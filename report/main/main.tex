@@ -1,0 +1,38 @@
+\providecommand{\main}{.}
+\documentclass[11pt, a4paper]{article}
+\usepackage{subfiles}
+
+\input{../preamble/preamble.tex}
+
+
+
+
+\begin{document}
+
+    %\frontmatter
+    % \newgeometry{inner=20mm, outer=20mm, top=20mm, bottom=20mm, marginparsep=6mm, marginparwidth=30mm}
+    % \pagecolor{green!10}
+    \input{../titlepage/titlepage.tex}
+    % \pagecolor{white}
+    % \input{../frontespizio/abstract.tex}
+    % \newgeometry{inner=20mm, outer=49mm, top=20mm, bottom=25mm, marginparsep=6mm, marginparwidth=30mm}
+
+
+    \tableofcontents
+    \clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+    %\mainmatter
+    \pagestyle{fancy}
+
+
+    \subfile{../sections/01.tex}
+
+
+    %\backmatter
+    \pagestyle{plain}
+
+
+    \input{../bibliography/bibliography.tex}
+
+\end{document}

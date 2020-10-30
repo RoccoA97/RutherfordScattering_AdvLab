@@ -1,0 +1,60 @@
+130748>: START LOG
+130748.INFO >: loading library ps5000a
+130748.INFO >: library loaded OK!
+130751.INFO >: Unit openened correctly
+130751.INFO >: Channel A setup information:
+Enabled: True
+Vrange: 5V -> 8
+Coupling: DC -> 1
+Voffset: 0.0
+
+130751.INFO >: Channel B setup information:
+Enabled: False
+Vrange: 10mV -> 0
+Coupling: DC -> 1
+Voffset: 0.0
+
+130751.INFO >: ADC resolution set at: 12bit
+130751.INFO >: Timebase information
+User sample rate: 200.0 MS/s
+User sample interval: 5.0 ns
+Nearest device parameters
+Sample rate: 250.0 MS/s
+Sample interval: 4.0 ns
+System Timebase: 2
+
+130751.INFO >: Sampling parameters set correctly
+130751.INFO >: Trigger Setup
+Trigger SetupSource:ADirection:FallingLevel:500.0	3276
+130751.INFO >: Memory Segmentation
+N. of segments: 1Samples/segment: 268435200
+130751.INFO >: Number of captures per run set at: 1
+130751.INFO >: Setting up run: 0
+130751.INFO >: Signals to capture in this run: 1
+130751.INFO >: Remaining time: 60
+130751.INFO >: DATA COLLECTION STARTED
+130824.INFO >: DATA COLLECTION ENDED
+130824.INFO >: Data buffer set OK for segment: 0
+130824.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+130824.INFO >: Number of captures per run set at: 1
+130824.INFO >: Setting up run: 1
+130824.INFO >: Signals to capture in this run: 1
+130824.INFO >: Remaining time: 27.2664048672
+130824.INFO >: DATA COLLECTION STARTED
+131014.INFO >: DATA COLLECTION ENDED
+131014.WARNING >: Exceeded expected runtime by: 82.373349905 seconds
+131014.INFO >: Data buffer set OK for segment: 0
+131014.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+131014.INFO >: Unit stopped correctly
+131014.INFO >: Unit closed correctly
+131014>: END LOG

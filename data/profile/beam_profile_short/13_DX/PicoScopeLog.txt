@@ -1,0 +1,5052 @@
+124113>: START LOG
+124113.INFO >: loading library ps5000a
+124113.INFO >: library loaded OK!
+124116.INFO >: Unit openened correctly
+124116.INFO >: Channel A setup information:
+Enabled: True
+Vrange: 5V -> 8
+Coupling: DC -> 1
+Voffset: 0.0
+
+124116.INFO >: Channel B setup information:
+Enabled: False
+Vrange: 10mV -> 0
+Coupling: DC -> 1
+Voffset: 0.0
+
+124116.INFO >: ADC resolution set at: 12bit
+124116.INFO >: Timebase information
+User sample rate: 200.0 MS/s
+User sample interval: 5.0 ns
+Nearest device parameters
+Sample rate: 250.0 MS/s
+Sample interval: 4.0 ns
+System Timebase: 2
+
+124116.INFO >: Sampling parameters set correctly
+124116.INFO >: Trigger Setup
+Trigger SetupSource:ADirection:FallingLevel:500.0	3276
+124116.INFO >: Memory Segmentation
+N. of segments: 1Samples/segment: 268435200
+124116.INFO >: Number of captures per run set at: 1
+124116.INFO >: Setting up run: 0
+124116.INFO >: Signals to capture in this run: 1
+124116.INFO >: Remaining time: 60
+124117.INFO >: DATA COLLECTION STARTED
+124117.INFO >: DATA COLLECTION ENDED
+124117.INFO >: Data buffer set OK for segment: 0
+124117.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124117.INFO >: Number of captures per run set at: 1
+124117.INFO >: Setting up run: 1
+124117.INFO >: Signals to capture in this run: 1
+124117.INFO >: Remaining time: 59.9839289188
+124117.INFO >: DATA COLLECTION STARTED
+124117.INFO >: DATA COLLECTION ENDED
+124117.INFO >: Data buffer set OK for segment: 0
+124117.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124117.INFO >: Number of captures per run set at: 1
+124117.INFO >: Setting up run: 2
+124117.INFO >: Signals to capture in this run: 1
+124117.INFO >: Remaining time: 59.5807259083
+124117.INFO >: DATA COLLECTION STARTED
+124117.INFO >: DATA COLLECTION ENDED
+124117.INFO >: Data buffer set OK for segment: 0
+124117.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124117.INFO >: Number of captures per run set at: 1
+124117.INFO >: Setting up run: 3
+124117.INFO >: Signals to capture in this run: 1
+124117.INFO >: Remaining time: 59.1047739983
+124117.INFO >: DATA COLLECTION STARTED
+124118.INFO >: DATA COLLECTION ENDED
+124118.INFO >: Data buffer set OK for segment: 0
+124118.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124118.INFO >: Number of captures per run set at: 1
+124118.INFO >: Setting up run: 4
+124118.INFO >: Signals to capture in this run: 1
+124118.INFO >: Remaining time: 58.9072029591
+124118.INFO >: DATA COLLECTION STARTED
+124118.INFO >: DATA COLLECTION ENDED
+124118.INFO >: Data buffer set OK for segment: 0
+124118.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124118.INFO >: Number of captures per run set at: 1
+124118.INFO >: Setting up run: 5
+124118.INFO >: Signals to capture in this run: 1
+124118.INFO >: Remaining time: 58.3653578758
+124118.INFO >: DATA COLLECTION STARTED
+124119.INFO >: DATA COLLECTION ENDED
+124119.INFO >: Data buffer set OK for segment: 0
+124119.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124119.INFO >: Number of captures per run set at: 1
+124119.INFO >: Setting up run: 6
+124119.INFO >: Signals to capture in this run: 1
+124119.INFO >: Remaining time: 57.8460657597
+124119.INFO >: DATA COLLECTION STARTED
+124119.INFO >: DATA COLLECTION ENDED
+124119.INFO >: Data buffer set OK for segment: 0
+124119.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124119.INFO >: Number of captures per run set at: 1
+124119.INFO >: Setting up run: 7
+124119.INFO >: Signals to capture in this run: 1
+124119.INFO >: Remaining time: 57.825940609
+124119.INFO >: DATA COLLECTION STARTED
+124119.INFO >: DATA COLLECTION ENDED
+124119.INFO >: Data buffer set OK for segment: 0
+124119.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124119.INFO >: Number of captures per run set at: 1
+124119.INFO >: Setting up run: 8
+124119.INFO >: Signals to capture in this run: 1
+124119.INFO >: Remaining time: 57.795091629
+124119.INFO >: DATA COLLECTION STARTED
+124119.INFO >: DATA COLLECTION ENDED
+124119.INFO >: Data buffer set OK for segment: 0
+124119.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124119.INFO >: Number of captures per run set at: 1
+124119.INFO >: Setting up run: 9
+124119.INFO >: Signals to capture in this run: 1
+124119.INFO >: Remaining time: 57.5654218197
+124119.INFO >: DATA COLLECTION STARTED
+124119.INFO >: DATA COLLECTION ENDED
+124119.INFO >: Data buffer set OK for segment: 0
+124119.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124119.INFO >: Number of captures per run set at: 1
+124119.INFO >: Setting up run: 10
+124119.INFO >: Signals to capture in this run: 1
+124119.INFO >: Remaining time: 57.5496497154
+124119.INFO >: DATA COLLECTION STARTED
+124120.INFO >: DATA COLLECTION ENDED
+124120.INFO >: Data buffer set OK for segment: 0
+124120.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124120.INFO >: Number of captures per run set at: 1
+124120.INFO >: Setting up run: 11
+124120.INFO >: Signals to capture in this run: 1
+124120.INFO >: Remaining time: 57.0758087635
+124120.INFO >: DATA COLLECTION STARTED
+124120.INFO >: DATA COLLECTION ENDED
+124120.INFO >: Data buffer set OK for segment: 0
+124120.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124120.INFO >: Number of captures per run set at: 1
+124120.INFO >: Setting up run: 12
+124120.INFO >: Signals to capture in this run: 1
+124120.INFO >: Remaining time: 56.9897317886
+124120.INFO >: DATA COLLECTION STARTED
+124120.INFO >: DATA COLLECTION ENDED
+124120.INFO >: Data buffer set OK for segment: 0
+124120.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124120.INFO >: Number of captures per run set at: 1
+124120.INFO >: Setting up run: 13
+124120.INFO >: Signals to capture in this run: 1
+124120.INFO >: Remaining time: 56.5607888699
+124120.INFO >: DATA COLLECTION STARTED
+124120.INFO >: DATA COLLECTION ENDED
+124120.INFO >: Data buffer set OK for segment: 0
+124120.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124120.INFO >: Number of captures per run set at: 1
+124120.INFO >: Setting up run: 14
+124120.INFO >: Signals to capture in this run: 1
+124120.INFO >: Remaining time: 56.4426827431
+124120.INFO >: DATA COLLECTION STARTED
+124120.INFO >: DATA COLLECTION ENDED
+124120.INFO >: Data buffer set OK for segment: 0
+124120.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124120.INFO >: Number of captures per run set at: 1
+124120.INFO >: Setting up run: 15
+124120.INFO >: Signals to capture in this run: 1
+124120.INFO >: Remaining time: 56.1420986652
+124120.INFO >: DATA COLLECTION STARTED
+124121.INFO >: DATA COLLECTION ENDED
+124121.INFO >: Data buffer set OK for segment: 0
+124121.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124121.INFO >: Number of captures per run set at: 1
+124121.INFO >: Setting up run: 16
+124121.INFO >: Signals to capture in this run: 1
+124121.INFO >: Remaining time: 56.105247736
+124121.INFO >: DATA COLLECTION STARTED
+124121.INFO >: DATA COLLECTION ENDED
+124121.INFO >: Data buffer set OK for segment: 0
+124121.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124121.INFO >: Number of captures per run set at: 1
+124121.INFO >: Setting up run: 17
+124121.INFO >: Signals to capture in this run: 1
+124121.INFO >: Remaining time: 55.9748296738
+124121.INFO >: DATA COLLECTION STARTED
+124121.INFO >: DATA COLLECTION ENDED
+124121.INFO >: Data buffer set OK for segment: 0
+124121.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124121.INFO >: Number of captures per run set at: 1
+124121.INFO >: Setting up run: 18
+124121.INFO >: Signals to capture in this run: 1
+124121.INFO >: Remaining time: 55.8855597973
+124121.INFO >: DATA COLLECTION STARTED
+124121.INFO >: DATA COLLECTION ENDED
+124121.INFO >: Data buffer set OK for segment: 0
+124121.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124121.INFO >: Number of captures per run set at: 1
+124121.INFO >: Setting up run: 19
+124121.INFO >: Signals to capture in this run: 1
+124121.INFO >: Remaining time: 55.7004628181
+124121.INFO >: DATA COLLECTION STARTED
+124121.INFO >: DATA COLLECTION ENDED
+124121.INFO >: Data buffer set OK for segment: 0
+124121.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124121.INFO >: Number of captures per run set at: 1
+124121.INFO >: Setting up run: 20
+124121.INFO >: Signals to capture in this run: 1
+124121.INFO >: Remaining time: 55.6129927635
+124121.INFO >: DATA COLLECTION STARTED
+124121.INFO >: DATA COLLECTION ENDED
+124121.INFO >: Data buffer set OK for segment: 0
+124121.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124121.INFO >: Number of captures per run set at: 1
+124121.INFO >: Setting up run: 21
+124121.INFO >: Signals to capture in this run: 1
+124121.INFO >: Remaining time: 55.3539187908
+124121.INFO >: DATA COLLECTION STARTED
+124122.INFO >: DATA COLLECTION ENDED
+124122.INFO >: Data buffer set OK for segment: 0
+124122.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124122.INFO >: Number of captures per run set at: 1
+124122.INFO >: Setting up run: 22
+124122.INFO >: Signals to capture in this run: 1
+124122.INFO >: Remaining time: 55.1520698071
+124122.INFO >: DATA COLLECTION STARTED
+124122.INFO >: DATA COLLECTION ENDED
+124122.INFO >: Data buffer set OK for segment: 0
+124122.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124122.INFO >: Number of captures per run set at: 1
+124122.INFO >: Setting up run: 23
+124122.INFO >: Signals to capture in this run: 1
+124122.INFO >: Remaining time: 55.0474579334
+124122.INFO >: DATA COLLECTION STARTED
+124122.INFO >: DATA COLLECTION ENDED
+124122.INFO >: Data buffer set OK for segment: 0
+124122.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124122.INFO >: Number of captures per run set at: 1
+124122.INFO >: Setting up run: 24
+124122.INFO >: Signals to capture in this run: 1
+124122.INFO >: Remaining time: 54.9211058617
+124122.INFO >: DATA COLLECTION STARTED
+124122.INFO >: DATA COLLECTION ENDED
+124122.INFO >: Data buffer set OK for segment: 0
+124122.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124122.INFO >: Number of captures per run set at: 1
+124122.INFO >: Setting up run: 25
+124122.INFO >: Signals to capture in this run: 1
+124122.INFO >: Remaining time: 54.5692868233
+124122.INFO >: DATA COLLECTION STARTED
+124122.INFO >: DATA COLLECTION ENDED
+124122.INFO >: Data buffer set OK for segment: 0
+124122.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124122.INFO >: Number of captures per run set at: 1
+124122.INFO >: Setting up run: 26
+124122.INFO >: Signals to capture in this run: 1
+124122.INFO >: Remaining time: 54.5496587753
+124122.INFO >: DATA COLLECTION STARTED
+124123.INFO >: DATA COLLECTION ENDED
+124123.INFO >: Data buffer set OK for segment: 0
+124123.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124123.INFO >: Number of captures per run set at: 1
+124123.INFO >: Setting up run: 27
+124123.INFO >: Signals to capture in this run: 1
+124123.INFO >: Remaining time: 53.8936376572
+124123.INFO >: DATA COLLECTION STARTED
+124123.INFO >: DATA COLLECTION ENDED
+124123.INFO >: Data buffer set OK for segment: 0
+124123.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124123.INFO >: Number of captures per run set at: 1
+124123.INFO >: Setting up run: 28
+124123.INFO >: Signals to capture in this run: 1
+124123.INFO >: Remaining time: 53.8214557171
+124123.INFO >: DATA COLLECTION STARTED
+124123.INFO >: DATA COLLECTION ENDED
+124123.INFO >: Data buffer set OK for segment: 0
+124123.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124123.INFO >: Number of captures per run set at: 1
+124123.INFO >: Setting up run: 29
+124123.INFO >: Signals to capture in this run: 1
+124123.INFO >: Remaining time: 53.7257187366
+124123.INFO >: DATA COLLECTION STARTED
+124123.INFO >: DATA COLLECTION ENDED
+124123.INFO >: Data buffer set OK for segment: 0
+124123.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124123.INFO >: Number of captures per run set at: 1
+124123.INFO >: Setting up run: 30
+124123.INFO >: Signals to capture in this run: 1
+124123.INFO >: Remaining time: 53.5238337517
+124123.INFO >: DATA COLLECTION STARTED
+124123.INFO >: DATA COLLECTION ENDED
+124123.INFO >: Data buffer set OK for segment: 0
+124123.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124123.INFO >: Number of captures per run set at: 1
+124123.INFO >: Setting up run: 31
+124123.INFO >: Signals to capture in this run: 1
+124123.INFO >: Remaining time: 53.3903758526
+124123.INFO >: DATA COLLECTION STARTED
+124123.INFO >: DATA COLLECTION ENDED
+124123.INFO >: Data buffer set OK for segment: 0
+124123.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124123.INFO >: Number of captures per run set at: 1
+124123.INFO >: Setting up run: 32
+124123.INFO >: Signals to capture in this run: 1
+124123.INFO >: Remaining time: 53.3453977108
+124123.INFO >: DATA COLLECTION STARTED
+124123.INFO >: DATA COLLECTION ENDED
+124123.INFO >: Data buffer set OK for segment: 0
+124123.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124123.INFO >: Number of captures per run set at: 1
+124123.INFO >: Setting up run: 33
+124123.INFO >: Signals to capture in this run: 1
+124123.INFO >: Remaining time: 53.3349637985
+124123.INFO >: DATA COLLECTION STARTED
+124123.INFO >: DATA COLLECTION ENDED
+124123.INFO >: Data buffer set OK for segment: 0
+124123.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124123.INFO >: Number of captures per run set at: 1
+124123.INFO >: Setting up run: 34
+124123.INFO >: Signals to capture in this run: 1
+124123.INFO >: Remaining time: 53.3120007515
+124123.INFO >: DATA COLLECTION STARTED
+124124.INFO >: DATA COLLECTION ENDED
+124124.INFO >: Data buffer set OK for segment: 0
+124124.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124124.INFO >: Number of captures per run set at: 1
+124124.INFO >: Setting up run: 35
+124124.INFO >: Signals to capture in this run: 1
+124124.INFO >: Remaining time: 53.2272727489
+124124.INFO >: DATA COLLECTION STARTED
+124124.INFO >: DATA COLLECTION ENDED
+124124.INFO >: Data buffer set OK for segment: 0
+124124.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124124.INFO >: Number of captures per run set at: 1
+124124.INFO >: Setting up run: 36
+124124.INFO >: Signals to capture in this run: 1
+124124.INFO >: Remaining time: 53.1947648525
+124124.INFO >: DATA COLLECTION STARTED
+124124.INFO >: DATA COLLECTION ENDED
+124124.INFO >: Data buffer set OK for segment: 0
+124124.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124124.INFO >: Number of captures per run set at: 1
+124124.INFO >: Setting up run: 37
+124124.INFO >: Signals to capture in this run: 1
+124124.INFO >: Remaining time: 52.6341648102
+124124.INFO >: DATA COLLECTION STARTED
+124124.INFO >: DATA COLLECTION ENDED
+124124.INFO >: Data buffer set OK for segment: 0
+124124.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124124.INFO >: Number of captures per run set at: 1
+124124.INFO >: Setting up run: 38
+124124.INFO >: Signals to capture in this run: 1
+124124.INFO >: Remaining time: 52.5971996784
+124124.INFO >: DATA COLLECTION STARTED
+124124.INFO >: DATA COLLECTION ENDED
+124124.INFO >: Data buffer set OK for segment: 0
+124124.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124124.INFO >: Number of captures per run set at: 1
+124124.INFO >: Setting up run: 39
+124124.INFO >: Signals to capture in this run: 1
+124124.INFO >: Remaining time: 52.5605967045
+124124.INFO >: DATA COLLECTION STARTED
+124125.INFO >: DATA COLLECTION ENDED
+124125.INFO >: Data buffer set OK for segment: 0
+124125.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124125.INFO >: Number of captures per run set at: 1
+124125.INFO >: Setting up run: 40
+124125.INFO >: Signals to capture in this run: 1
+124125.INFO >: Remaining time: 52.1725077629
+124125.INFO >: DATA COLLECTION STARTED
+124125.INFO >: DATA COLLECTION ENDED
+124125.INFO >: Data buffer set OK for segment: 0
+124125.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124125.INFO >: Number of captures per run set at: 1
+124125.INFO >: Setting up run: 41
+124125.INFO >: Signals to capture in this run: 1
+124125.INFO >: Remaining time: 51.5444159508
+124125.INFO >: DATA COLLECTION STARTED
+124126.INFO >: DATA COLLECTION ENDED
+124126.INFO >: Data buffer set OK for segment: 0
+124126.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124126.INFO >: Number of captures per run set at: 1
+124126.INFO >: Setting up run: 42
+124126.INFO >: Signals to capture in this run: 1
+124126.INFO >: Remaining time: 51.212130785
+124126.INFO >: DATA COLLECTION STARTED
+124126.INFO >: DATA COLLECTION ENDED
+124126.INFO >: Data buffer set OK for segment: 0
+124126.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124126.INFO >: Number of captures per run set at: 1
+124126.INFO >: Setting up run: 43
+124126.INFO >: Signals to capture in this run: 1
+124126.INFO >: Remaining time: 51.1190707684
+124126.INFO >: DATA COLLECTION STARTED
+124126.INFO >: DATA COLLECTION ENDED
+124126.INFO >: Data buffer set OK for segment: 0
+124126.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124126.INFO >: Number of captures per run set at: 1
+124126.INFO >: Setting up run: 44
+124126.INFO >: Signals to capture in this run: 1
+124126.INFO >: Remaining time: 50.977370739
+124126.INFO >: DATA COLLECTION STARTED
+124126.INFO >: DATA COLLECTION ENDED
+124126.INFO >: Data buffer set OK for segment: 0
+124126.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124126.INFO >: Number of captures per run set at: 1
+124126.INFO >: Setting up run: 45
+124126.INFO >: Signals to capture in this run: 1
+124126.INFO >: Remaining time: 50.6296668053
+124126.INFO >: DATA COLLECTION STARTED
+124126.INFO >: DATA COLLECTION ENDED
+124126.INFO >: Data buffer set OK for segment: 0
+124126.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124126.INFO >: Number of captures per run set at: 1
+124126.INFO >: Setting up run: 46
+124126.INFO >: Signals to capture in this run: 1
+124126.INFO >: Remaining time: 50.4905817509
+124126.INFO >: DATA COLLECTION STARTED
+124127.INFO >: DATA COLLECTION ENDED
+124127.INFO >: Data buffer set OK for segment: 0
+124127.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124127.INFO >: Number of captures per run set at: 1
+124127.INFO >: Setting up run: 47
+124127.INFO >: Signals to capture in this run: 1
+124127.INFO >: Remaining time: 49.9619808197
+124127.INFO >: DATA COLLECTION STARTED
+124127.INFO >: DATA COLLECTION ENDED
+124127.INFO >: Data buffer set OK for segment: 0
+124127.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124127.INFO >: Number of captures per run set at: 1
+124127.INFO >: Setting up run: 48
+124127.INFO >: Signals to capture in this run: 1
+124127.INFO >: Remaining time: 49.759983778
+124127.INFO >: DATA COLLECTION STARTED
+124127.INFO >: DATA COLLECTION ENDED
+124127.INFO >: Data buffer set OK for segment: 0
+124127.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124127.INFO >: Number of captures per run set at: 1
+124127.INFO >: Setting up run: 49
+124127.INFO >: Signals to capture in this run: 1
+124127.INFO >: Remaining time: 49.5602657795
+124127.INFO >: DATA COLLECTION STARTED
+124128.INFO >: DATA COLLECTION ENDED
+124128.INFO >: Data buffer set OK for segment: 0
+124128.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124128.INFO >: Number of captures per run set at: 1
+124128.INFO >: Setting up run: 50
+124128.INFO >: Signals to capture in this run: 1
+124128.INFO >: Remaining time: 49.2748045921
+124128.INFO >: DATA COLLECTION STARTED
+124128.INFO >: DATA COLLECTION ENDED
+124128.INFO >: Data buffer set OK for segment: 0
+124128.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124128.INFO >: Number of captures per run set at: 1
+124128.INFO >: Setting up run: 51
+124128.INFO >: Signals to capture in this run: 1
+124128.INFO >: Remaining time: 49.029592514
+124128.INFO >: DATA COLLECTION STARTED
+124128.INFO >: DATA COLLECTION ENDED
+124128.INFO >: Data buffer set OK for segment: 0
+124128.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124128.INFO >: Number of captures per run set at: 1
+124128.INFO >: Setting up run: 52
+124128.INFO >: Signals to capture in this run: 1
+124128.INFO >: Remaining time: 48.9937813282
+124128.INFO >: DATA COLLECTION STARTED
+124128.INFO >: DATA COLLECTION ENDED
+124128.INFO >: Data buffer set OK for segment: 0
+124128.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124128.INFO >: Number of captures per run set at: 1
+124128.INFO >: Setting up run: 53
+124128.INFO >: Signals to capture in this run: 1
+124128.INFO >: Remaining time: 48.6549534798
+124128.INFO >: DATA COLLECTION STARTED
+124128.INFO >: DATA COLLECTION ENDED
+124128.INFO >: Data buffer set OK for segment: 0
+124128.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124128.INFO >: Number of captures per run set at: 1
+124128.INFO >: Setting up run: 54
+124128.INFO >: Signals to capture in this run: 1
+124128.INFO >: Remaining time: 48.5349884033
+124128.INFO >: DATA COLLECTION STARTED
+124128.INFO >: DATA COLLECTION ENDED
+124128.INFO >: Data buffer set OK for segment: 0
+124128.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124128.INFO >: Number of captures per run set at: 1
+124128.INFO >: Setting up run: 55
+124128.INFO >: Signals to capture in this run: 1
+124128.INFO >: Remaining time: 48.4431843758
+124128.INFO >: DATA COLLECTION STARTED
+124129.INFO >: DATA COLLECTION ENDED
+124129.INFO >: Data buffer set OK for segment: 0
+124129.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124129.INFO >: Number of captures per run set at: 1
+124129.INFO >: Setting up run: 56
+124129.INFO >: Signals to capture in this run: 1
+124129.INFO >: Remaining time: 48.2844133377
+124129.INFO >: DATA COLLECTION STARTED
+124129.INFO >: DATA COLLECTION ENDED
+124129.INFO >: Data buffer set OK for segment: 0
+124129.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124129.INFO >: Number of captures per run set at: 1
+124129.INFO >: Setting up run: 57
+124129.INFO >: Signals to capture in this run: 1
+124129.INFO >: Remaining time: 48.2482774258
+124129.INFO >: DATA COLLECTION STARTED
+124129.INFO >: DATA COLLECTION ENDED
+124129.INFO >: Data buffer set OK for segment: 0
+124129.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124129.INFO >: Number of captures per run set at: 1
+124129.INFO >: Setting up run: 58
+124129.INFO >: Signals to capture in this run: 1
+124129.INFO >: Remaining time: 48.059728384
+124129.INFO >: DATA COLLECTION STARTED
+124129.INFO >: DATA COLLECTION ENDED
+124129.INFO >: Data buffer set OK for segment: 0
+124129.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124129.INFO >: Number of captures per run set at: 1
+124129.INFO >: Setting up run: 59
+124129.INFO >: Signals to capture in this run: 1
+124129.INFO >: Remaining time: 48.0409104824
+124129.INFO >: DATA COLLECTION STARTED
+124129.INFO >: DATA COLLECTION ENDED
+124129.INFO >: Data buffer set OK for segment: 0
+124129.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124129.INFO >: Number of captures per run set at: 1
+124129.INFO >: Setting up run: 60
+124129.INFO >: Signals to capture in this run: 1
+124129.INFO >: Remaining time: 47.7641513348
+124129.INFO >: DATA COLLECTION STARTED
+124129.INFO >: DATA COLLECTION ENDED
+124129.INFO >: Data buffer set OK for segment: 0
+124129.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124129.INFO >: Number of captures per run set at: 1
+124129.INFO >: Setting up run: 61
+124129.INFO >: Signals to capture in this run: 1
+124129.INFO >: Remaining time: 47.7108471394
+124129.INFO >: DATA COLLECTION STARTED
+124129.INFO >: DATA COLLECTION ENDED
+124129.INFO >: Data buffer set OK for segment: 0
+124129.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124129.INFO >: Number of captures per run set at: 1
+124129.INFO >: Setting up run: 62
+124129.INFO >: Signals to capture in this run: 1
+124129.INFO >: Remaining time: 47.526112318
+124129.INFO >: DATA COLLECTION STARTED
+124130.INFO >: DATA COLLECTION ENDED
+124130.INFO >: Data buffer set OK for segment: 0
+124130.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124130.INFO >: Number of captures per run set at: 1
+124130.INFO >: Setting up run: 63
+124130.INFO >: Signals to capture in this run: 1
+124130.INFO >: Remaining time: 47.3137643337
+124130.INFO >: DATA COLLECTION STARTED
+124130.INFO >: DATA COLLECTION ENDED
+124130.INFO >: Data buffer set OK for segment: 0
+124130.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124130.INFO >: Number of captures per run set at: 1
+124130.INFO >: Setting up run: 64
+124130.INFO >: Signals to capture in this run: 1
+124130.INFO >: Remaining time: 47.0590572357
+124130.INFO >: DATA COLLECTION STARTED
+124130.INFO >: DATA COLLECTION ENDED
+124130.INFO >: Data buffer set OK for segment: 0
+124130.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124130.INFO >: Number of captures per run set at: 1
+124130.INFO >: Setting up run: 65
+124130.INFO >: Signals to capture in this run: 1
+124130.INFO >: Remaining time: 47.0209422112
+124130.INFO >: DATA COLLECTION STARTED
+124130.INFO >: DATA COLLECTION ENDED
+124130.INFO >: Data buffer set OK for segment: 0
+124130.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124130.INFO >: Number of captures per run set at: 1
+124130.INFO >: Setting up run: 66
+124130.INFO >: Signals to capture in this run: 1
+124130.INFO >: Remaining time: 46.9617640972
+124130.INFO >: DATA COLLECTION STARTED
+124130.INFO >: DATA COLLECTION ENDED
+124130.INFO >: Data buffer set OK for segment: 0
+124130.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124130.INFO >: Number of captures per run set at: 1
+124130.INFO >: Setting up run: 67
+124130.INFO >: Signals to capture in this run: 1
+124130.INFO >: Remaining time: 46.8380551338
+124130.INFO >: DATA COLLECTION STARTED
+124130.INFO >: DATA COLLECTION ENDED
+124130.INFO >: Data buffer set OK for segment: 0
+124130.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124130.INFO >: Number of captures per run set at: 1
+124130.INFO >: Setting up run: 68
+124130.INFO >: Signals to capture in this run: 1
+124130.INFO >: Remaining time: 46.5493330956
+124130.INFO >: DATA COLLECTION STARTED
+124131.INFO >: DATA COLLECTION ENDED
+124131.INFO >: Data buffer set OK for segment: 0
+124131.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124131.INFO >: Number of captures per run set at: 1
+124131.INFO >: Setting up run: 69
+124131.INFO >: Signals to capture in this run: 1
+124131.INFO >: Remaining time: 46.2618842125
+124131.INFO >: DATA COLLECTION STARTED
+124131.INFO >: DATA COLLECTION ENDED
+124131.INFO >: Data buffer set OK for segment: 0
+124131.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124131.INFO >: Number of captures per run set at: 1
+124131.INFO >: Setting up run: 70
+124131.INFO >: Signals to capture in this run: 1
+124131.INFO >: Remaining time: 46.1140332222
+124131.INFO >: DATA COLLECTION STARTED
+124131.INFO >: DATA COLLECTION ENDED
+124131.INFO >: Data buffer set OK for segment: 0
+124131.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124131.INFO >: Number of captures per run set at: 1
+124131.INFO >: Setting up run: 71
+124131.INFO >: Signals to capture in this run: 1
+124131.INFO >: Remaining time: 45.9455761909
+124131.INFO >: DATA COLLECTION STARTED
+124131.INFO >: DATA COLLECTION ENDED
+124131.INFO >: Data buffer set OK for segment: 0
+124131.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124131.INFO >: Number of captures per run set at: 1
+124131.INFO >: Setting up run: 72
+124131.INFO >: Signals to capture in this run: 1
+124131.INFO >: Remaining time: 45.8217310905
+124131.INFO >: DATA COLLECTION STARTED
+124131.INFO >: DATA COLLECTION ENDED
+124131.INFO >: Data buffer set OK for segment: 0
+124131.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124131.INFO >: Number of captures per run set at: 1
+124131.INFO >: Setting up run: 73
+124131.INFO >: Signals to capture in this run: 1
+124131.INFO >: Remaining time: 45.5739040375
+124131.INFO >: DATA COLLECTION STARTED
+124131.INFO >: DATA COLLECTION ENDED
+124131.INFO >: Data buffer set OK for segment: 0
+124131.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124131.INFO >: Number of captures per run set at: 1
+124131.INFO >: Setting up run: 74
+124131.INFO >: Signals to capture in this run: 1
+124131.INFO >: Remaining time: 45.5637459755
+124131.INFO >: DATA COLLECTION STARTED
+124132.INFO >: DATA COLLECTION ENDED
+124132.INFO >: Data buffer set OK for segment: 0
+124132.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124132.INFO >: Number of captures per run set at: 1
+124132.INFO >: Setting up run: 75
+124132.INFO >: Signals to capture in this run: 1
+124132.INFO >: Remaining time: 45.4914109707
+124132.INFO >: DATA COLLECTION STARTED
+124132.INFO >: DATA COLLECTION ENDED
+124132.INFO >: Data buffer set OK for segment: 0
+124132.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124132.INFO >: Number of captures per run set at: 1
+124132.INFO >: Setting up run: 76
+124132.INFO >: Signals to capture in this run: 1
+124132.INFO >: Remaining time: 45.3718318939
+124132.INFO >: DATA COLLECTION STARTED
+124132.INFO >: DATA COLLECTION ENDED
+124132.INFO >: Data buffer set OK for segment: 0
+124132.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124132.INFO >: Number of captures per run set at: 1
+124132.INFO >: Setting up run: 77
+124132.INFO >: Signals to capture in this run: 1
+124132.INFO >: Remaining time: 45.1041069031
+124132.INFO >: DATA COLLECTION STARTED
+124132.INFO >: DATA COLLECTION ENDED
+124132.INFO >: Data buffer set OK for segment: 0
+124132.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124132.INFO >: Number of captures per run set at: 1
+124132.INFO >: Setting up run: 78
+124132.INFO >: Signals to capture in this run: 1
+124132.INFO >: Remaining time: 44.8697619438
+124132.INFO >: DATA COLLECTION STARTED
+124132.INFO >: DATA COLLECTION ENDED
+124132.INFO >: Data buffer set OK for segment: 0
+124133.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124133.INFO >: Number of captures per run set at: 1
+124133.INFO >: Setting up run: 79
+124133.INFO >: Signals to capture in this run: 1
+124133.INFO >: Remaining time: 44.5349397659
+124133.INFO >: DATA COLLECTION STARTED
+124133.INFO >: DATA COLLECTION ENDED
+124133.INFO >: Data buffer set OK for segment: 0
+124133.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124133.INFO >: Number of captures per run set at: 1
+124133.INFO >: Setting up run: 80
+124133.INFO >: Signals to capture in this run: 1
+124133.INFO >: Remaining time: 44.4212086201
+124133.INFO >: DATA COLLECTION STARTED
+124133.INFO >: DATA COLLECTION ENDED
+124133.INFO >: Data buffer set OK for segment: 0
+124133.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124133.INFO >: Number of captures per run set at: 1
+124133.INFO >: Setting up run: 81
+124133.INFO >: Signals to capture in this run: 1
+124133.INFO >: Remaining time: 44.4105615616
+124133.INFO >: DATA COLLECTION STARTED
+124133.INFO >: DATA COLLECTION ENDED
+124133.INFO >: Data buffer set OK for segment: 0
+124133.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124133.INFO >: Number of captures per run set at: 1
+124133.INFO >: Setting up run: 82
+124133.INFO >: Signals to capture in this run: 1
+124133.INFO >: Remaining time: 44.1436054707
+124133.INFO >: DATA COLLECTION STARTED
+124133.INFO >: DATA COLLECTION ENDED
+124133.INFO >: Data buffer set OK for segment: 0
+124133.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124133.INFO >: Number of captures per run set at: 1
+124133.INFO >: Setting up run: 83
+124133.INFO >: Signals to capture in this run: 1
+124133.INFO >: Remaining time: 43.919529438
+124133.INFO >: DATA COLLECTION STARTED
+124133.INFO >: DATA COLLECTION ENDED
+124133.INFO >: Data buffer set OK for segment: 0
+124133.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124133.INFO >: Number of captures per run set at: 1
+124133.INFO >: Setting up run: 84
+124133.INFO >: Signals to capture in this run: 1
+124133.INFO >: Remaining time: 43.8693654537
+124133.INFO >: DATA COLLECTION STARTED
+124133.INFO >: DATA COLLECTION ENDED
+124133.INFO >: Data buffer set OK for segment: 0
+124133.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124133.INFO >: Number of captures per run set at: 1
+124133.INFO >: Setting up run: 85
+124133.INFO >: Signals to capture in this run: 1
+124133.INFO >: Remaining time: 43.8594374657
+124133.INFO >: DATA COLLECTION STARTED
+124133.INFO >: DATA COLLECTION ENDED
+124133.INFO >: Data buffer set OK for segment: 0
+124133.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124133.INFO >: Number of captures per run set at: 1
+124133.INFO >: Setting up run: 86
+124133.INFO >: Signals to capture in this run: 1
+124133.INFO >: Remaining time: 43.779219389
+124133.INFO >: DATA COLLECTION STARTED
+124133.INFO >: DATA COLLECTION ENDED
+124133.INFO >: Data buffer set OK for segment: 0
+124133.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124133.INFO >: Number of captures per run set at: 1
+124133.INFO >: Setting up run: 87
+124133.INFO >: Signals to capture in this run: 1
+124133.INFO >: Remaining time: 43.595893383
+124133.INFO >: DATA COLLECTION STARTED
+124134.INFO >: DATA COLLECTION ENDED
+124134.INFO >: Data buffer set OK for segment: 0
+124134.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124134.INFO >: Number of captures per run set at: 1
+124134.INFO >: Setting up run: 88
+124134.INFO >: Signals to capture in this run: 1
+124134.INFO >: Remaining time: 43.2506651878
+124134.INFO >: DATA COLLECTION STARTED
+124134.INFO >: DATA COLLECTION ENDED
+124134.INFO >: Data buffer set OK for segment: 0
+124134.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124134.INFO >: Number of captures per run set at: 1
+124134.INFO >: Setting up run: 89
+124134.INFO >: Signals to capture in this run: 1
+124134.INFO >: Remaining time: 43.1043372154
+124134.INFO >: DATA COLLECTION STARTED
+124134.INFO >: DATA COLLECTION ENDED
+124134.INFO >: Data buffer set OK for segment: 0
+124134.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124134.INFO >: Number of captures per run set at: 1
+124134.INFO >: Setting up run: 90
+124134.INFO >: Signals to capture in this run: 1
+124134.INFO >: Remaining time: 43.032512188
+124134.INFO >: DATA COLLECTION STARTED
+124134.INFO >: DATA COLLECTION ENDED
+124134.INFO >: Data buffer set OK for segment: 0
+124134.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124134.INFO >: Number of captures per run set at: 1
+124134.INFO >: Setting up run: 91
+124134.INFO >: Signals to capture in this run: 1
+124134.INFO >: Remaining time: 42.9346852303
+124134.INFO >: DATA COLLECTION STARTED
+124134.INFO >: DATA COLLECTION ENDED
+124134.INFO >: Data buffer set OK for segment: 0
+124134.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124134.INFO >: Number of captures per run set at: 1
+124134.INFO >: Setting up run: 92
+124134.INFO >: Signals to capture in this run: 1
+124134.INFO >: Remaining time: 42.8521571159
+124134.INFO >: DATA COLLECTION STARTED
+124134.INFO >: DATA COLLECTION ENDED
+124134.INFO >: Data buffer set OK for segment: 0
+124134.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124134.INFO >: Number of captures per run set at: 1
+124134.INFO >: Setting up run: 93
+124134.INFO >: Signals to capture in this run: 1
+124134.INFO >: Remaining time: 42.7769730091
+124134.INFO >: DATA COLLECTION STARTED
+124134.INFO >: DATA COLLECTION ENDED
+124134.INFO >: Data buffer set OK for segment: 0
+124134.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124134.INFO >: Number of captures per run set at: 1
+124134.INFO >: Setting up run: 94
+124134.INFO >: Signals to capture in this run: 1
+124134.INFO >: Remaining time: 42.6666190624
+124134.INFO >: DATA COLLECTION STARTED
+124135.INFO >: DATA COLLECTION ENDED
+124135.INFO >: Data buffer set OK for segment: 0
+124135.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124135.INFO >: Number of captures per run set at: 1
+124135.INFO >: Setting up run: 95
+124135.INFO >: Signals to capture in this run: 1
+124135.INFO >: Remaining time: 42.5772519112
+124135.INFO >: DATA COLLECTION STARTED
+124135.INFO >: DATA COLLECTION ENDED
+124135.INFO >: Data buffer set OK for segment: 0
+124135.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124135.INFO >: Number of captures per run set at: 1
+124135.INFO >: Setting up run: 96
+124135.INFO >: Signals to capture in this run: 1
+124135.INFO >: Remaining time: 42.4762649536
+124135.INFO >: DATA COLLECTION STARTED
+124135.INFO >: DATA COLLECTION ENDED
+124135.INFO >: Data buffer set OK for segment: 0
+124135.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124135.INFO >: Number of captures per run set at: 1
+124135.INFO >: Setting up run: 97
+124135.INFO >: Signals to capture in this run: 1
+124135.INFO >: Remaining time: 42.40279603
+124135.INFO >: DATA COLLECTION STARTED
+124135.INFO >: DATA COLLECTION ENDED
+124135.INFO >: Data buffer set OK for segment: 0
+124135.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124135.INFO >: Number of captures per run set at: 1
+124135.INFO >: Setting up run: 98
+124135.INFO >: Signals to capture in this run: 1
+124135.INFO >: Remaining time: 41.9192140102
+124135.INFO >: DATA COLLECTION STARTED
+124135.INFO >: DATA COLLECTION ENDED
+124135.INFO >: Data buffer set OK for segment: 0
+124135.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124135.INFO >: Number of captures per run set at: 1
+124135.INFO >: Setting up run: 99
+124135.INFO >: Signals to capture in this run: 1
+124135.INFO >: Remaining time: 41.9062578678
+124135.INFO >: DATA COLLECTION STARTED
+124135.INFO >: DATA COLLECTION ENDED
+124135.INFO >: Data buffer set OK for segment: 0
+124135.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124135.INFO >: Number of captures per run set at: 1
+124135.INFO >: Setting up run: 100
+124135.INFO >: Signals to capture in this run: 1
+124135.INFO >: Remaining time: 41.8271667957
+124135.INFO >: DATA COLLECTION STARTED
+124135.INFO >: DATA COLLECTION ENDED
+124135.INFO >: Data buffer set OK for segment: 0
+124135.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124135.INFO >: Number of captures per run set at: 1
+124135.INFO >: Setting up run: 101
+124135.INFO >: Signals to capture in this run: 1
+124135.INFO >: Remaining time: 41.7215838432
+124135.INFO >: DATA COLLECTION STARTED
+124136.INFO >: DATA COLLECTION ENDED
+124136.INFO >: Data buffer set OK for segment: 0
+124136.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124136.INFO >: Number of captures per run set at: 1
+124136.INFO >: Setting up run: 102
+124136.INFO >: Signals to capture in this run: 1
+124136.INFO >: Remaining time: 41.6624557972
+124136.INFO >: DATA COLLECTION STARTED
+124136.INFO >: DATA COLLECTION ENDED
+124136.INFO >: Data buffer set OK for segment: 0
+124136.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124136.INFO >: Number of captures per run set at: 1
+124136.INFO >: Setting up run: 103
+124136.INFO >: Signals to capture in this run: 1
+124136.INFO >: Remaining time: 41.6170706749
+124136.INFO >: DATA COLLECTION STARTED
+124136.INFO >: DATA COLLECTION ENDED
+124136.INFO >: Data buffer set OK for segment: 0
+124136.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124136.INFO >: Number of captures per run set at: 1
+124136.INFO >: Setting up run: 104
+124136.INFO >: Signals to capture in this run: 1
+124136.INFO >: Remaining time: 41.4773738384
+124136.INFO >: DATA COLLECTION STARTED
+124136.INFO >: DATA COLLECTION ENDED
+124136.INFO >: Data buffer set OK for segment: 0
+124136.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124136.INFO >: Number of captures per run set at: 1
+124136.INFO >: Setting up run: 105
+124136.INFO >: Signals to capture in this run: 1
+124136.INFO >: Remaining time: 41.447991848
+124136.INFO >: DATA COLLECTION STARTED
+124136.INFO >: DATA COLLECTION ENDED
+124136.INFO >: Data buffer set OK for segment: 0
+124136.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124136.INFO >: Number of captures per run set at: 1
+124136.INFO >: Setting up run: 106
+124136.INFO >: Signals to capture in this run: 1
+124136.INFO >: Remaining time: 41.4201538563
+124136.INFO >: DATA COLLECTION STARTED
+124136.INFO >: DATA COLLECTION ENDED
+124136.INFO >: Data buffer set OK for segment: 0
+124136.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124136.INFO >: Number of captures per run set at: 1
+124136.INFO >: Setting up run: 107
+124136.INFO >: Signals to capture in this run: 1
+124136.INFO >: Remaining time: 41.2326107025
+124136.INFO >: DATA COLLECTION STARTED
+124136.INFO >: DATA COLLECTION ENDED
+124136.INFO >: Data buffer set OK for segment: 0
+124136.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124136.INFO >: Number of captures per run set at: 1
+124136.INFO >: Setting up run: 108
+124136.INFO >: Signals to capture in this run: 1
+124136.INFO >: Remaining time: 41.2229385376
+124136.INFO >: DATA COLLECTION STARTED
+124136.INFO >: DATA COLLECTION ENDED
+124136.INFO >: Data buffer set OK for segment: 0
+124136.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124136.INFO >: Number of captures per run set at: 1
+124136.INFO >: Setting up run: 109
+124136.INFO >: Signals to capture in this run: 1
+124136.INFO >: Remaining time: 41.0781943798
+124136.INFO >: DATA COLLECTION STARTED
+124136.INFO >: DATA COLLECTION ENDED
+124136.INFO >: Data buffer set OK for segment: 0
+124136.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124136.INFO >: Number of captures per run set at: 1
+124136.INFO >: Setting up run: 110
+124136.INFO >: Signals to capture in this run: 1
+124136.INFO >: Remaining time: 40.9426262379
+124136.INFO >: DATA COLLECTION STARTED
+124136.INFO >: DATA COLLECTION ENDED
+124136.INFO >: Data buffer set OK for segment: 0
+124136.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124136.INFO >: Number of captures per run set at: 1
+124136.INFO >: Setting up run: 111
+124136.INFO >: Signals to capture in this run: 1
+124136.INFO >: Remaining time: 40.8162431717
+124136.INFO >: DATA COLLECTION STARTED
+124136.INFO >: DATA COLLECTION ENDED
+124136.INFO >: Data buffer set OK for segment: 0
+124137.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124137.INFO >: Number of captures per run set at: 1
+124137.INFO >: Setting up run: 112
+124137.INFO >: Signals to capture in this run: 1
+124137.INFO >: Remaining time: 40.7387890816
+124137.INFO >: DATA COLLECTION STARTED
+124137.INFO >: DATA COLLECTION ENDED
+124137.INFO >: Data buffer set OK for segment: 0
+124137.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124137.INFO >: Number of captures per run set at: 1
+124137.INFO >: Setting up run: 113
+124137.INFO >: Signals to capture in this run: 1
+124137.INFO >: Remaining time: 40.7125883102
+124137.INFO >: DATA COLLECTION STARTED
+124137.INFO >: DATA COLLECTION ENDED
+124137.INFO >: Data buffer set OK for segment: 0
+124137.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124137.INFO >: Number of captures per run set at: 1
+124137.INFO >: Setting up run: 114
+124137.INFO >: Signals to capture in this run: 1
+124137.INFO >: Remaining time: 40.6881701946
+124137.INFO >: DATA COLLECTION STARTED
+124137.INFO >: DATA COLLECTION ENDED
+124137.INFO >: Data buffer set OK for segment: 0
+124137.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124137.INFO >: Number of captures per run set at: 1
+124137.INFO >: Setting up run: 115
+124137.INFO >: Signals to capture in this run: 1
+124137.INFO >: Remaining time: 40.6764731407
+124137.INFO >: DATA COLLECTION STARTED
+124137.INFO >: DATA COLLECTION ENDED
+124137.INFO >: Data buffer set OK for segment: 0
+124137.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124137.INFO >: Number of captures per run set at: 1
+124137.INFO >: Setting up run: 116
+124137.INFO >: Signals to capture in this run: 1
+124137.INFO >: Remaining time: 40.6354651451
+124137.INFO >: DATA COLLECTION STARTED
+124137.INFO >: DATA COLLECTION ENDED
+124137.INFO >: Data buffer set OK for segment: 0
+124137.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124137.INFO >: Number of captures per run set at: 1
+124137.INFO >: Setting up run: 117
+124137.INFO >: Signals to capture in this run: 1
+124137.INFO >: Remaining time: 40.5314002037
+124137.INFO >: DATA COLLECTION STARTED
+124137.INFO >: DATA COLLECTION ENDED
+124137.INFO >: Data buffer set OK for segment: 0
+124137.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124137.INFO >: Number of captures per run set at: 1
+124137.INFO >: Setting up run: 118
+124137.INFO >: Signals to capture in this run: 1
+124137.INFO >: Remaining time: 40.5151591301
+124137.INFO >: DATA COLLECTION STARTED
+124137.INFO >: DATA COLLECTION ENDED
+124137.INFO >: Data buffer set OK for segment: 0
+124137.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124137.INFO >: Number of captures per run set at: 1
+124137.INFO >: Setting up run: 119
+124137.INFO >: Signals to capture in this run: 1
+124137.INFO >: Remaining time: 40.3750350475
+124137.INFO >: DATA COLLECTION STARTED
+124137.INFO >: DATA COLLECTION ENDED
+124137.INFO >: Data buffer set OK for segment: 0
+124137.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124137.INFO >: Number of captures per run set at: 1
+124137.INFO >: Setting up run: 120
+124137.INFO >: Signals to capture in this run: 1
+124137.INFO >: Remaining time: 40.3563210964
+124137.INFO >: DATA COLLECTION STARTED
+124137.INFO >: DATA COLLECTION ENDED
+124137.INFO >: Data buffer set OK for segment: 0
+124137.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124137.INFO >: Number of captures per run set at: 1
+124137.INFO >: Setting up run: 121
+124137.INFO >: Signals to capture in this run: 1
+124137.INFO >: Remaining time: 40.2545189857
+124137.INFO >: DATA COLLECTION STARTED
+124137.INFO >: DATA COLLECTION ENDED
+124137.INFO >: Data buffer set OK for segment: 0
+124137.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124137.INFO >: Number of captures per run set at: 1
+124137.INFO >: Setting up run: 122
+124137.INFO >: Signals to capture in this run: 1
+124137.INFO >: Remaining time: 40.1223068237
+124137.INFO >: DATA COLLECTION STARTED
+124137.INFO >: DATA COLLECTION ENDED
+124137.INFO >: Data buffer set OK for segment: 0
+124137.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124137.INFO >: Number of captures per run set at: 1
+124137.INFO >: Setting up run: 123
+124137.INFO >: Signals to capture in this run: 1
+124137.INFO >: Remaining time: 40.0901687145
+124137.INFO >: DATA COLLECTION STARTED
+124138.INFO >: DATA COLLECTION ENDED
+124138.INFO >: Data buffer set OK for segment: 0
+124138.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124138.INFO >: Number of captures per run set at: 1
+124138.INFO >: Setting up run: 124
+124138.INFO >: Signals to capture in this run: 1
+124138.INFO >: Remaining time: 39.7972195148
+124138.INFO >: DATA COLLECTION STARTED
+124138.INFO >: DATA COLLECTION ENDED
+124138.INFO >: Data buffer set OK for segment: 0
+124138.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124138.INFO >: Number of captures per run set at: 1
+124138.INFO >: Setting up run: 125
+124138.INFO >: Signals to capture in this run: 1
+124138.INFO >: Remaining time: 39.7752335072
+124138.INFO >: DATA COLLECTION STARTED
+124138.INFO >: DATA COLLECTION ENDED
+124138.INFO >: Data buffer set OK for segment: 0
+124138.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124138.INFO >: Number of captures per run set at: 1
+124138.INFO >: Setting up run: 126
+124138.INFO >: Signals to capture in this run: 1
+124138.INFO >: Remaining time: 39.7213206291
+124138.INFO >: DATA COLLECTION STARTED
+124139.INFO >: DATA COLLECTION ENDED
+124139.INFO >: Data buffer set OK for segment: 0
+124139.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124139.INFO >: Number of captures per run set at: 1
+124139.INFO >: Setting up run: 127
+124139.INFO >: Signals to capture in this run: 1
+124139.INFO >: Remaining time: 38.3105077744
+124139.INFO >: DATA COLLECTION STARTED
+124139.INFO >: DATA COLLECTION ENDED
+124139.INFO >: Data buffer set OK for segment: 0
+124139.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124139.INFO >: Number of captures per run set at: 1
+124139.INFO >: Setting up run: 128
+124139.INFO >: Signals to capture in this run: 1
+124139.INFO >: Remaining time: 38.0395898819
+124139.INFO >: DATA COLLECTION STARTED
+124139.INFO >: DATA COLLECTION ENDED
+124139.INFO >: Data buffer set OK for segment: 0
+124139.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124139.INFO >: Number of captures per run set at: 1
+124139.INFO >: Setting up run: 129
+124139.INFO >: Signals to capture in this run: 1
+124139.INFO >: Remaining time: 37.8884878159
+124139.INFO >: DATA COLLECTION STARTED
+124140.INFO >: DATA COLLECTION ENDED
+124140.INFO >: Data buffer set OK for segment: 0
+124140.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124140.INFO >: Number of captures per run set at: 1
+124140.INFO >: Setting up run: 130
+124140.INFO >: Signals to capture in this run: 1
+124140.INFO >: Remaining time: 37.8067989349
+124140.INFO >: DATA COLLECTION STARTED
+124140.INFO >: DATA COLLECTION ENDED
+124140.INFO >: Data buffer set OK for segment: 0
+124140.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124140.INFO >: Number of captures per run set at: 1
+124140.INFO >: Setting up run: 131
+124140.INFO >: Signals to capture in this run: 1
+124140.INFO >: Remaining time: 37.7914459705
+124140.INFO >: DATA COLLECTION STARTED
+124140.INFO >: DATA COLLECTION ENDED
+124140.INFO >: Data buffer set OK for segment: 0
+124140.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124140.INFO >: Number of captures per run set at: 1
+124140.INFO >: Setting up run: 132
+124140.INFO >: Signals to capture in this run: 1
+124140.INFO >: Remaining time: 37.6977651119
+124140.INFO >: DATA COLLECTION STARTED
+124140.INFO >: DATA COLLECTION ENDED
+124140.INFO >: Data buffer set OK for segment: 0
+124140.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124140.INFO >: Number of captures per run set at: 1
+124140.INFO >: Setting up run: 133
+124140.INFO >: Signals to capture in this run: 1
+124140.INFO >: Remaining time: 37.5171961784
+124140.INFO >: DATA COLLECTION STARTED
+124140.INFO >: DATA COLLECTION ENDED
+124140.INFO >: Data buffer set OK for segment: 0
+124140.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124140.INFO >: Number of captures per run set at: 1
+124140.INFO >: Setting up run: 134
+124140.INFO >: Signals to capture in this run: 1
+124140.INFO >: Remaining time: 37.4296531677
+124140.INFO >: DATA COLLECTION STARTED
+124140.INFO >: DATA COLLECTION ENDED
+124140.INFO >: Data buffer set OK for segment: 0
+124140.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124140.INFO >: Number of captures per run set at: 1
+124140.INFO >: Setting up run: 135
+124140.INFO >: Signals to capture in this run: 1
+124140.INFO >: Remaining time: 36.9707562923
+124140.INFO >: DATA COLLECTION STARTED
+124141.INFO >: DATA COLLECTION ENDED
+124141.INFO >: Data buffer set OK for segment: 0
+124141.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124141.INFO >: Number of captures per run set at: 1
+124141.INFO >: Setting up run: 136
+124141.INFO >: Signals to capture in this run: 1
+124141.INFO >: Remaining time: 36.7294652462
+124141.INFO >: DATA COLLECTION STARTED
+124141.INFO >: DATA COLLECTION ENDED
+124141.INFO >: Data buffer set OK for segment: 0
+124141.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124141.INFO >: Number of captures per run set at: 1
+124141.INFO >: Setting up run: 137
+124141.INFO >: Signals to capture in this run: 1
+124141.INFO >: Remaining time: 36.5772502422
+124141.INFO >: DATA COLLECTION STARTED
+124141.INFO >: DATA COLLECTION ENDED
+124141.INFO >: Data buffer set OK for segment: 0
+124141.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124141.INFO >: Number of captures per run set at: 1
+124141.INFO >: Setting up run: 138
+124141.INFO >: Signals to capture in this run: 1
+124141.INFO >: Remaining time: 36.5528213978
+124141.INFO >: DATA COLLECTION STARTED
+124141.INFO >: DATA COLLECTION ENDED
+124141.INFO >: Data buffer set OK for segment: 0
+124141.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124141.INFO >: Number of captures per run set at: 1
+124141.INFO >: Setting up run: 139
+124141.INFO >: Signals to capture in this run: 1
+124141.INFO >: Remaining time: 36.4444134235
+124141.INFO >: DATA COLLECTION STARTED
+124141.INFO >: DATA COLLECTION ENDED
+124141.INFO >: Data buffer set OK for segment: 0
+124141.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124141.INFO >: Number of captures per run set at: 1
+124141.INFO >: Setting up run: 140
+124141.INFO >: Signals to capture in this run: 1
+124141.INFO >: Remaining time: 36.4302024841
+124141.INFO >: DATA COLLECTION STARTED
+124141.INFO >: DATA COLLECTION ENDED
+124141.INFO >: Data buffer set OK for segment: 0
+124141.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124141.INFO >: Number of captures per run set at: 1
+124141.INFO >: Setting up run: 141
+124141.INFO >: Signals to capture in this run: 1
+124141.INFO >: Remaining time: 36.4116835594
+124141.INFO >: DATA COLLECTION STARTED
+124141.INFO >: DATA COLLECTION ENDED
+124141.INFO >: Data buffer set OK for segment: 0
+124141.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124141.INFO >: Number of captures per run set at: 1
+124141.INFO >: Setting up run: 142
+124141.INFO >: Signals to capture in this run: 1
+124141.INFO >: Remaining time: 36.3685286045
+124141.INFO >: DATA COLLECTION STARTED
+124141.INFO >: DATA COLLECTION ENDED
+124141.INFO >: Data buffer set OK for segment: 0
+124141.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124141.INFO >: Number of captures per run set at: 1
+124141.INFO >: Setting up run: 143
+124141.INFO >: Signals to capture in this run: 1
+124141.INFO >: Remaining time: 36.3201906681
+124141.INFO >: DATA COLLECTION STARTED
+124141.INFO >: DATA COLLECTION ENDED
+124141.INFO >: Data buffer set OK for segment: 0
+124141.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124141.INFO >: Number of captures per run set at: 1
+124141.INFO >: Setting up run: 144
+124141.INFO >: Signals to capture in this run: 1
+124141.INFO >: Remaining time: 36.2344965935
+124141.INFO >: DATA COLLECTION STARTED
+124141.INFO >: DATA COLLECTION ENDED
+124141.INFO >: Data buffer set OK for segment: 0
+124141.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124141.INFO >: Number of captures per run set at: 1
+124141.INFO >: Setting up run: 145
+124141.INFO >: Signals to capture in this run: 1
+124141.INFO >: Remaining time: 36.0999536514
+124141.INFO >: DATA COLLECTION STARTED
+124141.INFO >: DATA COLLECTION ENDED
+124141.INFO >: Data buffer set OK for segment: 0
+124141.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124141.INFO >: Number of captures per run set at: 1
+124141.INFO >: Setting up run: 146
+124141.INFO >: Signals to capture in this run: 1
+124141.INFO >: Remaining time: 35.9889206886
+124141.INFO >: DATA COLLECTION STARTED
+124142.INFO >: DATA COLLECTION ENDED
+124142.INFO >: Data buffer set OK for segment: 0
+124142.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124142.INFO >: Number of captures per run set at: 1
+124142.INFO >: Setting up run: 147
+124142.INFO >: Signals to capture in this run: 1
+124142.INFO >: Remaining time: 35.8972187042
+124142.INFO >: DATA COLLECTION STARTED
+124142.INFO >: DATA COLLECTION ENDED
+124142.INFO >: Data buffer set OK for segment: 0
+124142.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124142.INFO >: Number of captures per run set at: 1
+124142.INFO >: Setting up run: 148
+124142.INFO >: Signals to capture in this run: 1
+124142.INFO >: Remaining time: 35.7991366386
+124142.INFO >: DATA COLLECTION STARTED
+124142.INFO >: DATA COLLECTION ENDED
+124142.INFO >: Data buffer set OK for segment: 0
+124142.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124142.INFO >: Number of captures per run set at: 1
+124142.INFO >: Setting up run: 149
+124142.INFO >: Signals to capture in this run: 1
+124142.INFO >: Remaining time: 35.4445545673
+124142.INFO >: DATA COLLECTION STARTED
+124142.INFO >: DATA COLLECTION ENDED
+124142.INFO >: Data buffer set OK for segment: 0
+124142.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124142.INFO >: Number of captures per run set at: 1
+124142.INFO >: Setting up run: 150
+124142.INFO >: Signals to capture in this run: 1
+124142.INFO >: Remaining time: 35.4325895309
+124142.INFO >: DATA COLLECTION STARTED
+124143.INFO >: DATA COLLECTION ENDED
+124143.INFO >: Data buffer set OK for segment: 0
+124143.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124143.INFO >: Number of captures per run set at: 1
+124143.INFO >: Setting up run: 151
+124143.INFO >: Signals to capture in this run: 1
+124143.INFO >: Remaining time: 34.5380284786
+124143.INFO >: DATA COLLECTION STARTED
+124143.INFO >: DATA COLLECTION ENDED
+124143.INFO >: Data buffer set OK for segment: 0
+124143.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124143.INFO >: Number of captures per run set at: 1
+124143.INFO >: Setting up run: 152
+124143.INFO >: Signals to capture in this run: 1
+124143.INFO >: Remaining time: 34.5320904255
+124143.INFO >: DATA COLLECTION STARTED
+124143.INFO >: DATA COLLECTION ENDED
+124143.INFO >: Data buffer set OK for segment: 0
+124143.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124143.INFO >: Number of captures per run set at: 1
+124143.INFO >: Setting up run: 153
+124143.INFO >: Signals to capture in this run: 1
+124143.INFO >: Remaining time: 34.525282383
+124143.INFO >: DATA COLLECTION STARTED
+124143.INFO >: DATA COLLECTION ENDED
+124143.INFO >: Data buffer set OK for segment: 0
+124143.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124143.INFO >: Number of captures per run set at: 1
+124143.INFO >: Setting up run: 154
+124143.INFO >: Signals to capture in this run: 1
+124143.INFO >: Remaining time: 34.434479475
+124143.INFO >: DATA COLLECTION STARTED
+124143.INFO >: DATA COLLECTION ENDED
+124143.INFO >: Data buffer set OK for segment: 0
+124143.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124143.INFO >: Number of captures per run set at: 1
+124143.INFO >: Setting up run: 155
+124143.INFO >: Signals to capture in this run: 1
+124143.INFO >: Remaining time: 34.4048275948
+124143.INFO >: DATA COLLECTION STARTED
+124143.INFO >: DATA COLLECTION ENDED
+124143.INFO >: Data buffer set OK for segment: 0
+124143.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124143.INFO >: Number of captures per run set at: 1
+124143.INFO >: Setting up run: 156
+124143.INFO >: Signals to capture in this run: 1
+124143.INFO >: Remaining time: 34.1532876492
+124143.INFO >: DATA COLLECTION STARTED
+124143.INFO >: DATA COLLECTION ENDED
+124143.INFO >: Data buffer set OK for segment: 0
+124143.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124143.INFO >: Number of captures per run set at: 1
+124143.INFO >: Setting up run: 157
+124143.INFO >: Signals to capture in this run: 1
+124143.INFO >: Remaining time: 34.020816803
+124143.INFO >: DATA COLLECTION STARTED
+124144.INFO >: DATA COLLECTION ENDED
+124144.INFO >: Data buffer set OK for segment: 0
+124144.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124144.INFO >: Number of captures per run set at: 1
+124144.INFO >: Setting up run: 158
+124144.INFO >: Signals to capture in this run: 1
+124144.INFO >: Remaining time: 33.9480848312
+124144.INFO >: DATA COLLECTION STARTED
+124144.INFO >: DATA COLLECTION ENDED
+124144.INFO >: Data buffer set OK for segment: 0
+124144.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124144.INFO >: Number of captures per run set at: 1
+124144.INFO >: Setting up run: 159
+124144.INFO >: Signals to capture in this run: 1
+124144.INFO >: Remaining time: 33.7531197071
+124144.INFO >: DATA COLLECTION STARTED
+124144.INFO >: DATA COLLECTION ENDED
+124144.INFO >: Data buffer set OK for segment: 0
+124144.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124144.INFO >: Number of captures per run set at: 1
+124144.INFO >: Setting up run: 160
+124144.INFO >: Signals to capture in this run: 1
+124144.INFO >: Remaining time: 33.6164116859
+124144.INFO >: DATA COLLECTION STARTED
+124144.INFO >: DATA COLLECTION ENDED
+124144.INFO >: Data buffer set OK for segment: 0
+124144.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124144.INFO >: Number of captures per run set at: 1
+124144.INFO >: Setting up run: 161
+124144.INFO >: Signals to capture in this run: 1
+124144.INFO >: Remaining time: 33.5686957836
+124144.INFO >: DATA COLLECTION STARTED
+124144.INFO >: DATA COLLECTION ENDED
+124144.INFO >: Data buffer set OK for segment: 0
+124144.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124144.INFO >: Number of captures per run set at: 1
+124144.INFO >: Setting up run: 162
+124144.INFO >: Signals to capture in this run: 1
+124144.INFO >: Remaining time: 33.2939786911
+124144.INFO >: DATA COLLECTION STARTED
+124144.INFO >: DATA COLLECTION ENDED
+124144.INFO >: Data buffer set OK for segment: 0
+124144.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124144.INFO >: Number of captures per run set at: 1
+124144.INFO >: Setting up run: 163
+124144.INFO >: Signals to capture in this run: 1
+124144.INFO >: Remaining time: 33.2555277348
+124144.INFO >: DATA COLLECTION STARTED
+124144.INFO >: DATA COLLECTION ENDED
+124144.INFO >: Data buffer set OK for segment: 0
+124144.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124144.INFO >: Number of captures per run set at: 1
+124144.INFO >: Setting up run: 164
+124144.INFO >: Signals to capture in this run: 1
+124144.INFO >: Remaining time: 33.2111518383
+124144.INFO >: DATA COLLECTION STARTED
+124144.INFO >: DATA COLLECTION ENDED
+124144.INFO >: Data buffer set OK for segment: 0
+124144.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124144.INFO >: Number of captures per run set at: 1
+124144.INFO >: Setting up run: 165
+124144.INFO >: Signals to capture in this run: 1
+124144.INFO >: Remaining time: 33.1438069344
+124144.INFO >: DATA COLLECTION STARTED
+124145.INFO >: DATA COLLECTION ENDED
+124145.INFO >: Data buffer set OK for segment: 0
+124145.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124145.INFO >: Number of captures per run set at: 1
+124145.INFO >: Setting up run: 166
+124145.INFO >: Signals to capture in this run: 1
+124145.INFO >: Remaining time: 33.050552845
+124145.INFO >: DATA COLLECTION STARTED
+124145.INFO >: DATA COLLECTION ENDED
+124145.INFO >: Data buffer set OK for segment: 0
+124145.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124145.INFO >: Number of captures per run set at: 1
+124145.INFO >: Setting up run: 167
+124145.INFO >: Signals to capture in this run: 1
+124145.INFO >: Remaining time: 33.0425429344
+124145.INFO >: DATA COLLECTION STARTED
+124145.INFO >: DATA COLLECTION ENDED
+124145.INFO >: Data buffer set OK for segment: 0
+124145.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124145.INFO >: Number of captures per run set at: 1
+124145.INFO >: Setting up run: 168
+124145.INFO >: Signals to capture in this run: 1
+124145.INFO >: Remaining time: 33.032957077
+124145.INFO >: DATA COLLECTION STARTED
+124145.INFO >: DATA COLLECTION ENDED
+124145.INFO >: Data buffer set OK for segment: 0
+124145.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124145.INFO >: Number of captures per run set at: 1
+124145.INFO >: Setting up run: 169
+124145.INFO >: Signals to capture in this run: 1
+124145.INFO >: Remaining time: 33.0065670013
+124145.INFO >: DATA COLLECTION STARTED
+124145.INFO >: DATA COLLECTION ENDED
+124145.INFO >: Data buffer set OK for segment: 0
+124145.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124145.INFO >: Number of captures per run set at: 1
+124145.INFO >: Setting up run: 170
+124145.INFO >: Signals to capture in this run: 1
+124145.INFO >: Remaining time: 32.9133849144
+124145.INFO >: DATA COLLECTION STARTED
+124145.INFO >: DATA COLLECTION ENDED
+124145.INFO >: Data buffer set OK for segment: 0
+124145.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124145.INFO >: Number of captures per run set at: 1
+124145.INFO >: Setting up run: 171
+124145.INFO >: Signals to capture in this run: 1
+124145.INFO >: Remaining time: 32.8882730007
+124145.INFO >: DATA COLLECTION STARTED
+124145.INFO >: DATA COLLECTION ENDED
+124145.INFO >: Data buffer set OK for segment: 0
+124145.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124145.INFO >: Number of captures per run set at: 1
+124145.INFO >: Setting up run: 172
+124145.INFO >: Signals to capture in this run: 1
+124145.INFO >: Remaining time: 32.6304929256
+124145.INFO >: DATA COLLECTION STARTED
+124145.INFO >: DATA COLLECTION ENDED
+124145.INFO >: Data buffer set OK for segment: 0
+124145.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124145.INFO >: Number of captures per run set at: 1
+124145.INFO >: Setting up run: 173
+124145.INFO >: Signals to capture in this run: 1
+124145.INFO >: Remaining time: 32.3667838573
+124145.INFO >: DATA COLLECTION STARTED
+124145.INFO >: DATA COLLECTION ENDED
+124145.INFO >: Data buffer set OK for segment: 0
+124145.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124145.INFO >: Number of captures per run set at: 1
+124145.INFO >: Setting up run: 174
+124145.INFO >: Signals to capture in this run: 1
+124145.INFO >: Remaining time: 32.2239499092
+124145.INFO >: DATA COLLECTION STARTED
+124145.INFO >: DATA COLLECTION ENDED
+124145.INFO >: Data buffer set OK for segment: 0
+124145.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124145.INFO >: Number of captures per run set at: 1
+124145.INFO >: Setting up run: 175
+124145.INFO >: Signals to capture in this run: 1
+124145.INFO >: Remaining time: 32.1483807564
+124145.INFO >: DATA COLLECTION STARTED
+124146.INFO >: DATA COLLECTION ENDED
+124146.INFO >: Data buffer set OK for segment: 0
+124146.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124146.INFO >: Number of captures per run set at: 1
+124146.INFO >: Setting up run: 176
+124146.INFO >: Signals to capture in this run: 1
+124146.INFO >: Remaining time: 31.7563016415
+124146.INFO >: DATA COLLECTION STARTED
+124146.INFO >: DATA COLLECTION ENDED
+124146.INFO >: Data buffer set OK for segment: 0
+124146.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124146.INFO >: Number of captures per run set at: 1
+124146.INFO >: Setting up run: 177
+124146.INFO >: Signals to capture in this run: 1
+124146.INFO >: Remaining time: 31.7353255749
+124146.INFO >: DATA COLLECTION STARTED
+124146.INFO >: DATA COLLECTION ENDED
+124146.INFO >: Data buffer set OK for segment: 0
+124146.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124146.INFO >: Number of captures per run set at: 1
+124146.INFO >: Setting up run: 178
+124146.INFO >: Signals to capture in this run: 1
+124146.INFO >: Remaining time: 31.6559026241
+124146.INFO >: DATA COLLECTION STARTED
+124146.INFO >: DATA COLLECTION ENDED
+124146.INFO >: Data buffer set OK for segment: 0
+124146.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124146.INFO >: Number of captures per run set at: 1
+124146.INFO >: Setting up run: 179
+124146.INFO >: Signals to capture in this run: 1
+124146.INFO >: Remaining time: 31.4303104877
+124146.INFO >: DATA COLLECTION STARTED
+124146.INFO >: DATA COLLECTION ENDED
+124146.INFO >: Data buffer set OK for segment: 0
+124146.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124146.INFO >: Number of captures per run set at: 1
+124146.INFO >: Setting up run: 180
+124146.INFO >: Signals to capture in this run: 1
+124146.INFO >: Remaining time: 31.4244756699
+124146.INFO >: DATA COLLECTION STARTED
+124146.INFO >: DATA COLLECTION ENDED
+124146.INFO >: Data buffer set OK for segment: 0
+124146.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124146.INFO >: Number of captures per run set at: 1
+124146.INFO >: Setting up run: 181
+124146.INFO >: Signals to capture in this run: 1
+124146.INFO >: Remaining time: 31.360771656
+124146.INFO >: DATA COLLECTION STARTED
+124146.INFO >: DATA COLLECTION ENDED
+124146.INFO >: Data buffer set OK for segment: 0
+124146.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124146.INFO >: Number of captures per run set at: 1
+124146.INFO >: Setting up run: 182
+124146.INFO >: Signals to capture in this run: 1
+124146.INFO >: Remaining time: 31.1705856323
+124146.INFO >: DATA COLLECTION STARTED
+124147.INFO >: DATA COLLECTION ENDED
+124147.INFO >: Data buffer set OK for segment: 0
+124147.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124147.INFO >: Number of captures per run set at: 1
+124147.INFO >: Setting up run: 183
+124147.INFO >: Signals to capture in this run: 1
+124147.INFO >: Remaining time: 31.1253564358
+124147.INFO >: DATA COLLECTION STARTED
+124147.INFO >: DATA COLLECTION ENDED
+124147.INFO >: Data buffer set OK for segment: 0
+124147.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124147.INFO >: Number of captures per run set at: 1
+124147.INFO >: Setting up run: 184
+124147.INFO >: Signals to capture in this run: 1
+124147.INFO >: Remaining time: 31.0068705082
+124147.INFO >: DATA COLLECTION STARTED
+124147.INFO >: DATA COLLECTION ENDED
+124147.INFO >: Data buffer set OK for segment: 0
+124147.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124147.INFO >: Number of captures per run set at: 1
+124147.INFO >: Setting up run: 185
+124147.INFO >: Signals to capture in this run: 1
+124147.INFO >: Remaining time: 30.9652454853
+124147.INFO >: DATA COLLECTION STARTED
+124147.INFO >: DATA COLLECTION ENDED
+124147.INFO >: Data buffer set OK for segment: 0
+124147.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124147.INFO >: Number of captures per run set at: 1
+124147.INFO >: Setting up run: 186
+124147.INFO >: Signals to capture in this run: 1
+124147.INFO >: Remaining time: 30.7050335407
+124147.INFO >: DATA COLLECTION STARTED
+124147.INFO >: DATA COLLECTION ENDED
+124147.INFO >: Data buffer set OK for segment: 0
+124147.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124147.INFO >: Number of captures per run set at: 1
+124147.INFO >: Setting up run: 187
+124147.INFO >: Signals to capture in this run: 1
+124147.INFO >: Remaining time: 30.6860575676
+124147.INFO >: DATA COLLECTION STARTED
+124147.INFO >: DATA COLLECTION ENDED
+124147.INFO >: Data buffer set OK for segment: 0
+124147.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124147.INFO >: Number of captures per run set at: 1
+124147.INFO >: Setting up run: 188
+124147.INFO >: Signals to capture in this run: 1
+124147.INFO >: Remaining time: 30.6084825993
+124147.INFO >: DATA COLLECTION STARTED
+124147.INFO >: DATA COLLECTION ENDED
+124147.INFO >: Data buffer set OK for segment: 0
+124147.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124147.INFO >: Number of captures per run set at: 1
+124147.INFO >: Setting up run: 189
+124147.INFO >: Signals to capture in this run: 1
+124147.INFO >: Remaining time: 30.5558905602
+124147.INFO >: DATA COLLECTION STARTED
+124147.INFO >: DATA COLLECTION ENDED
+124147.INFO >: Data buffer set OK for segment: 0
+124147.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124147.INFO >: Number of captures per run set at: 1
+124147.INFO >: Setting up run: 190
+124147.INFO >: Signals to capture in this run: 1
+124147.INFO >: Remaining time: 30.4241776466
+124147.INFO >: DATA COLLECTION STARTED
+124147.INFO >: DATA COLLECTION ENDED
+124147.INFO >: Data buffer set OK for segment: 0
+124147.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124147.INFO >: Number of captures per run set at: 1
+124147.INFO >: Setting up run: 191
+124147.INFO >: Signals to capture in this run: 1
+124147.INFO >: Remaining time: 30.2685575485
+124147.INFO >: DATA COLLECTION STARTED
+124148.INFO >: DATA COLLECTION ENDED
+124148.INFO >: Data buffer set OK for segment: 0
+124148.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124148.INFO >: Number of captures per run set at: 1
+124148.INFO >: Setting up run: 192
+124148.INFO >: Signals to capture in this run: 1
+124148.INFO >: Remaining time: 30.1524784565
+124148.INFO >: DATA COLLECTION STARTED
+124148.INFO >: DATA COLLECTION ENDED
+124148.INFO >: Data buffer set OK for segment: 0
+124148.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124148.INFO >: Number of captures per run set at: 1
+124148.INFO >: Setting up run: 193
+124148.INFO >: Signals to capture in this run: 1
+124148.INFO >: Remaining time: 29.8236174583
+124148.INFO >: DATA COLLECTION STARTED
+124148.INFO >: DATA COLLECTION ENDED
+124148.INFO >: Data buffer set OK for segment: 0
+124148.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124148.INFO >: Number of captures per run set at: 1
+124148.INFO >: Setting up run: 194
+124148.INFO >: Signals to capture in this run: 1
+124148.INFO >: Remaining time: 29.7471075058
+124148.INFO >: DATA COLLECTION STARTED
+124148.INFO >: DATA COLLECTION ENDED
+124148.INFO >: Data buffer set OK for segment: 0
+124148.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124148.INFO >: Number of captures per run set at: 1
+124148.INFO >: Setting up run: 195
+124148.INFO >: Signals to capture in this run: 1
+124148.INFO >: Remaining time: 29.7090685368
+124148.INFO >: DATA COLLECTION STARTED
+124148.INFO >: DATA COLLECTION ENDED
+124148.INFO >: Data buffer set OK for segment: 0
+124148.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124148.INFO >: Number of captures per run set at: 1
+124148.INFO >: Setting up run: 196
+124148.INFO >: Signals to capture in this run: 1
+124148.INFO >: Remaining time: 29.3818736076
+124148.INFO >: DATA COLLECTION STARTED
+124149.INFO >: DATA COLLECTION ENDED
+124149.INFO >: Data buffer set OK for segment: 0
+124149.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124149.INFO >: Number of captures per run set at: 1
+124149.INFO >: Setting up run: 197
+124149.INFO >: Signals to capture in this run: 1
+124149.INFO >: Remaining time: 29.2150576115
+124149.INFO >: DATA COLLECTION STARTED
+124149.INFO >: DATA COLLECTION ENDED
+124149.INFO >: Data buffer set OK for segment: 0
+124149.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124149.INFO >: Number of captures per run set at: 1
+124149.INFO >: Setting up run: 198
+124149.INFO >: Signals to capture in this run: 1
+124149.INFO >: Remaining time: 29.1496026516
+124149.INFO >: DATA COLLECTION STARTED
+124149.INFO >: DATA COLLECTION ENDED
+124149.INFO >: Data buffer set OK for segment: 0
+124149.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124149.INFO >: Number of captures per run set at: 1
+124149.INFO >: Setting up run: 199
+124149.INFO >: Signals to capture in this run: 1
+124149.INFO >: Remaining time: 28.5607655048
+124149.INFO >: DATA COLLECTION STARTED
+124150.INFO >: DATA COLLECTION ENDED
+124150.INFO >: Data buffer set OK for segment: 0
+124150.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124150.INFO >: Number of captures per run set at: 1
+124150.INFO >: Setting up run: 200
+124150.INFO >: Signals to capture in this run: 1
+124150.INFO >: Remaining time: 28.1263976097
+124150.INFO >: DATA COLLECTION STARTED
+124150.INFO >: DATA COLLECTION ENDED
+124150.INFO >: Data buffer set OK for segment: 0
+124150.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124150.INFO >: Number of captures per run set at: 1
+124150.INFO >: Setting up run: 201
+124150.INFO >: Signals to capture in this run: 1
+124150.INFO >: Remaining time: 27.7518377304
+124150.INFO >: DATA COLLECTION STARTED
+124150.INFO >: DATA COLLECTION ENDED
+124150.INFO >: Data buffer set OK for segment: 0
+124150.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124150.INFO >: Number of captures per run set at: 1
+124150.INFO >: Setting up run: 202
+124150.INFO >: Signals to capture in this run: 1
+124150.INFO >: Remaining time: 27.7375938892
+124150.INFO >: DATA COLLECTION STARTED
+124150.INFO >: DATA COLLECTION ENDED
+124150.INFO >: Data buffer set OK for segment: 0
+124150.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124150.INFO >: Number of captures per run set at: 1
+124150.INFO >: Setting up run: 203
+124150.INFO >: Signals to capture in this run: 1
+124150.INFO >: Remaining time: 27.4927899837
+124150.INFO >: DATA COLLECTION STARTED
+124150.INFO >: DATA COLLECTION ENDED
+124150.INFO >: Data buffer set OK for segment: 0
+124150.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124150.INFO >: Number of captures per run set at: 1
+124150.INFO >: Setting up run: 204
+124150.INFO >: Signals to capture in this run: 1
+124150.INFO >: Remaining time: 27.4864430428
+124150.INFO >: DATA COLLECTION STARTED
+124150.INFO >: DATA COLLECTION ENDED
+124150.INFO >: Data buffer set OK for segment: 0
+124150.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124150.INFO >: Number of captures per run set at: 1
+124150.INFO >: Setting up run: 205
+124150.INFO >: Signals to capture in this run: 1
+124150.INFO >: Remaining time: 27.4147248268
+124150.INFO >: DATA COLLECTION STARTED
+124151.INFO >: DATA COLLECTION ENDED
+124151.INFO >: Data buffer set OK for segment: 0
+124151.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124151.INFO >: Number of captures per run set at: 1
+124151.INFO >: Setting up run: 206
+124151.INFO >: Signals to capture in this run: 1
+124151.INFO >: Remaining time: 27.2599298954
+124151.INFO >: DATA COLLECTION STARTED
+124151.INFO >: DATA COLLECTION ENDED
+124151.INFO >: Data buffer set OK for segment: 0
+124151.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124151.INFO >: Number of captures per run set at: 1
+124151.INFO >: Setting up run: 207
+124151.INFO >: Signals to capture in this run: 1
+124151.INFO >: Remaining time: 27.0784208775
+124151.INFO >: DATA COLLECTION STARTED
+124151.INFO >: DATA COLLECTION ENDED
+124151.INFO >: Data buffer set OK for segment: 0
+124151.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124151.INFO >: Number of captures per run set at: 1
+124151.INFO >: Setting up run: 208
+124151.INFO >: Signals to capture in this run: 1
+124151.INFO >: Remaining time: 27.0208370686
+124151.INFO >: DATA COLLECTION STARTED
+124151.INFO >: DATA COLLECTION ENDED
+124151.INFO >: Data buffer set OK for segment: 0
+124151.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124151.INFO >: Number of captures per run set at: 1
+124151.INFO >: Setting up run: 209
+124151.INFO >: Signals to capture in this run: 1
+124151.INFO >: Remaining time: 26.7471609116
+124151.INFO >: DATA COLLECTION STARTED
+124151.INFO >: DATA COLLECTION ENDED
+124151.INFO >: Data buffer set OK for segment: 0
+124151.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124151.INFO >: Number of captures per run set at: 1
+124151.INFO >: Setting up run: 210
+124151.INFO >: Signals to capture in this run: 1
+124151.INFO >: Remaining time: 26.6310758591
+124151.INFO >: DATA COLLECTION STARTED
+124151.INFO >: DATA COLLECTION ENDED
+124151.INFO >: Data buffer set OK for segment: 0
+124151.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124151.INFO >: Number of captures per run set at: 1
+124151.INFO >: Setting up run: 211
+124151.INFO >: Signals to capture in this run: 1
+124151.INFO >: Remaining time: 26.614989996
+124151.INFO >: DATA COLLECTION STARTED
+124151.INFO >: DATA COLLECTION ENDED
+124151.INFO >: Data buffer set OK for segment: 0
+124151.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124151.INFO >: Number of captures per run set at: 1
+124151.INFO >: Setting up run: 212
+124151.INFO >: Signals to capture in this run: 1
+124151.INFO >: Remaining time: 26.4227869511
+124151.INFO >: DATA COLLECTION STARTED
+124151.INFO >: DATA COLLECTION ENDED
+124151.INFO >: Data buffer set OK for segment: 0
+124151.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124151.INFO >: Number of captures per run set at: 1
+124151.INFO >: Setting up run: 213
+124151.INFO >: Signals to capture in this run: 1
+124151.INFO >: Remaining time: 26.3759639263
+124151.INFO >: DATA COLLECTION STARTED
+124152.INFO >: DATA COLLECTION ENDED
+124152.INFO >: Data buffer set OK for segment: 0
+124152.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124152.INFO >: Number of captures per run set at: 1
+124152.INFO >: Setting up run: 214
+124152.INFO >: Signals to capture in this run: 1
+124152.INFO >: Remaining time: 26.3418190479
+124152.INFO >: DATA COLLECTION STARTED
+124152.INFO >: DATA COLLECTION ENDED
+124152.INFO >: Data buffer set OK for segment: 0
+124152.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124152.INFO >: Number of captures per run set at: 1
+124152.INFO >: Setting up run: 215
+124152.INFO >: Signals to capture in this run: 1
+124152.INFO >: Remaining time: 25.9109950066
+124152.INFO >: DATA COLLECTION STARTED
+124152.INFO >: DATA COLLECTION ENDED
+124152.INFO >: Data buffer set OK for segment: 0
+124152.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124152.INFO >: Number of captures per run set at: 1
+124152.INFO >: Setting up run: 216
+124152.INFO >: Signals to capture in this run: 1
+124152.INFO >: Remaining time: 25.7216668129
+124152.INFO >: DATA COLLECTION STARTED
+124152.INFO >: DATA COLLECTION ENDED
+124152.INFO >: Data buffer set OK for segment: 0
+124152.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124152.INFO >: Number of captures per run set at: 1
+124152.INFO >: Setting up run: 217
+124152.INFO >: Signals to capture in this run: 1
+124152.INFO >: Remaining time: 25.538561821
+124152.INFO >: DATA COLLECTION STARTED
+124152.INFO >: DATA COLLECTION ENDED
+124152.INFO >: Data buffer set OK for segment: 0
+124152.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124152.INFO >: Number of captures per run set at: 1
+124152.INFO >: Setting up run: 218
+124152.INFO >: Signals to capture in this run: 1
+124152.INFO >: Remaining time: 25.5064117908
+124152.INFO >: DATA COLLECTION STARTED
+124152.INFO >: DATA COLLECTION ENDED
+124152.INFO >: Data buffer set OK for segment: 0
+124152.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124152.INFO >: Number of captures per run set at: 1
+124152.INFO >: Setting up run: 219
+124152.INFO >: Signals to capture in this run: 1
+124152.INFO >: Remaining time: 25.4468288422
+124152.INFO >: DATA COLLECTION STARTED
+124153.INFO >: DATA COLLECTION ENDED
+124153.INFO >: Data buffer set OK for segment: 0
+124153.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124153.INFO >: Number of captures per run set at: 1
+124153.INFO >: Setting up run: 220
+124153.INFO >: Signals to capture in this run: 1
+124153.INFO >: Remaining time: 24.4463107586
+124153.INFO >: DATA COLLECTION STARTED
+124153.INFO >: DATA COLLECTION ENDED
+124153.INFO >: Data buffer set OK for segment: 0
+124153.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124153.INFO >: Number of captures per run set at: 1
+124153.INFO >: Setting up run: 221
+124153.INFO >: Signals to capture in this run: 1
+124153.INFO >: Remaining time: 24.4188196659
+124153.INFO >: DATA COLLECTION STARTED
+124154.INFO >: DATA COLLECTION ENDED
+124154.INFO >: Data buffer set OK for segment: 0
+124154.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124154.INFO >: Number of captures per run set at: 1
+124154.INFO >: Setting up run: 222
+124154.INFO >: Signals to capture in this run: 1
+124154.INFO >: Remaining time: 24.3883917332
+124154.INFO >: DATA COLLECTION STARTED
+124154.INFO >: DATA COLLECTION ENDED
+124154.INFO >: Data buffer set OK for segment: 0
+124154.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124154.INFO >: Number of captures per run set at: 1
+124154.INFO >: Setting up run: 223
+124154.INFO >: Signals to capture in this run: 1
+124154.INFO >: Remaining time: 24.3505966663
+124154.INFO >: DATA COLLECTION STARTED
+124154.INFO >: DATA COLLECTION ENDED
+124154.INFO >: Data buffer set OK for segment: 0
+124154.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124154.INFO >: Number of captures per run set at: 1
+124154.INFO >: Setting up run: 224
+124154.INFO >: Signals to capture in this run: 1
+124154.INFO >: Remaining time: 24.131529808
+124154.INFO >: DATA COLLECTION STARTED
+124154.INFO >: DATA COLLECTION ENDED
+124154.INFO >: Data buffer set OK for segment: 0
+124154.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124154.INFO >: Number of captures per run set at: 1
+124154.INFO >: Setting up run: 225
+124154.INFO >: Signals to capture in this run: 1
+124154.INFO >: Remaining time: 24.1025729179
+124154.INFO >: DATA COLLECTION STARTED
+124154.INFO >: DATA COLLECTION ENDED
+124154.INFO >: Data buffer set OK for segment: 0
+124154.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124154.INFO >: Number of captures per run set at: 1
+124154.INFO >: Setting up run: 226
+124154.INFO >: Signals to capture in this run: 1
+124154.INFO >: Remaining time: 24.0158939362
+124154.INFO >: DATA COLLECTION STARTED
+124154.INFO >: DATA COLLECTION ENDED
+124154.INFO >: Data buffer set OK for segment: 0
+124154.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124154.INFO >: Number of captures per run set at: 1
+124154.INFO >: Setting up run: 227
+124154.INFO >: Signals to capture in this run: 1
+124154.INFO >: Remaining time: 23.720539093
+124154.INFO >: DATA COLLECTION STARTED
+124154.INFO >: DATA COLLECTION ENDED
+124154.INFO >: Data buffer set OK for segment: 0
+124154.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124154.INFO >: Number of captures per run set at: 1
+124154.INFO >: Setting up run: 228
+124154.INFO >: Signals to capture in this run: 1
+124154.INFO >: Remaining time: 23.6328270435
+124154.INFO >: DATA COLLECTION STARTED
+124154.INFO >: DATA COLLECTION ENDED
+124154.INFO >: Data buffer set OK for segment: 0
+124154.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124154.INFO >: Number of captures per run set at: 1
+124154.INFO >: Setting up run: 229
+124154.INFO >: Signals to capture in this run: 1
+124154.INFO >: Remaining time: 23.56437397
+124154.INFO >: DATA COLLECTION STARTED
+124154.INFO >: DATA COLLECTION ENDED
+124154.INFO >: Data buffer set OK for segment: 0
+124154.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124154.INFO >: Number of captures per run set at: 1
+124154.INFO >: Setting up run: 230
+124154.INFO >: Signals to capture in this run: 1
+124154.INFO >: Remaining time: 23.5339939594
+124154.INFO >: DATA COLLECTION STARTED
+124154.INFO >: DATA COLLECTION ENDED
+124154.INFO >: Data buffer set OK for segment: 0
+124154.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124154.INFO >: Number of captures per run set at: 1
+124154.INFO >: Setting up run: 231
+124154.INFO >: Signals to capture in this run: 1
+124154.INFO >: Remaining time: 23.4954199791
+124154.INFO >: DATA COLLECTION STARTED
+124154.INFO >: DATA COLLECTION ENDED
+124154.INFO >: Data buffer set OK for segment: 0
+124154.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124154.INFO >: Number of captures per run set at: 1
+124154.INFO >: Setting up run: 232
+124154.INFO >: Signals to capture in this run: 1
+124154.INFO >: Remaining time: 23.4893398285
+124154.INFO >: DATA COLLECTION STARTED
+124155.INFO >: DATA COLLECTION ENDED
+124155.INFO >: Data buffer set OK for segment: 0
+124155.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124155.INFO >: Number of captures per run set at: 1
+124155.INFO >: Setting up run: 233
+124155.INFO >: Signals to capture in this run: 1
+124155.INFO >: Remaining time: 23.177000761
+124155.INFO >: DATA COLLECTION STARTED
+124155.INFO >: DATA COLLECTION ENDED
+124155.INFO >: Data buffer set OK for segment: 0
+124155.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124155.INFO >: Number of captures per run set at: 1
+124155.INFO >: Setting up run: 234
+124155.INFO >: Signals to capture in this run: 1
+124155.INFO >: Remaining time: 23.1145458221
+124155.INFO >: DATA COLLECTION STARTED
+124155.INFO >: DATA COLLECTION ENDED
+124155.INFO >: Data buffer set OK for segment: 0
+124155.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124155.INFO >: Number of captures per run set at: 1
+124155.INFO >: Setting up run: 235
+124155.INFO >: Signals to capture in this run: 1
+124155.INFO >: Remaining time: 22.8502027988
+124155.INFO >: DATA COLLECTION STARTED
+124155.INFO >: DATA COLLECTION ENDED
+124155.INFO >: Data buffer set OK for segment: 0
+124155.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124155.INFO >: Number of captures per run set at: 1
+124155.INFO >: Setting up run: 236
+124155.INFO >: Signals to capture in this run: 1
+124155.INFO >: Remaining time: 22.7542188168
+124155.INFO >: DATA COLLECTION STARTED
+124155.INFO >: DATA COLLECTION ENDED
+124155.INFO >: Data buffer set OK for segment: 0
+124155.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124155.INFO >: Number of captures per run set at: 1
+124155.INFO >: Setting up run: 237
+124155.INFO >: Signals to capture in this run: 1
+124155.INFO >: Remaining time: 22.7112517357
+124155.INFO >: DATA COLLECTION STARTED
+124156.INFO >: DATA COLLECTION ENDED
+124156.INFO >: Data buffer set OK for segment: 0
+124156.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124156.INFO >: Number of captures per run set at: 1
+124156.INFO >: Setting up run: 238
+124156.INFO >: Signals to capture in this run: 1
+124156.INFO >: Remaining time: 22.1882946491
+124156.INFO >: DATA COLLECTION STARTED
+124156.INFO >: DATA COLLECTION ENDED
+124156.INFO >: Data buffer set OK for segment: 0
+124156.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124156.INFO >: Number of captures per run set at: 1
+124156.INFO >: Setting up run: 239
+124156.INFO >: Signals to capture in this run: 1
+124156.INFO >: Remaining time: 22.0844736099
+124156.INFO >: DATA COLLECTION STARTED
+124156.INFO >: DATA COLLECTION ENDED
+124156.INFO >: Data buffer set OK for segment: 0
+124156.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124156.INFO >: Number of captures per run set at: 1
+124156.INFO >: Setting up run: 240
+124156.INFO >: Signals to capture in this run: 1
+124156.INFO >: Remaining time: 22.0443675518
+124156.INFO >: DATA COLLECTION STARTED
+124156.INFO >: DATA COLLECTION ENDED
+124156.INFO >: Data buffer set OK for segment: 0
+124156.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124156.INFO >: Number of captures per run set at: 1
+124156.INFO >: Setting up run: 241
+124156.INFO >: Signals to capture in this run: 1
+124156.INFO >: Remaining time: 21.9637956619
+124156.INFO >: DATA COLLECTION STARTED
+124156.INFO >: DATA COLLECTION ENDED
+124156.INFO >: Data buffer set OK for segment: 0
+124156.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124156.INFO >: Number of captures per run set at: 1
+124156.INFO >: Setting up run: 242
+124156.INFO >: Signals to capture in this run: 1
+124156.INFO >: Remaining time: 21.795075655
+124156.INFO >: DATA COLLECTION STARTED
+124156.INFO >: DATA COLLECTION ENDED
+124156.INFO >: Data buffer set OK for segment: 0
+124156.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124156.INFO >: Number of captures per run set at: 1
+124156.INFO >: Setting up run: 243
+124156.INFO >: Signals to capture in this run: 1
+124156.INFO >: Remaining time: 21.5508346558
+124156.INFO >: DATA COLLECTION STARTED
+124157.INFO >: DATA COLLECTION ENDED
+124157.INFO >: Data buffer set OK for segment: 0
+124157.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124157.INFO >: Number of captures per run set at: 1
+124157.INFO >: Setting up run: 244
+124157.INFO >: Signals to capture in this run: 1
+124157.INFO >: Remaining time: 21.4386365414
+124157.INFO >: DATA COLLECTION STARTED
+124157.INFO >: DATA COLLECTION ENDED
+124157.INFO >: Data buffer set OK for segment: 0
+124157.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124157.INFO >: Number of captures per run set at: 1
+124157.INFO >: Setting up run: 245
+124157.INFO >: Signals to capture in this run: 1
+124157.INFO >: Remaining time: 21.1847794056
+124157.INFO >: DATA COLLECTION STARTED
+124157.INFO >: DATA COLLECTION ENDED
+124157.INFO >: Data buffer set OK for segment: 0
+124157.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124157.INFO >: Number of captures per run set at: 1
+124157.INFO >: Setting up run: 246
+124157.INFO >: Signals to capture in this run: 1
+124157.INFO >: Remaining time: 21.1759433746
+124157.INFO >: DATA COLLECTION STARTED
+124157.INFO >: DATA COLLECTION ENDED
+124157.INFO >: Data buffer set OK for segment: 0
+124157.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124157.INFO >: Number of captures per run set at: 1
+124157.INFO >: Setting up run: 247
+124157.INFO >: Signals to capture in this run: 1
+124157.INFO >: Remaining time: 21.0032234192
+124157.INFO >: DATA COLLECTION STARTED
+124157.INFO >: DATA COLLECTION ENDED
+124157.INFO >: Data buffer set OK for segment: 0
+124157.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124157.INFO >: Number of captures per run set at: 1
+124157.INFO >: Setting up run: 248
+124157.INFO >: Signals to capture in this run: 1
+124157.INFO >: Remaining time: 20.8078894615
+124157.INFO >: DATA COLLECTION STARTED
+124157.INFO >: DATA COLLECTION ENDED
+124157.INFO >: Data buffer set OK for segment: 0
+124157.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124157.INFO >: Number of captures per run set at: 1
+124157.INFO >: Setting up run: 249
+124157.INFO >: Signals to capture in this run: 1
+124157.INFO >: Remaining time: 20.7481944561
+124157.INFO >: DATA COLLECTION STARTED
+124158.INFO >: DATA COLLECTION ENDED
+124158.INFO >: Data buffer set OK for segment: 0
+124158.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124158.INFO >: Number of captures per run set at: 1
+124158.INFO >: Setting up run: 250
+124158.INFO >: Signals to capture in this run: 1
+124158.INFO >: Remaining time: 20.4134426117
+124158.INFO >: DATA COLLECTION STARTED
+124158.INFO >: DATA COLLECTION ENDED
+124158.INFO >: Data buffer set OK for segment: 0
+124158.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124158.INFO >: Number of captures per run set at: 1
+124158.INFO >: Setting up run: 251
+124158.INFO >: Signals to capture in this run: 1
+124158.INFO >: Remaining time: 20.2795155048
+124158.INFO >: DATA COLLECTION STARTED
+124158.INFO >: DATA COLLECTION ENDED
+124158.INFO >: Data buffer set OK for segment: 0
+124158.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124158.INFO >: Number of captures per run set at: 1
+124158.INFO >: Setting up run: 252
+124158.INFO >: Signals to capture in this run: 1
+124158.INFO >: Remaining time: 19.7026875019
+124158.INFO >: DATA COLLECTION STARTED
+124159.INFO >: DATA COLLECTION ENDED
+124159.INFO >: Data buffer set OK for segment: 0
+124159.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124159.INFO >: Number of captures per run set at: 1
+124159.INFO >: Setting up run: 253
+124159.INFO >: Signals to capture in this run: 1
+124159.INFO >: Remaining time: 19.4119594097
+124159.INFO >: DATA COLLECTION STARTED
+124159.INFO >: DATA COLLECTION ENDED
+124159.INFO >: Data buffer set OK for segment: 0
+124159.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124159.INFO >: Number of captures per run set at: 1
+124159.INFO >: Setting up run: 254
+124159.INFO >: Signals to capture in this run: 1
+124159.INFO >: Remaining time: 19.3684463501
+124159.INFO >: DATA COLLECTION STARTED
+124159.INFO >: DATA COLLECTION ENDED
+124159.INFO >: Data buffer set OK for segment: 0
+124159.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124159.INFO >: Number of captures per run set at: 1
+124159.INFO >: Setting up run: 255
+124159.INFO >: Signals to capture in this run: 1
+124159.INFO >: Remaining time: 19.19851017
+124159.INFO >: DATA COLLECTION STARTED
+124159.INFO >: DATA COLLECTION ENDED
+124159.INFO >: Data buffer set OK for segment: 0
+124159.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124159.INFO >: Number of captures per run set at: 1
+124159.INFO >: Setting up run: 256
+124159.INFO >: Signals to capture in this run: 1
+124159.INFO >: Remaining time: 18.9814150333
+124159.INFO >: DATA COLLECTION STARTED
+124159.INFO >: DATA COLLECTION ENDED
+124159.INFO >: Data buffer set OK for segment: 0
+124159.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124159.INFO >: Number of captures per run set at: 1
+124159.INFO >: Setting up run: 257
+124159.INFO >: Signals to capture in this run: 1
+124159.INFO >: Remaining time: 18.8449521065
+124159.INFO >: DATA COLLECTION STARTED
+124159.INFO >: DATA COLLECTION ENDED
+124159.INFO >: Data buffer set OK for segment: 0
+124159.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124159.INFO >: Number of captures per run set at: 1
+124159.INFO >: Setting up run: 258
+124159.INFO >: Signals to capture in this run: 1
+124159.INFO >: Remaining time: 18.7698640823
+124159.INFO >: DATA COLLECTION STARTED
+124159.INFO >: DATA COLLECTION ENDED
+124159.INFO >: Data buffer set OK for segment: 0
+124159.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124159.INFO >: Number of captures per run set at: 1
+124159.INFO >: Setting up run: 259
+124159.INFO >: Signals to capture in this run: 1
+124159.INFO >: Remaining time: 18.6569070816
+124159.INFO >: DATA COLLECTION STARTED
+124159.INFO >: DATA COLLECTION ENDED
+124159.INFO >: Data buffer set OK for segment: 0
+124159.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124159.INFO >: Number of captures per run set at: 1
+124159.INFO >: Setting up run: 260
+124159.INFO >: Signals to capture in this run: 1
+124159.INFO >: Remaining time: 18.6455760002
+124200.INFO >: DATA COLLECTION STARTED
+124200.INFO >: DATA COLLECTION ENDED
+124200.INFO >: Data buffer set OK for segment: 0
+124200.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124200.INFO >: Number of captures per run set at: 1
+124200.INFO >: Setting up run: 261
+124200.INFO >: Signals to capture in this run: 1
+124200.INFO >: Remaining time: 18.5113489628
+124200.INFO >: DATA COLLECTION STARTED
+124200.INFO >: DATA COLLECTION ENDED
+124200.INFO >: Data buffer set OK for segment: 0
+124200.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124200.INFO >: Number of captures per run set at: 1
+124200.INFO >: Setting up run: 262
+124200.INFO >: Signals to capture in this run: 1
+124200.INFO >: Remaining time: 18.3860349655
+124200.INFO >: DATA COLLECTION STARTED
+124201.INFO >: DATA COLLECTION ENDED
+124201.INFO >: Data buffer set OK for segment: 0
+124201.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124201.INFO >: Number of captures per run set at: 1
+124201.INFO >: Setting up run: 263
+124201.INFO >: Signals to capture in this run: 1
+124201.INFO >: Remaining time: 17.3429429531
+124201.INFO >: DATA COLLECTION STARTED
+124201.INFO >: DATA COLLECTION ENDED
+124201.INFO >: Data buffer set OK for segment: 0
+124201.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124201.INFO >: Number of captures per run set at: 1
+124201.INFO >: Setting up run: 264
+124201.INFO >: Signals to capture in this run: 1
+124201.INFO >: Remaining time: 17.189330101
+124201.INFO >: DATA COLLECTION STARTED
+124201.INFO >: DATA COLLECTION ENDED
+124201.INFO >: Data buffer set OK for segment: 0
+124201.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124201.INFO >: Number of captures per run set at: 1
+124201.INFO >: Setting up run: 265
+124201.INFO >: Signals to capture in this run: 1
+124201.INFO >: Remaining time: 16.9639692307
+124201.INFO >: DATA COLLECTION STARTED
+124201.INFO >: DATA COLLECTION ENDED
+124201.INFO >: Data buffer set OK for segment: 0
+124201.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124201.INFO >: Number of captures per run set at: 1
+124201.INFO >: Setting up run: 266
+124201.INFO >: Signals to capture in this run: 1
+124201.INFO >: Remaining time: 16.8647761345
+124201.INFO >: DATA COLLECTION STARTED
+124201.INFO >: DATA COLLECTION ENDED
+124201.INFO >: Data buffer set OK for segment: 0
+124201.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124201.INFO >: Number of captures per run set at: 1
+124201.INFO >: Setting up run: 267
+124201.INFO >: Signals to capture in this run: 1
+124201.INFO >: Remaining time: 16.8435399532
+124201.INFO >: DATA COLLECTION STARTED
+124202.INFO >: DATA COLLECTION ENDED
+124202.INFO >: Data buffer set OK for segment: 0
+124202.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124202.INFO >: Number of captures per run set at: 1
+124202.INFO >: Setting up run: 268
+124202.INFO >: Signals to capture in this run: 1
+124202.INFO >: Remaining time: 16.5152108669
+124202.INFO >: DATA COLLECTION STARTED
+124202.INFO >: DATA COLLECTION ENDED
+124202.INFO >: Data buffer set OK for segment: 0
+124202.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124202.INFO >: Number of captures per run set at: 1
+124202.INFO >: Setting up run: 269
+124202.INFO >: Signals to capture in this run: 1
+124202.INFO >: Remaining time: 16.3039529324
+124202.INFO >: DATA COLLECTION STARTED
+124202.INFO >: DATA COLLECTION ENDED
+124202.INFO >: Data buffer set OK for segment: 0
+124202.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124202.INFO >: Number of captures per run set at: 1
+124202.INFO >: Setting up run: 270
+124202.INFO >: Signals to capture in this run: 1
+124202.INFO >: Remaining time: 16.2903647423
+124202.INFO >: DATA COLLECTION STARTED
+124202.INFO >: DATA COLLECTION ENDED
+124202.INFO >: Data buffer set OK for segment: 0
+124202.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124202.INFO >: Number of captures per run set at: 1
+124202.INFO >: Setting up run: 271
+124202.INFO >: Signals to capture in this run: 1
+124202.INFO >: Remaining time: 16.1526556015
+124202.INFO >: DATA COLLECTION STARTED
+124202.INFO >: DATA COLLECTION ENDED
+124202.INFO >: Data buffer set OK for segment: 0
+124202.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124202.INFO >: Number of captures per run set at: 1
+124202.INFO >: Setting up run: 272
+124202.INFO >: Signals to capture in this run: 1
+124202.INFO >: Remaining time: 16.1090126038
+124202.INFO >: DATA COLLECTION STARTED
+124202.INFO >: DATA COLLECTION ENDED
+124202.INFO >: Data buffer set OK for segment: 0
+124202.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124202.INFO >: Number of captures per run set at: 1
+124202.INFO >: Setting up run: 273
+124202.INFO >: Signals to capture in this run: 1
+124202.INFO >: Remaining time: 15.9290595055
+124202.INFO >: DATA COLLECTION STARTED
+124203.INFO >: DATA COLLECTION ENDED
+124203.INFO >: Data buffer set OK for segment: 0
+124203.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124203.INFO >: Number of captures per run set at: 1
+124203.INFO >: Setting up run: 274
+124203.INFO >: Signals to capture in this run: 1
+124203.INFO >: Remaining time: 15.6111617088
+124203.INFO >: DATA COLLECTION STARTED
+124203.INFO >: DATA COLLECTION ENDED
+124203.INFO >: Data buffer set OK for segment: 0
+124203.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124203.INFO >: Number of captures per run set at: 1
+124203.INFO >: Setting up run: 275
+124203.INFO >: Signals to capture in this run: 1
+124203.INFO >: Remaining time: 15.3912165165
+124203.INFO >: DATA COLLECTION STARTED
+124203.INFO >: DATA COLLECTION ENDED
+124203.INFO >: Data buffer set OK for segment: 0
+124203.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124203.INFO >: Number of captures per run set at: 1
+124203.INFO >: Setting up run: 276
+124203.INFO >: Signals to capture in this run: 1
+124203.INFO >: Remaining time: 15.3646295071
+124203.INFO >: DATA COLLECTION STARTED
+124203.INFO >: DATA COLLECTION ENDED
+124203.INFO >: Data buffer set OK for segment: 0
+124203.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124203.INFO >: Number of captures per run set at: 1
+124203.INFO >: Setting up run: 277
+124203.INFO >: Signals to capture in this run: 1
+124203.INFO >: Remaining time: 14.9484956264
+124203.INFO >: DATA COLLECTION STARTED
+124204.INFO >: DATA COLLECTION ENDED
+124204.INFO >: Data buffer set OK for segment: 0
+124204.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124204.INFO >: Number of captures per run set at: 1
+124204.INFO >: Setting up run: 278
+124204.INFO >: Signals to capture in this run: 1
+124204.INFO >: Remaining time: 14.3162856102
+124204.INFO >: DATA COLLECTION STARTED
+124204.INFO >: DATA COLLECTION ENDED
+124204.INFO >: Data buffer set OK for segment: 0
+124204.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124204.INFO >: Number of captures per run set at: 1
+124204.INFO >: Setting up run: 279
+124204.INFO >: Signals to capture in this run: 1
+124204.INFO >: Remaining time: 14.2280516624
+124204.INFO >: DATA COLLECTION STARTED
+124204.INFO >: DATA COLLECTION ENDED
+124204.INFO >: Data buffer set OK for segment: 0
+124204.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124204.INFO >: Number of captures per run set at: 1
+124204.INFO >: Setting up run: 280
+124204.INFO >: Signals to capture in this run: 1
+124204.INFO >: Remaining time: 13.9668567181
+124204.INFO >: DATA COLLECTION STARTED
+124204.INFO >: DATA COLLECTION ENDED
+124204.INFO >: Data buffer set OK for segment: 0
+124204.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124204.INFO >: Number of captures per run set at: 1
+124204.INFO >: Setting up run: 281
+124204.INFO >: Signals to capture in this run: 1
+124204.INFO >: Remaining time: 13.961512804
+124204.INFO >: DATA COLLECTION STARTED
+124204.INFO >: DATA COLLECTION ENDED
+124204.INFO >: Data buffer set OK for segment: 0
+124204.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124204.INFO >: Number of captures per run set at: 1
+124204.INFO >: Setting up run: 282
+124204.INFO >: Signals to capture in this run: 1
+124204.INFO >: Remaining time: 13.9508149624
+124204.INFO >: DATA COLLECTION STARTED
+124205.INFO >: DATA COLLECTION ENDED
+124205.INFO >: Data buffer set OK for segment: 0
+124205.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124205.INFO >: Number of captures per run set at: 1
+124205.INFO >: Setting up run: 283
+124205.INFO >: Signals to capture in this run: 1
+124205.INFO >: Remaining time: 13.7212407589
+124205.INFO >: DATA COLLECTION STARTED
+124205.INFO >: DATA COLLECTION ENDED
+124205.INFO >: Data buffer set OK for segment: 0
+124205.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124205.INFO >: Number of captures per run set at: 1
+124205.INFO >: Setting up run: 284
+124205.INFO >: Signals to capture in this run: 1
+124205.INFO >: Remaining time: 13.6947777271
+124205.INFO >: DATA COLLECTION STARTED
+124205.INFO >: DATA COLLECTION ENDED
+124205.INFO >: Data buffer set OK for segment: 0
+124205.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124205.INFO >: Number of captures per run set at: 1
+124205.INFO >: Setting up run: 285
+124205.INFO >: Signals to capture in this run: 1
+124205.INFO >: Remaining time: 13.5872876644
+124205.INFO >: DATA COLLECTION STARTED
+124205.INFO >: DATA COLLECTION ENDED
+124205.INFO >: Data buffer set OK for segment: 0
+124205.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124205.INFO >: Number of captures per run set at: 1
+124205.INFO >: Setting up run: 286
+124205.INFO >: Signals to capture in this run: 1
+124205.INFO >: Remaining time: 13.3905866146
+124205.INFO >: DATA COLLECTION STARTED
+124205.INFO >: DATA COLLECTION ENDED
+124205.INFO >: Data buffer set OK for segment: 0
+124205.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124205.INFO >: Number of captures per run set at: 1
+124205.INFO >: Setting up run: 287
+124205.INFO >: Signals to capture in this run: 1
+124205.INFO >: Remaining time: 13.2878885269
+124205.INFO >: DATA COLLECTION STARTED
+124205.INFO >: DATA COLLECTION ENDED
+124205.INFO >: Data buffer set OK for segment: 0
+124205.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124205.INFO >: Number of captures per run set at: 1
+124205.INFO >: Setting up run: 288
+124205.INFO >: Signals to capture in this run: 1
+124205.INFO >: Remaining time: 13.2365546227
+124205.INFO >: DATA COLLECTION STARTED
+124205.INFO >: DATA COLLECTION ENDED
+124205.INFO >: Data buffer set OK for segment: 0
+124205.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124205.INFO >: Number of captures per run set at: 1
+124205.INFO >: Setting up run: 289
+124205.INFO >: Signals to capture in this run: 1
+124205.INFO >: Remaining time: 13.1663246155
+124205.INFO >: DATA COLLECTION STARTED
+124205.INFO >: DATA COLLECTION ENDED
+124205.INFO >: Data buffer set OK for segment: 0
+124205.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124205.INFO >: Number of captures per run set at: 1
+124205.INFO >: Setting up run: 290
+124205.INFO >: Signals to capture in this run: 1
+124205.INFO >: Remaining time: 13.0614776611
+124205.INFO >: DATA COLLECTION STARTED
+124205.INFO >: DATA COLLECTION ENDED
+124205.INFO >: Data buffer set OK for segment: 0
+124205.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124205.INFO >: Number of captures per run set at: 1
+124205.INFO >: Setting up run: 291
+124205.INFO >: Signals to capture in this run: 1
+124205.INFO >: Remaining time: 13.0434925556
+124205.INFO >: DATA COLLECTION STARTED
+124206.INFO >: DATA COLLECTION ENDED
+124206.INFO >: Data buffer set OK for segment: 0
+124206.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124206.INFO >: Number of captures per run set at: 1
+124206.INFO >: Setting up run: 292
+124206.INFO >: Signals to capture in this run: 1
+124206.INFO >: Remaining time: 12.8398385048
+124206.INFO >: DATA COLLECTION STARTED
+124206.INFO >: DATA COLLECTION ENDED
+124206.INFO >: Data buffer set OK for segment: 0
+124206.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124206.INFO >: Number of captures per run set at: 1
+124206.INFO >: Setting up run: 293
+124206.INFO >: Signals to capture in this run: 1
+124206.INFO >: Remaining time: 12.7417805195
+124206.INFO >: DATA COLLECTION STARTED
+124206.INFO >: DATA COLLECTION ENDED
+124206.INFO >: Data buffer set OK for segment: 0
+124206.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124206.INFO >: Number of captures per run set at: 1
+124206.INFO >: Setting up run: 294
+124206.INFO >: Signals to capture in this run: 1
+124206.INFO >: Remaining time: 12.0785663128
+124206.INFO >: DATA COLLECTION STARTED
+124207.INFO >: DATA COLLECTION ENDED
+124207.INFO >: Data buffer set OK for segment: 0
+124207.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124207.INFO >: Number of captures per run set at: 1
+124207.INFO >: Setting up run: 295
+124207.INFO >: Signals to capture in this run: 1
+124207.INFO >: Remaining time: 11.7872102261
+124207.INFO >: DATA COLLECTION STARTED
+124207.INFO >: DATA COLLECTION ENDED
+124207.INFO >: Data buffer set OK for segment: 0
+124207.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124207.INFO >: Number of captures per run set at: 1
+124207.INFO >: Setting up run: 296
+124207.INFO >: Signals to capture in this run: 1
+124207.INFO >: Remaining time: 11.5040092468
+124207.INFO >: DATA COLLECTION STARTED
+124207.INFO >: DATA COLLECTION ENDED
+124207.INFO >: Data buffer set OK for segment: 0
+124207.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124207.INFO >: Number of captures per run set at: 1
+124207.INFO >: Setting up run: 297
+124207.INFO >: Signals to capture in this run: 1
+124207.INFO >: Remaining time: 11.3531882763
+124207.INFO >: DATA COLLECTION STARTED
+124207.INFO >: DATA COLLECTION ENDED
+124207.INFO >: Data buffer set OK for segment: 0
+124207.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124207.INFO >: Number of captures per run set at: 1
+124207.INFO >: Setting up run: 298
+124207.INFO >: Signals to capture in this run: 1
+124207.INFO >: Remaining time: 11.2974822521
+124207.INFO >: DATA COLLECTION STARTED
+124207.INFO >: DATA COLLECTION ENDED
+124207.INFO >: Data buffer set OK for segment: 0
+124207.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124207.INFO >: Number of captures per run set at: 1
+124207.INFO >: Setting up run: 299
+124207.INFO >: Signals to capture in this run: 1
+124207.INFO >: Remaining time: 11.2429943085
+124207.INFO >: DATA COLLECTION STARTED
+124207.INFO >: DATA COLLECTION ENDED
+124207.INFO >: Data buffer set OK for segment: 0
+124207.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124207.INFO >: Number of captures per run set at: 1
+124207.INFO >: Setting up run: 300
+124207.INFO >: Signals to capture in this run: 1
+124207.INFO >: Remaining time: 11.1852765083
+124207.INFO >: DATA COLLECTION STARTED
+124207.INFO >: DATA COLLECTION ENDED
+124207.INFO >: Data buffer set OK for segment: 0
+124207.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124207.INFO >: Number of captures per run set at: 1
+124207.INFO >: Setting up run: 301
+124207.INFO >: Signals to capture in this run: 1
+124207.INFO >: Remaining time: 11.1566574574
+124207.INFO >: DATA COLLECTION STARTED
+124208.INFO >: DATA COLLECTION ENDED
+124208.INFO >: Data buffer set OK for segment: 0
+124208.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124208.INFO >: Number of captures per run set at: 1
+124208.INFO >: Setting up run: 302
+124208.INFO >: Signals to capture in this run: 1
+124208.INFO >: Remaining time: 10.9086904526
+124208.INFO >: DATA COLLECTION STARTED
+124208.INFO >: DATA COLLECTION ENDED
+124208.INFO >: Data buffer set OK for segment: 0
+124208.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124208.INFO >: Number of captures per run set at: 1
+124208.INFO >: Setting up run: 303
+124208.INFO >: Signals to capture in this run: 1
+124208.INFO >: Remaining time: 10.8797645569
+124208.INFO >: DATA COLLECTION STARTED
+124208.INFO >: DATA COLLECTION ENDED
+124208.INFO >: Data buffer set OK for segment: 0
+124208.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124208.INFO >: Number of captures per run set at: 1
+124208.INFO >: Setting up run: 304
+124208.INFO >: Signals to capture in this run: 1
+124208.INFO >: Remaining time: 10.7564814091
+124208.INFO >: DATA COLLECTION STARTED
+124208.INFO >: DATA COLLECTION ENDED
+124208.INFO >: Data buffer set OK for segment: 0
+124208.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124208.INFO >: Number of captures per run set at: 1
+124208.INFO >: Setting up run: 305
+124208.INFO >: Signals to capture in this run: 1
+124208.INFO >: Remaining time: 10.6328923702
+124208.INFO >: DATA COLLECTION STARTED
+124208.INFO >: DATA COLLECTION ENDED
+124208.INFO >: Data buffer set OK for segment: 0
+124208.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124208.INFO >: Number of captures per run set at: 1
+124208.INFO >: Setting up run: 306
+124208.INFO >: Signals to capture in this run: 1
+124208.INFO >: Remaining time: 10.6078984737
+124208.INFO >: DATA COLLECTION STARTED
+124208.INFO >: DATA COLLECTION ENDED
+124208.INFO >: Data buffer set OK for segment: 0
+124208.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124208.INFO >: Number of captures per run set at: 1
+124208.INFO >: Setting up run: 307
+124208.INFO >: Signals to capture in this run: 1
+124208.INFO >: Remaining time: 10.5782973766
+124208.INFO >: DATA COLLECTION STARTED
+124208.INFO >: DATA COLLECTION ENDED
+124208.INFO >: Data buffer set OK for segment: 0
+124208.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124208.INFO >: Number of captures per run set at: 1
+124208.INFO >: Setting up run: 308
+124208.INFO >: Signals to capture in this run: 1
+124208.INFO >: Remaining time: 10.3789813519
+124208.INFO >: DATA COLLECTION STARTED
+124208.INFO >: DATA COLLECTION ENDED
+124208.INFO >: Data buffer set OK for segment: 0
+124208.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124208.INFO >: Number of captures per run set at: 1
+124208.INFO >: Setting up run: 309
+124208.INFO >: Signals to capture in this run: 1
+124208.INFO >: Remaining time: 10.2109034061
+124208.INFO >: DATA COLLECTION STARTED
+124208.INFO >: DATA COLLECTION ENDED
+124208.INFO >: Data buffer set OK for segment: 0
+124208.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124208.INFO >: Number of captures per run set at: 1
+124208.INFO >: Setting up run: 310
+124208.INFO >: Signals to capture in this run: 1
+124208.INFO >: Remaining time: 10.2060124874
+124208.INFO >: DATA COLLECTION STARTED
+124208.INFO >: DATA COLLECTION ENDED
+124208.INFO >: Data buffer set OK for segment: 0
+124208.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124208.INFO >: Number of captures per run set at: 1
+124208.INFO >: Setting up run: 311
+124208.INFO >: Signals to capture in this run: 1
+124208.INFO >: Remaining time: 10.1908683777
+124208.INFO >: DATA COLLECTION STARTED
+124208.INFO >: DATA COLLECTION ENDED
+124208.INFO >: Data buffer set OK for segment: 0
+124208.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124208.INFO >: Number of captures per run set at: 1
+124208.INFO >: Setting up run: 312
+124208.INFO >: Signals to capture in this run: 1
+124208.INFO >: Remaining time: 10.1657762527
+124208.INFO >: DATA COLLECTION STARTED
+124208.INFO >: DATA COLLECTION ENDED
+124208.INFO >: Data buffer set OK for segment: 0
+124208.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124208.INFO >: Number of captures per run set at: 1
+124208.INFO >: Setting up run: 313
+124208.INFO >: Signals to capture in this run: 1
+124208.INFO >: Remaining time: 10.003878355
+124208.INFO >: DATA COLLECTION STARTED
+124209.INFO >: DATA COLLECTION ENDED
+124209.INFO >: Data buffer set OK for segment: 0
+124209.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124209.INFO >: Number of captures per run set at: 1
+124209.INFO >: Setting up run: 314
+124209.INFO >: Signals to capture in this run: 1
+124209.INFO >: Remaining time: 9.85860443115
+124209.INFO >: DATA COLLECTION STARTED
+124209.INFO >: DATA COLLECTION ENDED
+124209.INFO >: Data buffer set OK for segment: 0
+124209.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124209.INFO >: Number of captures per run set at: 1
+124209.INFO >: Setting up run: 315
+124209.INFO >: Signals to capture in this run: 1
+124209.INFO >: Remaining time: 9.71540760994
+124209.INFO >: DATA COLLECTION STARTED
+124209.INFO >: DATA COLLECTION ENDED
+124209.INFO >: Data buffer set OK for segment: 0
+124209.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124209.INFO >: Number of captures per run set at: 1
+124209.INFO >: Setting up run: 316
+124209.INFO >: Signals to capture in this run: 1
+124209.INFO >: Remaining time: 9.59905171394
+124209.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 317
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.95940279961
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 318
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.94011187553
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 319
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.91020894051
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 320
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.90635895729
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 321
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.78621101379
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 322
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.77537798882
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 323
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.61616897583
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 324
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.61047697067
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 325
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.5937268734
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 326
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.54940271378
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 327
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.52497076988
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 328
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.51117777824
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 329
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.49768471718
+124210.INFO >: DATA COLLECTION STARTED
+124210.INFO >: DATA COLLECTION ENDED
+124210.INFO >: Data buffer set OK for segment: 0
+124210.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124210.INFO >: Number of captures per run set at: 1
+124210.INFO >: Setting up run: 330
+124210.INFO >: Signals to capture in this run: 1
+124210.INFO >: Remaining time: 8.28932571411
+124210.INFO >: DATA COLLECTION STARTED
+124211.INFO >: DATA COLLECTION ENDED
+124211.INFO >: Data buffer set OK for segment: 0
+124211.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124211.INFO >: Number of captures per run set at: 1
+124211.INFO >: Setting up run: 331
+124211.INFO >: Signals to capture in this run: 1
+124211.INFO >: Remaining time: 7.96224784851
+124211.INFO >: DATA COLLECTION STARTED
+124211.INFO >: DATA COLLECTION ENDED
+124211.INFO >: Data buffer set OK for segment: 0
+124211.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124211.INFO >: Number of captures per run set at: 1
+124211.INFO >: Setting up run: 332
+124211.INFO >: Signals to capture in this run: 1
+124211.INFO >: Remaining time: 7.82304191589
+124211.INFO >: DATA COLLECTION STARTED
+124211.INFO >: DATA COLLECTION ENDED
+124211.INFO >: Data buffer set OK for segment: 0
+124211.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124211.INFO >: Number of captures per run set at: 1
+124211.INFO >: Setting up run: 333
+124211.INFO >: Signals to capture in this run: 1
+124211.INFO >: Remaining time: 7.71095180511
+124211.INFO >: DATA COLLECTION STARTED
+124211.INFO >: DATA COLLECTION ENDED
+124211.INFO >: Data buffer set OK for segment: 0
+124211.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124211.INFO >: Number of captures per run set at: 1
+124211.INFO >: Setting up run: 334
+124211.INFO >: Signals to capture in this run: 1
+124211.INFO >: Remaining time: 7.57347488403
+124211.INFO >: DATA COLLECTION STARTED
+124211.INFO >: DATA COLLECTION ENDED
+124211.INFO >: Data buffer set OK for segment: 0
+124211.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124211.INFO >: Number of captures per run set at: 1
+124211.INFO >: Setting up run: 335
+124211.INFO >: Signals to capture in this run: 1
+124211.INFO >: Remaining time: 7.54297208786
+124211.INFO >: DATA COLLECTION STARTED
+124211.INFO >: DATA COLLECTION ENDED
+124211.INFO >: Data buffer set OK for segment: 0
+124211.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124211.INFO >: Number of captures per run set at: 1
+124211.INFO >: Setting up run: 336
+124211.INFO >: Signals to capture in this run: 1
+124211.INFO >: Remaining time: 7.27304601669
+124211.INFO >: DATA COLLECTION STARTED
+124212.INFO >: DATA COLLECTION ENDED
+124212.INFO >: Data buffer set OK for segment: 0
+124212.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124212.INFO >: Number of captures per run set at: 1
+124212.INFO >: Setting up run: 337
+124212.INFO >: Signals to capture in this run: 1
+124212.INFO >: Remaining time: 6.58783793449
+124212.INFO >: DATA COLLECTION STARTED
+124212.INFO >: DATA COLLECTION ENDED
+124212.INFO >: Data buffer set OK for segment: 0
+124212.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124212.INFO >: Number of captures per run set at: 1
+124212.INFO >: Setting up run: 338
+124212.INFO >: Signals to capture in this run: 1
+124212.INFO >: Remaining time: 6.5359120369
+124212.INFO >: DATA COLLECTION STARTED
+124212.INFO >: DATA COLLECTION ENDED
+124212.INFO >: Data buffer set OK for segment: 0
+124212.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124212.INFO >: Number of captures per run set at: 1
+124212.INFO >: Setting up run: 339
+124212.INFO >: Signals to capture in this run: 1
+124212.INFO >: Remaining time: 6.38080906868
+124212.INFO >: DATA COLLECTION STARTED
+124212.INFO >: DATA COLLECTION ENDED
+124212.INFO >: Data buffer set OK for segment: 0
+124212.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124212.INFO >: Number of captures per run set at: 1
+124212.INFO >: Setting up run: 340
+124212.INFO >: Signals to capture in this run: 1
+124212.INFO >: Remaining time: 6.30057311058
+124212.INFO >: DATA COLLECTION STARTED
+124212.INFO >: DATA COLLECTION ENDED
+124212.INFO >: Data buffer set OK for segment: 0
+124212.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124212.INFO >: Number of captures per run set at: 1
+124212.INFO >: Setting up run: 341
+124212.INFO >: Signals to capture in this run: 1
+124212.INFO >: Remaining time: 6.24885296822
+124212.INFO >: DATA COLLECTION STARTED
+124213.INFO >: DATA COLLECTION ENDED
+124213.INFO >: Data buffer set OK for segment: 0
+124213.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124213.INFO >: Number of captures per run set at: 1
+124213.INFO >: Setting up run: 342
+124213.INFO >: Signals to capture in this run: 1
+124213.INFO >: Remaining time: 6.0319108963
+124213.INFO >: DATA COLLECTION STARTED
+124213.INFO >: DATA COLLECTION ENDED
+124213.INFO >: Data buffer set OK for segment: 0
+124213.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124213.INFO >: Number of captures per run set at: 1
+124213.INFO >: Setting up run: 343
+124213.INFO >: Signals to capture in this run: 1
+124213.INFO >: Remaining time: 5.7245759964
+124213.INFO >: DATA COLLECTION STARTED
+124213.INFO >: DATA COLLECTION ENDED
+124213.INFO >: Data buffer set OK for segment: 0
+124213.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124213.INFO >: Number of captures per run set at: 1
+124213.INFO >: Setting up run: 344
+124213.INFO >: Signals to capture in this run: 1
+124213.INFO >: Remaining time: 5.56461691856
+124213.INFO >: DATA COLLECTION STARTED
+124213.INFO >: DATA COLLECTION ENDED
+124213.INFO >: Data buffer set OK for segment: 0
+124213.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124213.INFO >: Number of captures per run set at: 1
+124213.INFO >: Setting up run: 345
+124213.INFO >: Signals to capture in this run: 1
+124213.INFO >: Remaining time: 5.35041189194
+124213.INFO >: DATA COLLECTION STARTED
+124213.INFO >: DATA COLLECTION ENDED
+124213.INFO >: Data buffer set OK for segment: 0
+124213.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124213.INFO >: Number of captures per run set at: 1
+124213.INFO >: Setting up run: 346
+124213.INFO >: Signals to capture in this run: 1
+124213.INFO >: Remaining time: 5.33973789215
+124213.INFO >: DATA COLLECTION STARTED
+124213.INFO >: DATA COLLECTION ENDED
+124213.INFO >: Data buffer set OK for segment: 0
+124213.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124213.INFO >: Number of captures per run set at: 1
+124213.INFO >: Setting up run: 347
+124213.INFO >: Signals to capture in this run: 1
+124213.INFO >: Remaining time: 5.2757768631
+124213.INFO >: DATA COLLECTION STARTED
+124214.INFO >: DATA COLLECTION ENDED
+124214.INFO >: Data buffer set OK for segment: 0
+124214.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124214.INFO >: Number of captures per run set at: 1
+124214.INFO >: Setting up run: 348
+124214.INFO >: Signals to capture in this run: 1
+124214.INFO >: Remaining time: 5.14032578468
+124214.INFO >: DATA COLLECTION STARTED
+124214.INFO >: DATA COLLECTION ENDED
+124214.INFO >: Data buffer set OK for segment: 0
+124214.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124214.INFO >: Number of captures per run set at: 1
+124214.INFO >: Setting up run: 349
+124214.INFO >: Signals to capture in this run: 1
+124214.INFO >: Remaining time: 5.00760197639
+124214.INFO >: DATA COLLECTION STARTED
+124214.INFO >: DATA COLLECTION ENDED
+124214.INFO >: Data buffer set OK for segment: 0
+124214.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124214.INFO >: Number of captures per run set at: 1
+124214.INFO >: Setting up run: 350
+124214.INFO >: Signals to capture in this run: 1
+124214.INFO >: Remaining time: 4.98758101463
+124214.INFO >: DATA COLLECTION STARTED
+124214.INFO >: DATA COLLECTION ENDED
+124214.INFO >: Data buffer set OK for segment: 0
+124214.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124214.INFO >: Number of captures per run set at: 1
+124214.INFO >: Setting up run: 351
+124214.INFO >: Signals to capture in this run: 1
+124214.INFO >: Remaining time: 4.63600897789
+124214.INFO >: DATA COLLECTION STARTED
+124214.INFO >: DATA COLLECTION ENDED
+124214.INFO >: Data buffer set OK for segment: 0
+124214.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124214.INFO >: Number of captures per run set at: 1
+124214.INFO >: Setting up run: 352
+124214.INFO >: Signals to capture in this run: 1
+124214.INFO >: Remaining time: 4.40601205826
+124214.INFO >: DATA COLLECTION STARTED
+124214.INFO >: DATA COLLECTION ENDED
+124214.INFO >: Data buffer set OK for segment: 0
+124214.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124214.INFO >: Number of captures per run set at: 1
+124214.INFO >: Setting up run: 353
+124214.INFO >: Signals to capture in this run: 1
+124214.INFO >: Remaining time: 4.36645698547
+124214.INFO >: DATA COLLECTION STARTED
+124214.INFO >: DATA COLLECTION ENDED
+124214.INFO >: Data buffer set OK for segment: 0
+124214.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124214.INFO >: Number of captures per run set at: 1
+124214.INFO >: Setting up run: 354
+124214.INFO >: Signals to capture in this run: 1
+124214.INFO >: Remaining time: 4.36000609398
+124214.INFO >: DATA COLLECTION STARTED
+124214.INFO >: DATA COLLECTION ENDED
+124214.INFO >: Data buffer set OK for segment: 0
+124214.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124214.INFO >: Number of captures per run set at: 1
+124214.INFO >: Setting up run: 355
+124214.INFO >: Signals to capture in this run: 1
+124214.INFO >: Remaining time: 4.33142399788
+124214.INFO >: DATA COLLECTION STARTED
+124214.INFO >: DATA COLLECTION ENDED
+124214.INFO >: Data buffer set OK for segment: 0
+124214.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124214.INFO >: Number of captures per run set at: 1
+124214.INFO >: Setting up run: 356
+124214.INFO >: Signals to capture in this run: 1
+124214.INFO >: Remaining time: 4.24831008911
+124214.INFO >: DATA COLLECTION STARTED
+124215.INFO >: DATA COLLECTION ENDED
+124215.INFO >: Data buffer set OK for segment: 0
+124215.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124215.INFO >: Number of captures per run set at: 1
+124215.INFO >: Setting up run: 357
+124215.INFO >: Signals to capture in this run: 1
+124215.INFO >: Remaining time: 4.233314991
+124215.INFO >: DATA COLLECTION STARTED
+124215.INFO >: DATA COLLECTION ENDED
+124215.INFO >: Data buffer set OK for segment: 0
+124215.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124215.INFO >: Number of captures per run set at: 1
+124215.INFO >: Setting up run: 358
+124215.INFO >: Signals to capture in this run: 1
+124215.INFO >: Remaining time: 4.1533010006
+124215.INFO >: DATA COLLECTION STARTED
+124215.INFO >: DATA COLLECTION ENDED
+124215.INFO >: Data buffer set OK for segment: 0
+124215.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124215.INFO >: Number of captures per run set at: 1
+124215.INFO >: Setting up run: 359
+124215.INFO >: Signals to capture in this run: 1
+124215.INFO >: Remaining time: 4.09632515907
+124215.INFO >: DATA COLLECTION STARTED
+124215.INFO >: DATA COLLECTION ENDED
+124215.INFO >: Data buffer set OK for segment: 0
+124215.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124215.INFO >: Number of captures per run set at: 1
+124215.INFO >: Setting up run: 360
+124215.INFO >: Signals to capture in this run: 1
+124215.INFO >: Remaining time: 3.98879003525
+124215.INFO >: DATA COLLECTION STARTED
+124215.INFO >: DATA COLLECTION ENDED
+124215.INFO >: Data buffer set OK for segment: 0
+124215.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124215.INFO >: Number of captures per run set at: 1
+124215.INFO >: Setting up run: 361
+124215.INFO >: Signals to capture in this run: 1
+124215.INFO >: Remaining time: 3.94463205338
+124215.INFO >: DATA COLLECTION STARTED
+124215.INFO >: DATA COLLECTION ENDED
+124215.INFO >: Data buffer set OK for segment: 0
+124215.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124215.INFO >: Number of captures per run set at: 1
+124215.INFO >: Setting up run: 362
+124215.INFO >: Signals to capture in this run: 1
+124215.INFO >: Remaining time: 3.87883710861
+124215.INFO >: DATA COLLECTION STARTED
+124215.INFO >: DATA COLLECTION ENDED
+124215.INFO >: Data buffer set OK for segment: 0
+124215.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124215.INFO >: Number of captures per run set at: 1
+124215.INFO >: Setting up run: 363
+124215.INFO >: Signals to capture in this run: 1
+124215.INFO >: Remaining time: 3.76998710632
+124215.INFO >: DATA COLLECTION STARTED
+124215.INFO >: DATA COLLECTION ENDED
+124215.INFO >: Data buffer set OK for segment: 0
+124215.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124215.INFO >: Number of captures per run set at: 1
+124215.INFO >: Setting up run: 364
+124215.INFO >: Signals to capture in this run: 1
+124215.INFO >: Remaining time: 3.74307608604
+124215.INFO >: DATA COLLECTION STARTED
+124215.INFO >: DATA COLLECTION ENDED
+124215.INFO >: Data buffer set OK for segment: 0
+124215.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124215.INFO >: Number of captures per run set at: 1
+124215.INFO >: Setting up run: 365
+124215.INFO >: Signals to capture in this run: 1
+124215.INFO >: Remaining time: 3.72037792206
+124215.INFO >: DATA COLLECTION STARTED
+124215.INFO >: DATA COLLECTION ENDED
+124215.INFO >: Data buffer set OK for segment: 0
+124215.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124215.INFO >: Number of captures per run set at: 1
+124215.INFO >: Setting up run: 366
+124215.INFO >: Signals to capture in this run: 1
+124215.INFO >: Remaining time: 3.58043575287
+124215.INFO >: DATA COLLECTION STARTED
+124215.INFO >: DATA COLLECTION ENDED
+124215.INFO >: Data buffer set OK for segment: 0
+124215.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124215.INFO >: Number of captures per run set at: 1
+124215.INFO >: Setting up run: 367
+124215.INFO >: Signals to capture in this run: 1
+124215.INFO >: Remaining time: 3.57234978676
+124215.INFO >: DATA COLLECTION STARTED
+124216.INFO >: DATA COLLECTION ENDED
+124216.INFO >: Data buffer set OK for segment: 0
+124216.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124216.INFO >: Number of captures per run set at: 1
+124216.INFO >: Setting up run: 368
+124216.INFO >: Signals to capture in this run: 1
+124216.INFO >: Remaining time: 3.30501675606
+124216.INFO >: DATA COLLECTION STARTED
+124216.INFO >: DATA COLLECTION ENDED
+124216.INFO >: Data buffer set OK for segment: 0
+124216.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124216.INFO >: Number of captures per run set at: 1
+124216.INFO >: Setting up run: 369
+124216.INFO >: Signals to capture in this run: 1
+124216.INFO >: Remaining time: 3.26602768898
+124216.INFO >: DATA COLLECTION STARTED
+124216.INFO >: DATA COLLECTION ENDED
+124216.INFO >: Data buffer set OK for segment: 0
+124216.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124216.INFO >: Number of captures per run set at: 1
+124216.INFO >: Setting up run: 370
+124216.INFO >: Signals to capture in this run: 1
+124216.INFO >: Remaining time: 3.17507266998
+124216.INFO >: DATA COLLECTION STARTED
+124216.INFO >: DATA COLLECTION ENDED
+124216.INFO >: Data buffer set OK for segment: 0
+124216.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124216.INFO >: Number of captures per run set at: 1
+124216.INFO >: Setting up run: 371
+124216.INFO >: Signals to capture in this run: 1
+124216.INFO >: Remaining time: 2.74787282944
+124216.INFO >: DATA COLLECTION STARTED
+124216.INFO >: DATA COLLECTION ENDED
+124216.INFO >: Data buffer set OK for segment: 0
+124216.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124216.INFO >: Number of captures per run set at: 1
+124216.INFO >: Setting up run: 372
+124216.INFO >: Signals to capture in this run: 1
+124216.INFO >: Remaining time: 2.69547367096
+124216.INFO >: DATA COLLECTION STARTED
+124216.INFO >: DATA COLLECTION ENDED
+124216.INFO >: Data buffer set OK for segment: 0
+124216.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124216.INFO >: Number of captures per run set at: 1
+124216.INFO >: Setting up run: 373
+124216.INFO >: Signals to capture in this run: 1
+124216.INFO >: Remaining time: 2.66651463509
+124216.INFO >: DATA COLLECTION STARTED
+124216.INFO >: DATA COLLECTION ENDED
+124216.INFO >: Data buffer set OK for segment: 0
+124216.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124216.INFO >: Number of captures per run set at: 1
+124216.INFO >: Setting up run: 374
+124216.INFO >: Signals to capture in this run: 1
+124216.INFO >: Remaining time: 2.45333266258
+124216.INFO >: DATA COLLECTION STARTED
+124217.INFO >: DATA COLLECTION ENDED
+124217.INFO >: Data buffer set OK for segment: 0
+124217.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124217.INFO >: Number of captures per run set at: 1
+124217.INFO >: Setting up run: 375
+124217.INFO >: Signals to capture in this run: 1
+124217.INFO >: Remaining time: 2.07538175583
+124217.INFO >: DATA COLLECTION STARTED
+124217.INFO >: DATA COLLECTION ENDED
+124217.INFO >: Data buffer set OK for segment: 0
+124217.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124217.INFO >: Number of captures per run set at: 1
+124217.INFO >: Setting up run: 376
+124217.INFO >: Signals to capture in this run: 1
+124217.INFO >: Remaining time: 1.91580176353
+124217.INFO >: DATA COLLECTION STARTED
+124217.INFO >: DATA COLLECTION ENDED
+124217.INFO >: Data buffer set OK for segment: 0
+124217.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124217.INFO >: Number of captures per run set at: 1
+124217.INFO >: Setting up run: 377
+124217.INFO >: Signals to capture in this run: 1
+124217.INFO >: Remaining time: 1.73884963989
+124217.INFO >: DATA COLLECTION STARTED
+124217.INFO >: DATA COLLECTION ENDED
+124217.INFO >: Data buffer set OK for segment: 0
+124217.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124217.INFO >: Number of captures per run set at: 1
+124217.INFO >: Setting up run: 378
+124217.INFO >: Signals to capture in this run: 1
+124217.INFO >: Remaining time: 1.57877063751
+124217.INFO >: DATA COLLECTION STARTED
+124217.INFO >: DATA COLLECTION ENDED
+124217.INFO >: Data buffer set OK for segment: 0
+124217.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124217.INFO >: Number of captures per run set at: 1
+124217.INFO >: Setting up run: 379
+124217.INFO >: Signals to capture in this run: 1
+124217.INFO >: Remaining time: 1.54590559006
+124217.INFO >: DATA COLLECTION STARTED
+124217.INFO >: DATA COLLECTION ENDED
+124217.INFO >: Data buffer set OK for segment: 0
+124217.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124217.INFO >: Number of captures per run set at: 1
+124217.INFO >: Setting up run: 380
+124217.INFO >: Signals to capture in this run: 1
+124217.INFO >: Remaining time: 1.50515270233
+124217.INFO >: DATA COLLECTION STARTED
+124218.INFO >: DATA COLLECTION ENDED
+124218.INFO >: Data buffer set OK for segment: 0
+124218.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124218.INFO >: Number of captures per run set at: 1
+124218.INFO >: Setting up run: 381
+124218.INFO >: Signals to capture in this run: 1
+124218.INFO >: Remaining time: 1.26436781883
+124218.INFO >: DATA COLLECTION STARTED
+124218.INFO >: DATA COLLECTION ENDED
+124218.INFO >: Data buffer set OK for segment: 0
+124218.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124218.INFO >: Number of captures per run set at: 1
+124218.INFO >: Setting up run: 382
+124218.INFO >: Signals to capture in this run: 1
+124218.INFO >: Remaining time: 1.09081983566
+124218.INFO >: DATA COLLECTION STARTED
+124218.INFO >: DATA COLLECTION ENDED
+124218.INFO >: Data buffer set OK for segment: 0
+124218.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124218.INFO >: Number of captures per run set at: 1
+124218.INFO >: Setting up run: 383
+124218.INFO >: Signals to capture in this run: 1
+124218.INFO >: Remaining time: 0.8410987854
+124218.INFO >: DATA COLLECTION STARTED
+124219.INFO >: DATA COLLECTION ENDED
+124219.INFO >: Data buffer set OK for segment: 0
+124219.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124219.INFO >: Number of captures per run set at: 1
+124219.INFO >: Setting up run: 384
+124219.INFO >: Signals to capture in this run: 1
+124219.INFO >: Remaining time: 0.173014879227
+124219.INFO >: DATA COLLECTION STARTED
+124219.INFO >: DATA COLLECTION ENDED
+124219.INFO >: Data buffer set OK for segment: 0
+124219.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124219.INFO >: Number of captures per run set at: 1
+124219.INFO >: Setting up run: 385
+124219.INFO >: Signals to capture in this run: 1
+124219.INFO >: Remaining time: 0.112540960312
+124219.INFO >: DATA COLLECTION STARTED
+124219.INFO >: DATA COLLECTION ENDED
+124219.WARNING >: Exceeded expected runtime by: 0.112665176392 seconds
+124219.INFO >: Data buffer set OK for segment: 0
+124219.INFO >: Data Retrieve Report
+Issued number of captures: 1
+Actual number of captures: 1
+Issued number of samples: 5000
+Actual number of samples: 5000
+
+124226.INFO >: Unit stopped correctly
+124226.INFO >: Unit closed correctly
+124227>: END LOG

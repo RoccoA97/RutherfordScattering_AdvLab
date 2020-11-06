@@ -1,0 +1,37 @@
+<node id="TOP">
+  <node id="DATA"   address="0x0000"   description="DATA registers" permission ="r" fwinfo="endpoint;width=10">
+    <node id="ro_data"   address="0x0000"  mode="block" size="0x0200"  description="read out data"/>
+    <node id="reg_read"   address="0x0200" mode="single"   description="data on register"/>
+  </node>
+  <node id="CSR"   address="0x2000"  description="CTRL and STATUS registers" fwinfo="endpoint;width=4">
+    <node id="ctrl"  address="0x0000">
+      <node id="strt"  mask="0x0001"/>
+      <node id="op_sw"  mask="0x001E"/>
+      <node id="ro_stop"  mask="0x0020"/>
+      <node id="mem_read"  mask="0x0040"/>
+	  <node id="rstn_ipBUS"  mask="0x0080"/>
+    </node>
+    <node id="status"  address="0x0001">
+      <node id="powered"  mask="0x0001"/>
+      <node id="init"  mask="0x0002"/>
+      <node id="busy"  mask="0x0004"/>
+      <node id="FIFO_full"  mask="0x000008"/>
+      <node id="FIFO_empty"  mask="0x000010"/>
+      <node id="FIFO_prog_full"  mask="0x0020"/>
+      <node id="mem_readable"  mask="0x0040"/>
+      <node id="err_slave"  mask="0x0080"/>
+      <node id="err_idle"  mask="0x0100"/>
+      <node id="err_read"  mask="0x0200"/>
+      <node id="err_chip_id"  mask="0x0400"/>
+      <node id="lkd_AC"  mask="0x0800"/>  
+      <node id="lkd_ipbus"  mask="0x1000"/>   
+    </node>
+  </node>
+  <node id="cmd_addr"   address="0x3000" description="cmd and registers" permission = "rw" fwinfo="endpoint;width=3">
+    <node id="RR_addr"  address="0x0000"/>
+    <node id="OP_command"  address="0x0001"/>
+    <node id="Chip_ID"  address="0x0002"/>
+    <node id="WR_addr"  address="0x0003"/>
+    <node id="WR_data"  address="0x0004"/>
+  </node>	
+</node>

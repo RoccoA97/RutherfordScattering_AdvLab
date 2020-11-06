@@ -1,0 +1,4 @@
+tri_mode_ethernet_mac_0_mii_if.vhd,vhdl,xil_defaultlib,../../../ip/tri_mode_ethernet_mac_0_2/synth/physical/tri_mode_ethernet_mac_0_mii_if.vhd,
+tri_mode_ethernet_mac_0_block.vhd,vhdl,xil_defaultlib,../../../ip/tri_mode_ethernet_mac_0_2/synth/tri_mode_ethernet_mac_0_block.vhd,
+tri_mode_ethernet_mac_0.vhd,vhdl,xil_defaultlib,../../../ip/tri_mode_ethernet_mac_0_2/synth/tri_mode_ethernet_mac_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,13 @@
+xpm_memory.sv,systemverilog,xil_defaultlib,../../../../../../../../../eda/xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../eda/xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd,
+xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_9,../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd,
+xbip_pipe_v3_0_vh_rfs.vhd,vhdl,xbip_pipe_v3_0_5,../../../ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd,
+xbip_bram18k_v3_0_vh_rfs.vhd,vhdl,xbip_bram18k_v3_0_5,../../../ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd,
+mult_gen_v12_0_vh_rfs.vhd,vhdl,mult_gen_v12_0_14,../../../ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd,
+axi_lite_ipif_v3_0_vh_rfs.vhd,vhdl,axi_lite_ipif_v3_0_4,../../../ipstatic/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd,
+tri_mode_ethernet_mac_v9_0_rfs.v,verilog,tri_mode_ethernet_mac_v9_0_13,../../../ipstatic/hdl/tri_mode_ethernet_mac_v9_0_rfs.v,
+tri_mode_ethernet_mac_v9_0_rfs.vhd,vhdl,tri_mode_ethernet_mac_v9_0_13,../../../ipstatic/hdl/tri_mode_ethernet_mac_v9_0_rfs.vhd,
+tri_mode_ethernet_mac_0_mii_if.vhd,vhdl,xil_defaultlib,../../../ip/tri_mode_ethernet_mac_0_2/synth/physical/tri_mode_ethernet_mac_0_mii_if.vhd,
+tri_mode_ethernet_mac_0_block.vhd,vhdl,xil_defaultlib,../../../ip/tri_mode_ethernet_mac_0_2/synth/tri_mode_ethernet_mac_0_block.vhd,
+tri_mode_ethernet_mac_0.vhd,vhdl,xil_defaultlib,../../../ip/tri_mode_ethernet_mac_0_2/synth/tri_mode_ethernet_mac_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

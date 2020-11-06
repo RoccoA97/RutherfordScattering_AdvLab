@@ -1,0 +1,198 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date             : Fri Nov  6 20:50:58 2020
+| Host             : DESKTOP-L2LUOAH running 64-bit major release  (build 9200)
+| Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb -rpx top_level_power_routed.rpx
+| Design           : top_level
+| Device           : xc7a35tcsg324-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.392        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.319        |
+| Device Static (W)        | 0.074        |
+| Effective TJA (C/W)      | 4.8          |
+| Max Ambient (C)          | 83.1         |
+| Junction Temperature (C) | 26.9         |
+| Confidence Level         | Medium       |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.021 |       17 |       --- |             --- |
+| Slice Logic              |     0.011 |    10296 |       --- |             --- |
+|   LUT as Logic           |     0.009 |     3551 |     20800 |           17.07 |
+|   Register               |    <0.001 |     5457 |     41600 |           13.12 |
+|   CARRY4                 |    <0.001 |      176 |      8150 |            2.16 |
+|   LUT as Shift Register  |    <0.001 |       52 |      9600 |            0.54 |
+|   F7/F8 Muxes            |    <0.001 |       32 |     32600 |            0.10 |
+|   Others                 |     0.000 |      198 |       --- |             --- |
+|   LUT as Distributed RAM |     0.000 |       16 |      9600 |            0.17 |
+| Signals                  |     0.014 |     7800 |       --- |             --- |
+| Block RAM                |     0.049 |     26.5 |        50 |           53.00 |
+| MMCM                     |     0.213 |        2 |         5 |           40.00 |
+| I/O                      |     0.010 |       28 |       210 |           13.33 |
+| Static Power             |     0.074 |          |           |                 |
+| Total                    |     0.392 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.105 |       0.094 |      0.011 |
+| Vccaux    |       1.800 |     0.130 |       0.118 |      0.013 |
+| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.005 |       0.004 |      0.001 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                               | Action                                                                                                     |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                      |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                |                                                                                                            |
+| I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                          |                                                                                                            |
+|                             |            |                                                       |                                                                                                            |
+| Overall confidence level    | Medium     |                                                       |                                                                                                            |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++----------------+-----------------------------------+-----------------+
+| Clock          | Domain                            | Constraint (ns) |
++----------------+-----------------------------------+-----------------+
+| I              | Inst_system_clocks/I              |            16.0 |
+| clk_fout       | ALPIDE_reader/MMCM/clk_fout       |            10.0 |
+| clk_ipb_i      | Inst_system_clocks/clk_ipb_i      |            32.0 |
+| clk_out1_mmcm  | ALPIDE_reader/MMCM/clk_out1_mmcm  |            25.0 |
+| clk_out2_mmcm  | ALPIDE_reader/MMCM/clk_out2_mmcm  |            25.0 |
+| clk_rx         | mii_rx_clk_i                      |            40.0 |
+| clk_tx_mac     | mii_tx_clk_i                      |            40.0 |
+| mii_rx_clk_i   | mii_rx_clk_i                      |            40.0 |
+| mii_tx_clk_i   | mii_tx_clk_i                      |            40.0 |
+| s_clk_200_in   | Inst_system_clocks/s_clk_200_in   |             5.0 |
+| s_fb_txclk_in  | Inst_system_clocks/s_fb_txclk_in  |            20.0 |
+| s_phy_clk_in   | Inst_system_clocks/s_phy_clk_in   |            40.0 |
+| s_sysclk_x2_in | Inst_system_clocks/s_sysclk_x2_in |             8.0 |
+| s_sysclk_x4_in | Inst_system_clocks/s_sysclk_x4_in |             4.0 |
+| sys_clk_pin    | clk_base_xc7a_i                   |            10.0 |
++----------------+-----------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------------+-----------+
+| Name                          | Power (W) |
++-------------------------------+-----------+
+| top_level                     |     0.318 |
+|   ALPIDE_reader               |     0.108 |
+|     MMCM                      |     0.106 |
+|   Data_reg                    |     0.001 |
+|   FIFO                        |     0.004 |
+|     xpm_fifo_sync_inst        |     0.004 |
+|       xpm_fifo_base_inst      |     0.004 |
+|   Inst_system_clocks          |     0.109 |
+|   eth_mac_block_1             |     0.014 |
+|     trimac_sup_block          |     0.004 |
+|       tri_mode_ethernet_mac_i |     0.004 |
+|     user_side_FIFO            |     0.010 |
+|       rx_fifo_i               |     0.006 |
+|       tx_fifo_i               |     0.004 |
+|   ipbus                       |     0.071 |
+|     trans                     |     0.002 |
+|       iface                   |     0.001 |
+|       sm                      |     0.001 |
+|     udp_if                    |     0.069 |
+|       ARP                     |     0.001 |
+|       IPADDR                  |     0.001 |
+|       RARP_block              |     0.003 |
+|       internal_ram            |     0.003 |
+|       ipbus_rx_ram            |     0.013 |
+|       ipbus_tx_ram            |     0.023 |
+|       payload                 |     0.003 |
+|       ping                    |     0.001 |
+|       resend                  |     0.001 |
+|       rx_byte_sum             |     0.001 |
+|       rx_packet_parser        |     0.005 |
+|       status                  |     0.002 |
+|       status_buffer           |     0.003 |
+|       tx_main                 |     0.003 |
+|       tx_transactor           |     0.002 |
++-------------------------------+-----------+
+
+

@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../ALPIDEN2.srcs/sources_1/ip/vio_0/hdl" --include "../../../../ALPIDEN2.srcs/sources_1/ip/vio_dpram/hdl" --include "../../../../ALPIDEN2.srcs/sources_1/ip/R_W_PLL_1" \
+"../../../../ALPIDEN2.srcs/sources_1/ip/vio_0/vio_0_sim_netlist.v" \
+"../../../../ALPIDEN2.srcs/sources_1/ip/vio_dpram/vio_dpram_sim_netlist.v" \
+"../../../../ALPIDEN2.ip_user_files/ip/CMD_ROM/sim/CMD_ROM.v" \
+"../../../../ALPIDEN2.ip_user_files/ip/R_W_PLL_1/R_W_PLL_clk_wiz.v" \
+"../../../../ALPIDEN2.ip_user_files/ip/R_W_PLL_1/R_W_PLL.v" \
+"../../../../ALPIDEN2.ip_user_files/ip/DATA_FIFO/sim/DATA_FIFO.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

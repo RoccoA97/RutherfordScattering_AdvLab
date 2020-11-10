@@ -1,0 +1,322 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Nov  6 20:50:49 2020
+| Host         : DESKTOP-L2LUOAH running 64-bit major release  (build 9200)
+| Command      : report_drc -file top_level_drc_routed.rpt -pb top_level_drc_routed.pb -rpx top_level_drc_routed.rpx
+| Design       : top_level
+| Device       : xc7a35tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 54
++-----------+----------+-----------------------------------------------------+------------+
+| Rule      | Severity | Description                                         | Violations |
++-----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| CHECK-3   | Warning  | Report rule limit reached                           | 1          |
+| PDCN-1569 | Warning  | LUT equation term check                             | 25         |
+| PDRC-153  | Warning  | Gated clock check                                   | 1          |
+| PLIO-6    | Warning  | Placement Constraints Check for IO constraints      | 2          |
+| REQP-1577 | Warning  | Clock output buffering                              | 1          |
+| REQP-1617 | Warning  | use_IOB_register                                    | 2          |
+| REQP-1839 | Warning  | RAMB36 async control check                          | 20         |
+| RTSTAT-10 | Warning  | No routable loads                                   | 1          |
++-----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/addr_filter_top/address_filter_inst/special_pause_address[2].LUT3_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/addr_filter_top/address_filter_inst/special_pause_address[3].LUT3_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/addr_filter_top/address_filter_inst/special_pause_address[4].LUT3_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#4 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[3].LUT4_special_pause_inst is not included in the LUT equation: 'O6=((~A3)*A2*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#5 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/addr_filter_top/address_filter_inst/special_pause_address[2].LUT3_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#6 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/addr_filter_top/address_filter_inst/special_pause_address[3].LUT3_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#7 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/addr_filter_top/address_filter_inst/special_pause_address[4].LUT3_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#8 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/addr_filter_top/address_filter_inst/special_pause_address[5].LUT3_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#9 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[2].LUT4_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#10 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[2].LUT4_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#11 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[4].LUT4_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#12 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[5].LUT4_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#13 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/addr_filter_top/address_filter_inst/special_pause_address[2].LUT3_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#14 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/addr_filter_top/address_filter_inst/special_pause_address[5].LUT3_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#15 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[2].LUT4_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#16 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[4].LUT4_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#17 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[5].LUT4_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#18 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/addr_filter_top/address_filter_inst/special_pause_address[5].LUT3_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#19 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[2].LUT4_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#20 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[4].LUT4_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#21 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[5].LUT4_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#22 Warning
+LUT equation term check  
+Used physical LUT pin 'A6' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/addr_filter_top/address_filter_inst/special_pause_address[3].LUT3_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#23 Warning
+LUT equation term check  
+Used physical LUT pin 'A6' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/addr_filter_top/address_filter_inst/special_pause_address[4].LUT3_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#24 Warning
+LUT equation term check  
+Used physical LUT pin 'A6' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[4].LUT4_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#25 Warning
+LUT equation term check  
+Used physical LUT pin 'A6' of cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/flow/tx/pause_fixed_field_lut[5].LUT4_special_pause_inst is not included in the LUT equation: 'O6=0'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net ALPIDE_reader/pin_in_reg_i_1_n_0 is a gated clock net sourced by a combinational pin ALPIDE_reader/pin_in_reg_i_1/O, cell ALPIDE_reader/pin_in_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLIO-6#1 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/mii_interface/mii_tx_er_obuf_reg. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#2 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/mii_interface/rx_er_to_mac_reg. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+REQP-1577#1 Warning
+Clock output buffering  
+MMCME2_ADV connectivity violation. The signal ALPIDE_reader/MMCM/clk_fout on the ALPIDE_reader/MMCM/MMCME2_BASE_inst/CLKFBOUT pin of ALPIDE_reader/MMCM/MMCME2_BASE_inst does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
+Related violations: <none>
+
+REQP-1617#1 Warning
+use_IOB_register  
+The FDRE cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/mii_interface/mii_tx_er_obuf_reg has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is property connected to an IO.
+Related violations: <none>
+
+REQP-1617#2 Warning
+use_IOB_register  
+The FDRE cell eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/mii_interface/rx_er_to_mac_reg has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is property connected to an IO.
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/ENARDEN (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEA[0] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEA[1] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEA[2] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEA[3] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/ENARDEN (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEA[0] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEA[1] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEA[2] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEA[3] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2/ENARDEN (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2/WEA[0] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2/WEA[1] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2/WEA[2] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2/WEA[3] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3/ENARDEN (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3/WEA[0] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3/WEA[1] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3/WEA[2] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3 has an input control pin FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3/WEA[3] (net: FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (FIFO_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+536 net(s) have no routable loads. The problem bus(es) and/or net(s) are Inst_system_clocks/BUFG_SYS_CLK_x4_n_0, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/txgen/CRC_CE, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/CRC_CE, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/FRAME_DECODER/EQUAL_inferred__0/i__carry_n_1, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/FRAME_DECODER/EQUAL_inferred__0/i__carry_n_2, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/FRAME_DECODER/EQUAL_inferred__0/i__carry_n_3, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/FRAME_DECODER/FRAME_COUNTER_reg[0]_i_1_n_1, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/FRAME_DECODER/FRAME_COUNTER_reg[0]_i_1_n_2, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/FRAME_DECODER/FRAME_COUNTER_reg[0]_i_1_n_3, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/FRAME_DECODER/FRAME_COUNTER_reg[4]_i_1_n_1, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/FRAME_DECODER/FRAME_COUNTER_reg[4]_i_1_n_2, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/FRAME_DECODER/FRAME_COUNTER_reg[4]_i_1_n_3, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/FRAME_DECODER/FRAME_COUNTER_reg[8]_i_1_n_1, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/FRAME_DECODER/FRAME_COUNTER_reg[8]_i_1_n_2, eth_mac_block_1/trimac_sup_block/tri_mode_ethernet_mac_i/U0/tri_mode_ethernet_mac_0_core/rxgen/FRAME_DECODER/FRAME_COUNTER_reg[8]_i_1_n_3 (the first 15 of 491 listed).
+Related violations: <none>
+
+

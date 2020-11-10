@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<connections>
+  <connection id="ALPIDE" uri="ipbusudp-2.0://10.10.10.100:50001" address_table="file://ALPIDE_regs.xml" />  
+</connections>
+

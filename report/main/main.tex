@@ -9,12 +9,13 @@
 
 \begin{document}
 
-    %\frontmatter
-    % \newgeometry{inner=20mm, outer=20mm, top=20mm, bottom=20mm, marginparsep=6mm, marginparwidth=30mm}
+    % \frontmatter
+    \newgeometry{inner=20mm, outer=20mm, top=20mm, bottom=20mm, marginparsep=6mm, marginparwidth=30mm}
     % \pagecolor{green!10}
     \input{../titlepage/titlepage.tex}
     % \pagecolor{white}
     % \input{../frontespizio/abstract.tex}
+    \newgeometry{inner=20mm, outer=20mm, top=20mm, bottom=20mm, marginparsep=6mm, marginparwidth=30mm}
     % \newgeometry{inner=20mm, outer=49mm, top=20mm, bottom=25mm, marginparsep=6mm, marginparwidth=30mm}
 
 
@@ -22,17 +23,22 @@
     \clearpage{\pagestyle{empty}\cleardoublepage}
 
 
-    %\mainmatter
+    % \mainmatter
     \pagestyle{fancy}
 
 
     \subfile{../sections/01.tex}
+    \subfile{../sections/02.tex}
+    \subfile{../sections/03.tex}
+    \subfile{../sections/04.tex}
+    \subfile{../sections/05.tex}
+    \subfile{../sections/06.tex}
 
 
     %\backmatter
     \pagestyle{plain}
 
-
+    \clearpage{\pagestyle{empty}\cleardoublepage}
     \input{../bibliography/bibliography.tex}
 
 \end{document}

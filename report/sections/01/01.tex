@@ -1,0 +1,37 @@
+\providecommand{\main}{../../main}
+\documentclass[../../main/main.tex]{subfiles}
+
+
+\begin{document}
+
+\section{Introduction}
+
+% \subsection{History background}
+In the beginning of the \( 20^{\text{th}} \) century, the study of the structure of atoms began to intensify. In particular, J.J. Thomson, after the discover of the electrons, hypothesized the ``plum pudding'' model: the structure of the atom consists of electrons occuping a region of space uniformly and positively charged. Ernest Rutherford tested if this behaviour of nature was plausible and set up his famous experiment, proving that Thomson's prediction was not explained by experimental data. Moreover, he tried to explain the this riddle by introducing a new hypothesis, namely the Rutherford model, where the positive charge is densely-packed in the center, forming the nucleus.
+
+Returning to the present and focusing on scattering processes, the ladders are tipically described in terms of the differential cross section. Briefly, is nothing more than a function describind the probability of a scattering event to occur. In the particular case of the scattering of a charged particle against the nucleus of the Rutherford model of atoms, the differential cross section reads:
+\begin{equation}
+    \dv{\sigma}{\Omega}
+    =
+    \qty(\frac{ZZ'e^{2}}{16\pi \varepsilon_{0} E}) \frac{1}{\sin^4\frac{\theta}{2}}
+    \label{eq:S01_1}
+\end{equation}
+where:
+\begin{itemize}
+    \item \( Z \) and \( Z' \) are the atomic numbers of the incoming particle and of the scattering material, respectively;
+    \item \( e \) is the unit charge, namely the charge of a proton;
+    \item \( E \) is the energy of the incoming particle;
+    \item \( \theta \) is the polar angle at which the incoming particle scatters with respect to the center of the scattering, namely the atom nucleus.
+\end{itemize}
+However, the expression given in Eq. \ref{eq:S01_1} is only an approximation given by a simplified model and naive geometry hypotheses. In fact, for small angles it diverges and this is in contrast with the observations.
+
+Given these premises on which the following discussion will hold on, we introduce now the objectives of our work:
+\begin{itemize}
+    \item elaborate and describe an appropriate experimental setup for performing measurments of charged particles scattering;
+    \item characterize the instruments employed for the measurments;
+    \item model through numerical simulations the experimental apparatus components and conditions and the physics of the phenomenon under study, basing its behaviour on theoretical considerations given by Rutherford results;
+    \item measure the differential cross section of Rutherford scattering and compare it with the expected result from simulation.
+\end{itemize}
+
+
+\end{document}

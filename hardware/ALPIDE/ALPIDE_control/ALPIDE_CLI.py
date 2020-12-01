@@ -23,8 +23,8 @@ parser.add_argument('-cc', '--Commands', metavar='N', type=str, nargs='+', defau
                     help='List of commands to perform, type -cc cc to print the cmd list')
 parser.add_argument('-ci', '--Chip_ID', metavar='N', type=int,
                     help='Chip ID that will be used, one among 0x12,0x16,0x1A,0x1E, default 0x12')
-parser.add_argument('-st', '--STROBE', metavar='N', type=int, nargs='+',
-                    help='Strobe duration (first) STROBE gap (second) in clk cycles, default 100')
+parser.add_argument('-st', '--STROBE', metavar='N', type=int, nargs='+', default=[100,100],
+                    help='STROBE duration (first) STROBE gap (second) in clk cycles, default 100 100')
 parser.add_argument('-ti', '--readout_time', metavar='N', type=int, default=1,
                     help='Readout time in minutes, default 1')
 parser.add_argument('-pn', '--readout_packets', metavar='N', type=int, default=100000,
@@ -62,7 +62,7 @@ ALPIDE_CMD_RDOP		= 0x004E
 
 if __name__ == "__main__":
 
-	#os.system("rm Current_run_data/Per_event_readout/*")
+	os.system("rm Current_run_data/Per_event_readout/Default_run")
 	#os.system("rm Current_run_data/Continuous_readout/*")
 	#os.system("rm Current_run_data/Rawdata_readout/*")
 	#os.system("rm Current_run_data/Threshold_test/*")
@@ -299,7 +299,7 @@ if __name__ == "__main__":
 							total_packets = total_packets + n_packet
 							n_packet = 0
 							name_file = args.file_name + '_packet_' + '%d' % (k)
-							np.save(os.path.join(folder_path, name_file),packet_list)
+							np.save(os.path.join(folder_path, name_file),packet_list, allow_pickle=False)
 							k = k + 1
 							packet_list = []
 							hw.getNode("CSR.ctrl.ro_stop").write(0b0)
@@ -319,7 +319,7 @@ if __name__ == "__main__":
 				total_packets = total_packets + n_packet
 				n_packet = 0
 				name_file = args.file_name + '_packet_' + '%d' % (k)
-				np.save(os.path.join(folder_path, name_file),packet_list)
+				np.save(os.path.join(folder_path, name_file),packet_list, allow_pickle=False)
 				k = 0
 				packet_list = []
 				stat_name_file = 'Stat_' + args.file_name + '.txt'

@@ -13,7 +13,6 @@ import multiprocessing as mp
 import os
 import argparse
 from ROOT import TFile, TTree
-from array import array
 
 SET_N_THREADS = 4
 
@@ -291,12 +290,18 @@ if __name__=="__main__":
     plt.subplot(311)
     plt.subplots_adjust(hspace=0.4)
     plt.title("Area")
-    n, bins, patches = plt.hist(areas, bins=int((np.max(areas) - np.min(areas))/2),
-                                range=(np.min(areas), np.max(areas)))
+    try:
+        n, bins, patches = plt.hist(areas, bins=int((np.max(areas) - np.min(areas)) / 2),
+                                    range=(np.min(areas), np.max(areas)))
+    except:
+        n, bins, patches = plt.hist(areas)
     plt.subplot(312)
     plt.title("PCA ratios")
-    n, bins, patches = plt.hist(ratios, bins=int(np.max(ratios) - np.min(ratios)),
-                                range=(np.min(ratios), np.max(ratios)))
+    try:
+        n, bins, patches = plt.hist(ratios, bins=int(np.max(ratios) - np.min(ratios)),
+                                    range=(np.min(ratios), np.max(ratios)))
+    except:
+        n, bins, patches = plt.hist(ratios)
     plt.subplot(313)
     plt.title("2D Histo")
     plt.hist2d(means[:, 1], means[:, 0], [128, 64])
@@ -308,10 +313,10 @@ if __name__=="__main__":
     root_file = TFile(String, "RECREATE")
     tree = TTree("tree", "file")
 
-    Rareas = array('f', [0.])
-    Rmeanx = array('f', [0.])
-    Rmeany = array('f', [0.])
-    Rratios = array('f', [0.])
+    Rareas = np.empty(1, dtype="float32")
+    Rmeanx = np.empty(1, dtype="float32")
+    Rmeany = np.empty(1, dtype="float32")
+    Rratios = np.empty(1, dtype="float32")
 
     tree.Branch("Rareas", Rareas, "Rareas/F")
     tree.Branch("Rmeanx", Rmeanx, "Rmeanx/F")
@@ -320,8 +325,8 @@ if __name__=="__main__":
 
     for i in range(len(areas)):
         Rareas[0] = areas[i]
-        Rmeanx [0] = means[i,0]
-        Rmeany[0] = means[i, 1]
+        Rmeany [0] = means[i, 0]
+        Rmeanx[0] = means[i, 1]
         Rratios[0] = ratios[i]
         tree.Fill()
 

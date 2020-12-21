@@ -1,0 +1,10 @@
+Data recieved	   = 107623424 
+Packets recieved       = 201267 
+Readout_time           = 600.000546s 
+Data idle recieved	   = 106226217 
+Data busy recieved	   = 0 
+Dead time [percentage] = 98.701763 
+Events detected	   = 201538 
+Throughput[Mbps]       = 4.304933 
+Strobe = 5000 
+Gap    = 25000 

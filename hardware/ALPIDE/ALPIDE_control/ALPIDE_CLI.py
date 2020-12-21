@@ -23,8 +23,8 @@ parser.add_argument('-cc', '--Commands', metavar='N', type=str, nargs='+', defau
                     help='List of commands to perform, type -cc cc to print the cmd list')
 parser.add_argument('-ci', '--Chip_ID', metavar='N', type=int,
                     help='Chip ID that will be used, one among 0x12,0x16,0x1A,0x1E, default 0x12')
-parser.add_argument('-st', '--STROBE', metavar='N', type=int, nargs='+', default=[100,100],
-                    help='STROBE duration (first) STROBE gap (second) in clk cycles, default 100 100')
+parser.add_argument('-st', '--STROBE', metavar='N', type=int, nargs='+',
+                    help='Strobe duration (first) STROBE gap (second) in clk cycles, default 100')
 parser.add_argument('-ti', '--readout_time', metavar='N', type=int, default=1,
                     help='Readout time in minutes, default 1')
 parser.add_argument('-pn', '--readout_packets', metavar='N', type=int, default=100000,
@@ -62,7 +62,7 @@ ALPIDE_CMD_RDOP		= 0x004E
 
 if __name__ == "__main__":
 
-	os.system("rm Current_run_data/Per_event_readout/Default_run")
+	#os.system("rm Current_run_data/Per_event_readout/*")
 	#os.system("rm Current_run_data/Continuous_readout/*")
 	#os.system("rm Current_run_data/Rawdata_readout/*")
 	#os.system("rm Current_run_data/Threshold_test/*")
@@ -77,7 +77,7 @@ if __name__ == "__main__":
 	hw.getNode("CSR.ctrl.ro_stop").write(0b0)	#Enable read out (FPGA side)
 	hw.dispatch()
 	print 'Initialization comlpete'
-
+	
 	#get working dir
 	path = os.getcwd()
 	print ("The current working directory is %s" % path)
@@ -94,14 +94,14 @@ if __name__ == "__main__":
 	#Set the chip ID
 	hw.getNode("cmd_addr.Chip_ID").write(Chip_ID)
 	hw.dispatch()
-
-
-
+	
+		
+	
 	while len(args.Commands) >= 1:
 
 		ip = args.Commands[0]
 		args.Commands.pop(0)
-
+		
 		if ip == "pon":
 			Afunc.send_cmd(power_on)
 			powered, initialized, busy, FIFO_full, FIFO_empty, FIFO_prg_full, mem_readable, err_slave, err_idle, err_read, err_chip_id, lkd_AC, lkd_ipbus = Afunc.get_status()
@@ -279,7 +279,7 @@ if __name__ == "__main__":
 				Total_readout_time=time.time()
 				Afunc.send_cmd(trigger_cmd)	#need to first external start the STROBE generation
 				Afunc.send_cmd(read_out)
-				while (total_packets < args.readout_packets) and ((time.time()-Total_readout_time-Delta_time) < (args.readout_time*60)):
+				while (total_packets < args.pn) and ((time.time()-Total_readout_time-Delta_time) < (args.ti*60)):
 					try:
 						if n_packet < 100000:
 							mem_readable = hw.getNode("CSR.status.mem_readable").read()	#get memory readable status from FPGA
@@ -299,7 +299,7 @@ if __name__ == "__main__":
 							total_packets = total_packets + n_packet
 							n_packet = 0
 							name_file = args.file_name + '_packet_' + '%d' % (k)
-							np.save(os.path.join(folder_path, name_file),packet_list, allow_pickle=False)
+							np.save(os.path.join(folder_path, name_file),packet_list)
 							k = k + 1
 							packet_list = []
 							hw.getNode("CSR.ctrl.ro_stop").write(0b0)
@@ -319,7 +319,7 @@ if __name__ == "__main__":
 				total_packets = total_packets + n_packet
 				n_packet = 0
 				name_file = args.file_name + '_packet_' + '%d' % (k)
-				np.save(os.path.join(folder_path, name_file),packet_list, allow_pickle=False)
+				np.save(os.path.join(folder_path, name_file),packet_list)
 				k = 0
 				packet_list = []
 				stat_name_file = 'Stat_' + args.file_name + '.txt'
@@ -332,7 +332,7 @@ if __name__ == "__main__":
 				file.write('Dead time [percentage] = %f \n' % dead_time)
 				file.write('Events detected	= %d \n' % n_events)
 				file.write('Throughput[Mbps] = %f \n' % n_data*24/(Total_readout_time*1000000))
-				file.close()
+				file.close()	
 				Afunc.print_error()
 				dead_time = float(n_idle)/n_data*100
 				print """

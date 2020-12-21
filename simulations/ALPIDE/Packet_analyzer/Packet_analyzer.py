@@ -3,10 +3,8 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import DBSCAN, AgglomerativeClustering
 from sklearn.decomposition import PCA
 from pathlib import Path
-import matplotlib as mpl
 from matplotlib import cm
 import matplotlib.colors as colors
-import matplotlib.cbook as cbook
 import time
 import sys
 import multiprocessing as mp
@@ -143,9 +141,20 @@ parser.add_argument('-A', '--Alg', metavar='Agg or DB', type=str, default='DB',
                     help='Select which algorithm to use')
 parser.add_argument('-d', '--Dist', metavar='N', type=int, nargs='+', default='[1,10]',
                     help='DB scan distance, Agglomerative cluster distance')
+parser.add_argument('-s', '--StepCenter', metavar='N', type=int, default='17',
+                    help='Distance from the center, in motor steps')
+parser.add_argument('-w', '--Weight', metavar='N', type=float, default='1.',
+                    help="Event's weight")
+parser.add_argument('-b', '--NBestemmie', metavar='N', type=int, default='1000',
+                    help="Analysis's complexity")
 
 
 args = parser.parse_args()
+
+ALPIDE_center   = -17   #Steps
+ALPIDE_distance = 76.3  #mm
+ALPIDE_width    = 30    #mm
+ALPIDE_height   = 15    #mm
 
 
 
@@ -158,6 +167,7 @@ if __name__=="__main__":
     ClusterAgg = []
     AreaClusterAgg = []
 
+    #find number of files
     noise_points = 0
     Data = []
     t=time.time()
@@ -172,6 +182,8 @@ if __name__=="__main__":
             break
     Ntot = i
     i = 0
+
+    #clustering and analysis
     if args.Alg=="DB":
         if args.Par==True:
             print('Parallel processing with DBSCAN')
@@ -260,6 +272,7 @@ if __name__=="__main__":
     else:
         print("Allora sei mona..")
 
+    #print results
     print('\n')
     areas = np.array([d.area for d in Data])
     ratios = np.array([d.pca_r for d in Data])
@@ -273,6 +286,7 @@ if __name__=="__main__":
     path = os.getcwd()
     print("The current working directory is %s" % path)
 
+    #save histos as png
     folder_path = path + '/Analyzed_Data/' + Folder_name
     try:  # new work folder named args.file_name
         os.mkdir(folder_path)
@@ -291,7 +305,7 @@ if __name__=="__main__":
     plt.subplots_adjust(hspace=0.4)
     plt.title("Area")
     try:
-        n, bins, patches = plt.hist(areas, bins=int((np.max(areas) - np.min(areas)) / 2),
+        n, bins, patches = plt.hist(areas, bins=int((np.max(areas) - np.min(areas))),
                                     range=(np.min(areas), np.max(areas)))
     except:
         n, bins, patches = plt.hist(areas)
@@ -309,6 +323,33 @@ if __name__=="__main__":
     String = 'Analyzed_Data/' + Folder_name + '/' + args.Folder + '_plot'
     plt.savefig(String, dpi=700)
 
+    #produce an hitmap matrix image
+    cluster_matrix = np.zeros((512, 1024))
+    for i in range(N_files):
+        file_name = Folder_name + "/" + Folder_name + "_packet_{0:0d}.npy".format(i)
+        packet = np.load(file_name, allow_pickle=True)
+
+        for Cluster in packet:
+            for pixel in Cluster:
+                x = pixel[1]
+                y = pixel[0]
+                cluster_matrix[y, x] += 1
+
+    # and plot it
+    fig, ax = plt.subplots()
+    colormap = cm.get_cmap('jet')
+    psm = ax.pcolormesh(cluster_matrix, cmap=colormap, norm=colors.LogNorm(vmin=1))
+    # psm = ax.pcolormesh(cluster_matrix, cmap=colormap, vmax=50)
+    cbar = plt.colorbar(psm, shrink=0.5, ax=ax)
+    # cbar.set_label("N. hits")
+    plt.axis('scaled')
+    ax.set(xlim=(0, 1023), ylim=(0, 511))
+    plt.xlabel("Column")
+    plt.ylabel("Row")
+    String = 'Analyzed_Data/' + Folder_name + '/' + args.Folder + '_hitmap'
+    plt.savefig(String, dpi=700)
+
+    #save data as root file
     String = 'Analyzed_Data/' + Folder_name + '/' + args.Folder + '.root'
     root_file = TFile(String, "RECREATE")
     tree = TTree("tree", "file")
@@ -316,17 +357,24 @@ if __name__=="__main__":
     Rareas = np.empty(1, dtype="float32")
     Rmeanx = np.empty(1, dtype="float32")
     Rmeany = np.empty(1, dtype="float32")
+    Rtheta = np.empty(1, dtype="float32")
+    Rweight = np.empty(1, dtype="float32")
     Rratios = np.empty(1, dtype="float32")
 
     tree.Branch("Rareas", Rareas, "Rareas/F")
     tree.Branch("Rmeanx", Rmeanx, "Rmeanx/F")
     tree.Branch("Rmeany", Rmeany, "Rmeany/F")
+    tree.Branch("Rtheta", Rtheta, "Rtheta/F")
+    tree.Branch("Rweight", Rweight, "Rweight/F")
     tree.Branch("Rratios", Rratios, "Rratios/F")
 
     for i in range(len(areas)):
         Rareas[0] = areas[i]
         Rmeany [0] = means[i, 0]
         Rmeanx[0] = means[i, 1]
+        Rtheta[0] = np.arctan2((means[i, 1] - 512)*ALPIDE_width/1024,
+                               ALPIDE_distance) + (args.StepCenter+ALPIDE_center)*0.9*np.pi/180
+        Rweight[0] = args.Weight
         Rratios[0] = ratios[i]
         tree.Fill()
 

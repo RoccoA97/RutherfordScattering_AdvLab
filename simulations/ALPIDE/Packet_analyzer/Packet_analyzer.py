@@ -152,7 +152,7 @@ parser.add_argument('-b', '--NBestemmie', metavar='N', type=int, default='1000',
 args = parser.parse_args()
 
 ALPIDE_center   = -17   #Steps
-ALPIDE_distance = 76.3  #mm
+ALPIDE_distance = 78.63  #mm
 ALPIDE_width    = 30    #mm
 ALPIDE_height   = 15    #mm
 

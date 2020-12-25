@@ -10,7 +10,6 @@ import sys
 import multiprocessing as mp
 import os
 import argparse
-from tqdm import tqdm
 from ROOT import TFile, TTree
 
 SET_N_THREADS = 4
@@ -132,22 +131,15 @@ def par_ClusterAnalysisPCA(parallel_result):
 
     return PCAresult
 
-def Verbose_print(String,Verb=True):
-    if Verb:
-        print(String)
-
-
 
 parser = argparse.ArgumentParser(description='Packet analyzer')
 parser.add_argument('-f', '--Folder', metavar='N', type=str, default='Deafault_run',
                     help='Folder name to analyze')
 parser.add_argument('-p', '--Par', action='store_true', dest='Par',
                     help='Enable parallelization')
-parser.add_argument('-v', '--Verbose', action='store_true', dest='Verbose',
-                    help='Enable verbose option')
 parser.add_argument('-A', '--Alg', metavar='Agg or DB', type=str, default='DB',
                     help='Select which algorithm to use')
-parser.add_argument('-d', '--Dist', metavar='N', type=int, nargs='+', default=[1,10],
+parser.add_argument('-d', '--Dist', metavar='N', type=int, nargs='+', default='[1,10]',
                     help='DB scan distance, Agglomerative cluster distance')
 parser.add_argument('-s', '--StepCenter', metavar='N', type=int, default='17',
                     help='Distance from the center, in motor steps')
@@ -156,11 +148,11 @@ parser.add_argument('-w', '--Weight', metavar='N', type=float, default='1.',
 parser.add_argument('-b', '--NBestemmie', metavar='N', type=int, default='1000',
                     help="Analysis's complexity")
 
+
 args = parser.parse_args()
 
-#Geometry parameters
 ALPIDE_center   = -17   #Steps
-ALPIDE_distance = 78.63 #mm
+ALPIDE_distance = 78.63  #mm
 ALPIDE_width    = 30    #mm
 ALPIDE_height   = 15    #mm
 
@@ -186,7 +178,7 @@ if __name__=="__main__":
             i += 1
         else:
             N_files=i
-            Verbose_print("{0:0d} Packet files found".format(N_files),args.Verbose)
+            print("{0:0d} Packet files found".format(N_files))
             break
     Ntot = i
     i = 0
@@ -194,37 +186,37 @@ if __name__=="__main__":
     #clustering and analysis
     if args.Alg=="DB":
         if args.Par==True:
-            Verbose_print('Parallel processing with DBSCAN',args.Verbose)
-            for i in tqdm(range(N_files), desc=args.Folder):
+            print('Parallel processing with DBSCAN')
+            for i in range(N_files):
                 file_name = args.Folder + "/" + args.Folder + "_packet_{0:0d}.npy".format(i)
                 my_file = Path(file_name)
                 if my_file.is_file():
-                    #if (i % patience == 0):
-                        #sys.stdout.write("\rCompleteness : " + str(round(i / Ntot * 100, 1)) + "%")
+                    if (i % patience == 0):
+                        sys.stdout.write("\rCompleteness : " + str(round(i / Ntot * 100, 1)) + "%")
                     try:
                         packet = np.load(file_name, allow_pickle=True)
                     except:
-                        Verbose_print("\nPacket {0:0d} is corrupted\n".format(i),args.Verbose)
+                        print("\nPacket {0:0d} is corrupted\n".format(i))
                         break
                     DBresult = par_findClusterDB(packet, args.Dist[0])
                     PCAresult = par_ClusterAnalysisPCA(DBresult)
                     Data = np.append(Data, PCAresult)
                     noise_points += sum(data[2] for data in DBresult)
                 else:
-                    Verbose_print("\nNo more packets to analyze\n",args.Verbose)
+                    print("\nNo more packets to analyze\n")
                     break
         else:
-            Verbose_print('Processing with DBSCAN',args.Verbose)
-            for i in tqdm(range(N_files),desc=args.Folder):
+            print('Processing with DBSCAN')
+            for i in range(N_files):
                 file_name = args.Folder + "/" + args.Folder + "_packet_{0:0d}.npy".format(i)
                 my_file = Path(file_name)
                 if my_file.is_file():
-                    #if (i % patience == 0):
-                        #sys.stdout.write("\rCompleteness : " + str(round(i / Ntot * 100, 1)) + "%")
+                    if (i % patience == 0):
+                        sys.stdout.write("\rCompleteness : " + str(round(i / Ntot * 100, 1)) + "%")
                     try:
                         packet = np.load(file_name, allow_pickle=True)
                     except:
-                        Verbose_print("\nPacket {0:0d} is corrupted\n".format(i),args.Verbose)
+                        print("\nPacket {0:0d} is corrupted\n".format(i))
                         break
                     for current_packet in packet:
                         Cluster, AreaCluster, nc = findClusterDB(current_packet,args.Dist[0])
@@ -236,37 +228,37 @@ if __name__=="__main__":
                         noise_points  += nc
     elif args.Alg=="Agg":
         if args.Par==True:
-            Verbose_print('Parallel processing with Agglomerative Clustering',args.Verbose)
-            for i in tqdm(range(N_files),desc=args.Folder):
+            print('Parallel processing with Agglomerative Clustering')
+            for i in range(N_files):
                 file_name = args.Folder + "/" + args.Folder + "_packet_{0:0d}.npy".format(i)
                 my_file = Path(file_name)
                 if my_file.is_file():
-                    #if (i % patience == 0):
-                        #sys.stdout.write("\rCompleteness : " + str(round(i / Ntot * 100, 1)) + "%")
+                    if (i % patience == 0):
+                        sys.stdout.write("\rCompleteness : " + str(round(i / Ntot * 100, 1)) + "%")
                     try:
                         packet = np.load(file_name, allow_pickle=True)
                     except:
-                        Verbose_print("\nPacket {0:0d} is corrupted\n".format(i),args.Verbose)
+                        print("\nPacket {0:0d} is corrupted\n".format(i))
                         break
                     Aggresult = par_findClusterAgg(packet, args.Dist[1])
                     PCAresult = par_ClusterAnalysisPCA(Aggresult)
                     Data = np.append(Data, PCAresult)
                     noise_points  += sum(data[2] for data in Aggresult)
                 else:
-                    Verbose_print("\nNo more packets to analyze\n",args.Verbose)
+                    print("\nNo more packets to analyze\n")
                     break
         else:
-            Verbose_print('Processing with Agglomerative Clustering',args.Verbose)
-            for i in tqdm(range(N_files),desc=args.Folder):
+            print('Processing with Agglomerative Clustering')
+            for i in range(N_files):
                 file_name = args.Folder + "/" + args.Folder + "_packet_{0:0d}.npy".format(i)
                 my_file = Path(file_name)
                 if my_file.is_file():
-                    #if (i % patience == 0):
-                        #sys.stdout.write("\rCompleteness : " + str(round(i / Ntot * 100, 1)) + "%")
+                    if (i % patience == 0):
+                        sys.stdout.write("\rCompleteness : " + str(round(i / Ntot * 100, 1)) + "%")
                     try:
                         packet = np.load(file_name, allow_pickle=True)
                     except:
-                        Verbose_print("\nPacket {0:0d} is corrupted\n".format(i),args.Verbose)
+                        print("\nPacket {0:0d} is corrupted\n".format(i))
                         break
                     for current_packet in packet:
                         Cluster, AreaCluster, nc = findClusterAgg(current_packet, args.Dist[1])
@@ -278,31 +270,30 @@ if __name__=="__main__":
                         noise_points  += nc
 
     else:
-        Verbose_print("Allora sei mona..",args.Verbose)
+        print("Allora sei mona..")
 
     #print results
-    Verbose_print('\n',args.Verbose)
+    print('\n')
     areas = np.array([d.area for d in Data])
     ratios = np.array([d.pca_r for d in Data])
     means = np.array([d.mean for d in Data])
-    if args.Verbose:
-        print("Estimated noise points=", noise_points)
-        print("Estimated clusters=", len(ratios))
-        print("Estimated mean area=", np.mean(areas))
-        print('Process time = ',time.time()-t)
+    print("Estimated noise points=", noise_points)
+    print("Estimated clusters=", len(ratios))
+    print("Estimated mean area=", np.mean(areas))
+    print('Process time = ',time.time()-t)
 
     # get working dir
     path = os.getcwd()
-    Verbose_print("The current working directory is %s" % path,args.Verbose)
+    print("The current working directory is %s" % path)
 
     #save histos as png
     folder_path = path + '/Analyzed_Data/' + Folder_name
     try:  # new work folder named args.file_name
         os.mkdir(folder_path)
     except OSError:
-        Verbose_print("Directory %s alredy present" % folder_path,args.Verbose)
+        print("Directory %s alredy present" % folder_path)
     else:
-        Verbose_print("Successfully created the directory %s " % folder_path,args.Verbose)
+        print("Successfully created the directory %s " % folder_path)
     String='Analyzed_Data/' + Folder_name + '/Area_' + args.Folder + '.npy'
     np.save(String, areas)
     String='Analyzed_Data/' + Folder_name + '/Mean_' + args.Folder + '.npy'
@@ -331,7 +322,6 @@ if __name__=="__main__":
 
     String = 'Analyzed_Data/' + Folder_name + '/' + args.Folder + '_plot'
     plt.savefig(String, dpi=700)
-    plt.close()
 
     #produce an hitmap matrix image
     cluster_matrix = np.zeros((512, 1024))
@@ -358,39 +348,34 @@ if __name__=="__main__":
     plt.ylabel("Row")
     String = 'Analyzed_Data/' + Folder_name + '/' + args.Folder + '_hitmap'
     plt.savefig(String, dpi=700)
-    plt.close()
-
 
     #save data as root file
-    String      = 'Analyzed_Data/' + Folder_name + '/' + args.Folder + '.root'
-    root_file   = TFile(String, "RECREATE")
-    tree        = TTree("tree", "file")
+    String = 'Analyzed_Data/' + Folder_name + '/' + args.Folder + '.root'
+    root_file = TFile(String, "RECREATE")
+    tree = TTree("tree", "file")
 
-    Rnoise  = np.empty(1, dtype="float32")
-    Rareas  = np.empty(1, dtype="float32")
-    Rmeanx  = np.empty(1, dtype="float32")
-    Rmeany  = np.empty(1, dtype="float32")
-    Rtheta  = np.empty(1, dtype="float32")
+    Rareas = np.empty(1, dtype="float32")
+    Rmeanx = np.empty(1, dtype="float32")
+    Rmeany = np.empty(1, dtype="float32")
+    Rtheta = np.empty(1, dtype="float32")
     Rweight = np.empty(1, dtype="float32")
     Rratios = np.empty(1, dtype="float32")
 
-    tree.Branch("Rnoise",  Rnoise,  "Rnoise/F")
-    tree.Branch("Rareas",  Rareas,  "Rareas/F")
-    tree.Branch("Rmeanx",  Rmeanx,  "Rmeanx/F")
-    tree.Branch("Rmeany",  Rmeany,  "Rmeany/F")
-    tree.Branch("Rtheta",  Rtheta,  "Rtheta/F")
+    tree.Branch("Rareas", Rareas, "Rareas/F")
+    tree.Branch("Rmeanx", Rmeanx, "Rmeanx/F")
+    tree.Branch("Rmeany", Rmeany, "Rmeany/F")
+    tree.Branch("Rtheta", Rtheta, "Rtheta/F")
     tree.Branch("Rweight", Rweight, "Rweight/F")
     tree.Branch("Rratios", Rratios, "Rratios/F")
 
     for i in range(len(areas)):
-        Rnoise[0]   = noise_points
-        Rareas[0]   = areas[i]
-        Rmeany [0]  = means[i, 0]
-        Rmeanx[0]   = means[i, 1]
-        Rtheta[0]   = np.arctan2((means[i, 1] - 512)*ALPIDE_width/1024,
+        Rareas[0] = areas[i]
+        Rmeany [0] = means[i, 0]
+        Rmeanx[0] = means[i, 1]
+        Rtheta[0] = np.arctan2((means[i, 1] - 512)*ALPIDE_width/1024,
                                ALPIDE_distance) + (args.StepCenter+ALPIDE_center)*0.9*np.pi/180
-        Rweight[0]  = args.Weight
-        Rratios[0]  = ratios[i]
+        Rweight[0] = args.Weight
+        Rratios[0] = ratios[i]
         tree.Fill()
 
     root_file.Write()

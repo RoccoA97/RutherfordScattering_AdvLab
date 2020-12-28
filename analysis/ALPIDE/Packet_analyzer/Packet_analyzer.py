@@ -13,7 +13,7 @@ import argparse
 from tqdm import tqdm
 from ROOT import TFile, TTree
 
-SET_N_THREADS = 4
+SET_N_THREADS = 10
 
 def findClusterDB(X, distance):
     if len(X)>1:

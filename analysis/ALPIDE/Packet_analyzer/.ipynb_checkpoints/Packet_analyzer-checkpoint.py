@@ -13,7 +13,6 @@ import argparse
 from tqdm import tqdm
 from ROOT import TFile, TTree
 
-SET_N_THREADS = 10
 
 def findClusterDB(X, distance):
     if len(X)>1:
@@ -139,6 +138,8 @@ def Verbose_print(String,Verb=True):
 
 
 parser = argparse.ArgumentParser(description='Packet analyzer')
+parser.add_argument('-Df', '--Data_path', metavar='N', type=str, default='Data',
+                    help='Data folder path')
 parser.add_argument('-f', '--Folder', metavar='N', type=str, default='Deafault_run',
                     help='Folder name to analyze')
 parser.add_argument('-p', '--Par', action='store_true', dest='Par',
@@ -153,10 +154,15 @@ parser.add_argument('-s', '--StepCenter', metavar='N', type=int, default='17',
                     help='Distance from the center, in motor steps')
 parser.add_argument('-w', '--Weight', metavar='N', type=float, default='1.',
                     help="Event's weight")
+parser.add_argument('-NThr', '--NThreads', metavar='N', type=int, default='4',
+                    help="Number of threahds")
 parser.add_argument('-b', '--NBestemmie', metavar='N', type=int, default='1000',
                     help="Analysis's complexity")
 
 args = parser.parse_args()
+
+
+SET_N_THREADS = args.NThreads
 
 #Geometry parameters
 ALPIDE_center   = -17   #Steps
@@ -167,20 +173,23 @@ ALPIDE_height   = 15    #mm
 
 
 if __name__=="__main__":
-    Folder_name = args.Folder
-    i = 0
-    patience = 1
-    ClusterDB = []
-    AreaClusterDB = []
-    ClusterAgg = []
+                    
+    Data_folder_path = args.Data_path                
+    Folder_name      = args.Folder
+    
+    #patience = 1                
+    i              = 0
+    ClusterDB      = []
+    AreaClusterDB  = []
+    ClusterAgg     = []
     AreaClusterAgg = []
 
     #find number of files
     noise_points = 0
-    Data = []
-    t=time.time()
+    Data         = []
+    t            = time.time()
     while True:
-        file_name = args.Folder + "/" + args.Folder + "_packet_{0:0d}.npy".format(i)
+        file_name =Data_folder_path + "/" + Folder_name + "/" + Folder_name + "_packet_{0:0d}.npy".format(i)
         my_file = Path(file_name)
         if my_file.is_file():
             i += 1
@@ -196,7 +205,7 @@ if __name__=="__main__":
         if args.Par==True:
             Verbose_print('Parallel processing with DBSCAN',args.Verbose)
             for i in tqdm(range(N_files), desc=args.Folder):
-                file_name = args.Folder + "/" + args.Folder + "_packet_{0:0d}.npy".format(i)
+                file_name =Data_folder_path + "/" + Folder_name + "/" + Folder_name + "_packet_{0:0d}.npy".format(i)
                 my_file = Path(file_name)
                 if my_file.is_file():
                     #if (i % patience == 0):
@@ -216,7 +225,7 @@ if __name__=="__main__":
         else:
             Verbose_print('Processing with DBSCAN',args.Verbose)
             for i in tqdm(range(N_files),desc=args.Folder):
-                file_name = args.Folder + "/" + args.Folder + "_packet_{0:0d}.npy".format(i)
+                file_name =Data_folder_path + "/" + Folder_name + "/" + Folder_name + "_packet_{0:0d}.npy".format(i)
                 my_file = Path(file_name)
                 if my_file.is_file():
                     #if (i % patience == 0):
@@ -238,7 +247,7 @@ if __name__=="__main__":
         if args.Par==True:
             Verbose_print('Parallel processing with Agglomerative Clustering',args.Verbose)
             for i in tqdm(range(N_files),desc=args.Folder):
-                file_name = args.Folder + "/" + args.Folder + "_packet_{0:0d}.npy".format(i)
+                file_name =Data_folder_path + "/" + Folder_name + "/" + Folder_name + "_packet_{0:0d}.npy".format(i)
                 my_file = Path(file_name)
                 if my_file.is_file():
                     #if (i % patience == 0):
@@ -258,7 +267,7 @@ if __name__=="__main__":
         else:
             Verbose_print('Processing with Agglomerative Clustering',args.Verbose)
             for i in tqdm(range(N_files),desc=args.Folder):
-                file_name = args.Folder + "/" + args.Folder + "_packet_{0:0d}.npy".format(i)
+                file_name =Data_folder_path + "/" + Folder_name + "/" + Folder_name + "_packet_{0:0d}.npy".format(i)
                 my_file = Path(file_name)
                 if my_file.is_file():
                     #if (i % patience == 0):
@@ -336,7 +345,7 @@ if __name__=="__main__":
     #produce an hitmap matrix image
     cluster_matrix = np.zeros((512, 1024))
     for i in range(N_files):
-        file_name = Folder_name + "/" + Folder_name + "_packet_{0:0d}.npy".format(i)
+        file_name =Data_folder_path + "/" + Folder_name + "/" + Folder_name + "_packet_{0:0d}.npy".format(i)
         packet = np.load(file_name, allow_pickle=True)
 
         for Cluster in packet:

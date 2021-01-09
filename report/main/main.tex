@@ -1,5 +1,5 @@
 \providecommand{\main}{.}
-\documentclass[11pt, a4paper]{article}
+\documentclass[rmp,11pt,onecolumn,fleqn,notitlepage]{revtex4-1}
 \usepackage{subfiles}
 
 \input{../preamble/preamble.tex}
@@ -9,36 +9,32 @@
 
 \begin{document}
 
-    % \frontmatter
-    \newgeometry{inner=20mm, outer=20mm, top=20mm, bottom=20mm, marginparsep=6mm, marginparwidth=30mm}
-    % \pagecolor{green!10}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % TITLEPAGE and INDEX
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \input{../titlepage/titlepage.tex}
-    % \pagecolor{white}
-    % \input{../frontespizio/abstract.tex}
-    \newgeometry{inner=20mm, outer=20mm, top=20mm, bottom=20mm, marginparsep=6mm, marginparwidth=30mm}
-    % \newgeometry{inner=20mm, outer=49mm, top=20mm, bottom=25mm, marginparsep=6mm, marginparwidth=30mm}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-    \tableofcontents
-    \clearpage{\pagestyle{empty}\cleardoublepage}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % REPORT CONTENT (SECTIONS)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \subfile{../sections/01/01.tex}
+    \subfile{../sections/02/02.tex}
+    \subfile{../sections/03/03.tex}
+    \subfile{../sections/04/04.tex}
+    \subfile{../sections/05/05.tex}
+    \subfile{../sections/06/06.tex}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-    % \mainmatter
-    \pagestyle{fancy}
 
-
-    \subfile{../sections/01.tex}
-    \subfile{../sections/02.tex}
-    \subfile{../sections/03.tex}
-    \subfile{../sections/04.tex}
-    \subfile{../sections/05.tex}
-    \subfile{../sections/06.tex}
-
-
-    %\backmatter
-    \pagestyle{plain}
-
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % BIBLIOGRAPHY
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \clearpage{\pagestyle{empty}\cleardoublepage}
     \input{../bibliography/bibliography.tex}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}

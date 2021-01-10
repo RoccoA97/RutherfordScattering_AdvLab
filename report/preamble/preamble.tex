@@ -1,346 +1,88 @@
+% Paper template for Advanced Physics Laboratory Course
+% Suggestion: it is better to compile it directly on overleaf, because the subfigure settings can arise problems
+% Made by Alice Pagano and Francesca Dodici
+% Modified by Rocco Ardino
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LOAD PACKAGES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% PACKAGES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Algorithms
-\usepackage[linesnumbered,vlined,ruled,commentsnumbered]{algorithm2e}
-
-% Babel
-\usepackage[english]{babel}
-
-% Code writing
-	%\usepackage[procnames]{listings}
-
-% Font
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[fleqn]{amsmath}
-\usepackage{amssymb,amsthm,amsfonts}
-\usepackage{mathtools}
-\usepackage{eucal}
-\usepackage{textcomp}
-\usepackage{dsfont}
-\usepackage{bbm}
-\usepackage{inconsolata}
-\usepackage{anyfontsize}
-
-% Footnote
-
-
-% Hyperref
-\usepackage[hyphens]{url}
-\usepackage{cite}
-\usepackage{hyperref}
-\usepackage{nameref}
-
-% Images
-\usepackage[pdftex]{graphicx}
-%\usepackage{subfigure}
-\usepackage{subfig}
-\usepackage{eso-pic}
-\usepackage{caption}
+%% general packages
+\usepackage{graphicx}
 \usepackage{wrapfig}
-\usepackage{float}
-
-% List
-\usepackage{enumerate}
-
-% SI units
-\usepackage{siunitx}
-
-% Standalone
-\usepackage[subpreambles=true]{standalone}
-\usepackage{import}
-
-% Tables
+\usepackage{color}
+\usepackage{latexsym,amsmath}
+\usepackage{physics}
+\usepackage{chemformula}
 \usepackage{tabularx}
-\usepackage{booktabs}
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage{amssymb}
+% \usepackage[caption=false, justification=right]{subfig}
+\usepackage[caption=false]{subfig}
 \usepackage{multirow}
 
-% TiKz and graphs
-\usepackage{pgf,tikz,pgfplots}
-% \usepackage{gnuplottex}
-\usepackage{bm}
-\usepackage{relsize}
-\usepackage{tikz-3dplot}
-\usepackage[compat=1.1.0]{tikz-feynman}
-\usepackage{circuitikz}
-\pgfplotsset{compat=1.16}
-
-% Typeset
-\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
-\usepackage{fancyhdr}
-\usepackage{indentfirst}
-\usepackage{titlesec}
-\usepackage{setspace}
-\usepackage{xspace}
-% \usepackage{parskip}  % Elimina il separatore a inizio paragrafo
-\usepackage{afterpage}
-\usepackage{comment}
-
-%Python
+%% listing packages (for codes)
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{framed}
+\usepackage{inconsolata} % To change the listing font
 
-%Per scrivere matrice identità
-%Per semplificazione formule
-\usepackage{cancel}
+%% hyperlink package
+\definecolor{linkcolor}{rgb}{0,0,0.65} %hyperlink
+\definecolor{linescolor}{rgb}{0.65,0.16,0.16}
+\definecolor{cool}{RGB}{49,54,149}
+\definecolor{hot}{RGB}{165,0,38}
+\usepackage[pdftex, colorlinks=true, pdfstartview=FitV, linkcolor=linescolor, citecolor=linescolor, urlcolor=linkcolor, hyperindex=true, hyperfigures=true]{hyperref}
 
-% Others
-\usepackage{empheq}
-\usepackage{soul}
-%Evidenziare testo con mdframed
-\usepackage{mdframed}
-%Note a margine
-\usepackage{marginnote}
-\usepackage{mparhack}
-%Display data
-\usepackage{datetime}
-%Physics
-\usepackage{physics}
-
-\usepackage[many,most,theorems]{tcolorbox}
+%% page settings and formatting
+\usepackage{fancyhdr}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SETTINGS AND NEW COMMANDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% NEW COMMANDS
+%% fancyhdr header and footer settings
+\pagestyle{fancyplain}
+\fancyhf{}
+\fancyfoot[R]{\textbf{\thepage}}
+\fancyfoot[L]{Università degli Studi di Padova - Dipartimento di Fisica e Astronomia Galileo Galilei}
+%\fancyhead[L]{\textbf{Advanced Physics Laboratory Report}}
+\fancyhead[L]{\ifnum\value{section}>0\nouppercase{\textbf{\leftmark}\fi}}
+\fancyhead[R]{R. Ardino - G. Bortolato - A. Valente}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+%% indentation space
+\setlength\parindent{9pt}
+\linespread{1.13}% 0.956} % if using 11pt font
+
+%% section style
+%Redefine \thesubsection as \thesection.\alph{subsection}. (\alph replaces the default \arabic; you could also choose, e.g., \Alph, \roman, and \Roman.)
+\renewcommand{\thesection}{\textbf{\Roman{section}}}
+\renewcommand{\thesubsection}{\textbf{\arabic{subsection}}}
+\renewcommand{\thesubsubsection}{\textbf{\Alph{subsubsection}}}
+%\renewcommand{\thesection}{\textbf{\arabic{section}}}
+%\renewcommand{\thesubsection}{\thesection.\textbf{\arabic{subsection}}}
+%\renewcommand{\thesubsubsection}{\textbf{\thesection.\arabic{subsection}.\arabic{subsubsection}}}
+
+%% figure and table style settings
+\renewcommand{\tablename}{\textbf{TAB.}}
+\renewcommand{\thetable}{\textbf{\arabic{table}}}
+\renewcommand{\figurename}{\textbf{FIG.}}
+\renewcommand{\thefigure}{\textbf{\arabic{figure}}}
+
+%% bibliography settings
+\bibliographystyle{aipnum4-1}
+\setcitestyle{numbers,square}
+
+%% figure caption settings (in bold)
+\captionsetup[figure]{labelfont={bf},labelformat={default},labelsep=period,name={FIG.}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% User defined commands
-\newcommand{\mathcolorbox}[2]{\colorbox{#1}{$\displaystyle #2$}}
-\newcommand{\hlfancy}[2]{\sethlcolor{#1}\hl{#2}}
-
-%% User defined math commands
-\newcommand{\id}{\mathbbm{1}}
-\newcommand{\floor}[1]{\left \lfloor #1 \right \rfloor}
-\newcommand{\ceil}[1]{\left \lceil #1 \right \rceil}
-\renewcommand{\Re}[1]{\operatorname{\mathbb{R}e}\left[ #1 \right]}
-\renewcommand{\Im}[1]{\operatorname{\mathbb{I}m}\left[ #1 \right]}
-
-\newtcbtheorem{theorem}{Theorem}{ % frame stuff
-    boxrule = 1pt,
-    breakable,
-    enhanced,
-    frame empty,
-    interior style= {orange!20},
-    %interior empty,
-    colframe=black,
-    borderline ={1pt}{0pt}{black},
-    left=0.2cm,
-    % title stuff
-    attach boxed title to top left={yshift=-2mm,xshift=0mm},
-    coltitle=black,
-    fonttitle=\bfseries,
-    colbacktitle=white,
-    fontupper=\slshape,
-    boxed title style={boxrule=1pt,sharp corners}}{theorem}
-
-\newtcbtheorem{corollary}{Corollary}{ % frame stuff
-    boxrule = 1pt,
-    breakable,
-    enhanced,
-    frame empty,
-    interior style= {orange!20},
-    %interior empty,
-    colframe=black,
-    borderline ={1pt}{0pt}{black},
-    left=0.2cm,
-    % title stuff
-    attach boxed title to top left={yshift=-2mm,xshift=0mm},
-    coltitle=black,
-    fonttitle=\bfseries,
-    colbacktitle=white,
-    fontupper=\slshape,
-    boxed title style={boxrule=1pt,sharp corners}}{corollary}
-
-\newtcbtheorem{lemma}{Lemma}{ % frame stuff
-    boxrule = 1pt,
-    breakable,
-    enhanced,
-    frame empty,
-    interior style= {orange!20},
-    %interior empty,
-    colframe=black,
-    borderline ={1pt}{0pt}{black},
-    left=0.2cm,
-    % title stuff
-    attach boxed title to top left={yshift=-2mm,xshift=0mm},
-    coltitle=black,
-    fonttitle=\bfseries,
-    colbacktitle=white,
-    fontupper=\slshape,
-    boxed title style={boxrule=1pt,sharp corners}}{lemma}
-
-\newtcbtheorem{definition}{Definition}{ % frame stuff
-    boxrule = 1pt,
-    breakable,
-    enhanced,
-    frame empty,
-    interior style= {blue!10},
-    %interior empty,
-    colframe=black,
-    borderline ={1pt}{0pt}{black},
-    left=0.2cm,
-    % title stuff
-    attach boxed title to top left={yshift=-2mm,xshift=0mm},
-    coltitle=black,
-    fonttitle=\bfseries,
-    colbacktitle=white,
-    boxed title style={boxrule=1pt,sharp corners}}{definition}
-
-\newtcbtheorem{exercise}{Exercise}{ % frame stuff
-    boxrule = 1pt,
-    breakable,
-    enhanced,
-    frame empty,
-    interior style= {blue!6},
-    %interior empty,
-    colframe=black,
-    borderline ={1pt}{0pt}{black},
-    left=0.2cm,
-    % title stuff
-    attach boxed title to top left={yshift=-2mm,xshift=0mm},
-    coltitle=black,
-    fonttitle=\bfseries,
-    colbacktitle=white,
-    boxed title style={boxrule=1pt,sharp corners}}{exercise}
-
-\newtcbtheorem{example}{Example}{ % frame stuff
-    boxrule = 1pt,
-    enhanced,
-    frame empty,
-    interior style= {green!6},%{left color=yellow!70,right color=green!70},
-    %interior empty,
-    colframe=black,
-    borderline ={1pt}{0pt}{black},
-    breakable,
-    left=0.2cm,
-    % title stuff
-    attach boxed title to top left={yshift=-2mm,xshift=0mm},
-    coltitle=black,
-    fonttitle=\bfseries,
-    colbacktitle=white,
-    boxed title style={boxrule=1pt,sharp corners}}{example}
-
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem{observation}{Observation}
-%Evidenziare testo
-\newtheorem*{solution}{Solution}
-
-\newcommand\mybox[1]{%
-  \fbox{\begin{minipage}{0.9\textwidth}#1\end{minipage}}}
-
-  %Spiegazioni/verifiche
-\newenvironment{greenbox}{\begin{mdframed}[hidealllines=true,backgroundcolor=green!20,innerleftmargin=3pt,innerrightmargin=3pt,innertopmargin=3pt,innerbottommargin=3pt]}{\end{mdframed}}
-
-\newenvironment{bluebox}{\begin{mdframed}[hidealllines=true,backgroundcolor=blue!10,innerleftmargin=3pt,innerrightmargin=3pt,innertopmargin=3pt,innerbottommargin=3pt]}{\end{mdframed}}
-
-\newenvironment{yellowbox}{\begin{mdframed}[hidealllines=true,backgroundcolor=yellow!20,innerleftmargin=3pt,innerrightmargin=3pt,innertopmargin=3pt,innerbottommargin=3pt]}{\end{mdframed}}
-
-\newenvironment{redbox}{\begin{mdframed}[hidealllines=true,backgroundcolor=red!20,innerleftmargin=3pt,innerrightmargin=3pt,innertopmargin=3pt,innerbottommargin=3pt]}{\end{mdframed}}
-
-\newenvironment{orangebox}{\begin{mdframed}[hidealllines=true,backgroundcolor=orange!20,innerleftmargin=3pt,innerrightmargin=3pt,innertopmargin=3pt,innerbottommargin=3pt]}{\end{mdframed}}
-
-%emph equation
-\newcommand*\myyellowbox[1]{%
-  \colorbox{yellow!40}{\hspace{1em}#1\hspace{1em}}}
-
-\newcommand*\mygreenbox[1]{%
-  \colorbox{green!20}{\hspace{1em}#1\hspace{1em}}}
-
-
-%%%%%%%%%%PROOF%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{xpatch}
-\xpatchcmd{\proof}{\itshape}{\normalfont\proofnamefont}{}{}
-\newcommand{\proofnamefont}{\bfseries}
-\renewcommand\qedsymbol{$\blacksquare$}
-
-\newcommand\Warning{%
-	\makebox[1.4em][c]{%
-		\makebox[0pt][c]{\raisebox{.1em}{\small!}}%
-		\makebox[0pt][c]{\color{red}\Large$\bigtriangleup$}
-	}
-}%
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% SETTINGS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Geometry
-\makeatletter
-\renewcommand{\@marginparreset}{%
-    \reset@font\small
-    \raggedright
-    \slshape
-    \@setminipage
-}
-\makeatother
-
-\captionsetup[table]{font=small,labelfont={bf},skip=10pt}
-\captionsetup[figure]{font=small,labelfont={bf},skip=10pt}
-
-
-%link ipertestuale per indice
-\hypersetup{
-    colorlinks=false,
-    linkcolor=black,
-    filecolor=blue,
-    citecolor = blue,
-    urlcolor=blue,
-}
-
-%%%%%indent%%%
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt}
-\setlength{\mathindent}{1.5em}
-
-%Python in latex
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-\definecolor{commentcolour}{rgb}{0.43,0.63,0.65}
-
-\definecolor{shadecolor}{rgb}{0.93, 0.93, 0.93}
-\definecolor{darkgreen}{rgb}{0.0, 0.4, 0.0}
-\definecolor{darkred}{rgb}{0.8, 0.0, 0.0}
-\definecolor{violet}{rgb}{0.55, 0.0, 0.55}
-
-\definecolor{mygreen}{rgb}{0,0.6,0}
-\definecolor{mygray}{rgb}{0.5,0.5,0.5}
-\definecolor{mymauve}{rgb}{0.58,0,0.82}
-\lstset{
-    backgroundcolor=\color{shadecolor},       % background color
-    basicstyle=\ttfamily\footnotesize,        % the size of the fonts that are used for the code
-    breakatwhitespace=false,                  % sets if automatic breaks should only happen at whitespace
-    breaklines=false,                         % sets automatic line breaking
-    captionpos=b,                             % sets the caption-position to bottom
-    commentstyle=\color{mygreen},             % comment style
-    extendedchars=true,                       % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
-    keepspaces=true,                          % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-    keywordstyle=\bfseries\color{blue},       % keyword style
-    language=[95]Fortran,                     % the language of the code
-    numbers=left,                             % where to put the line-numbers; possible values are (none, left, right)
-    numbersep=5pt,                            % how far the line-numbers are from the code
-    numberstyle=\tiny\color{mygray},          % the style that is used for the line-numbers
-    rulecolor=\color{black},                  % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-    showspaces=false,                         % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
-    showstringspaces=false,                   % underline spaces within strings only
-    showtabs=false,                           % show tabs within strings adding particular underscores
-    stepnumber=1,                             % the step between two line-numbers. If it's 1, each line will be numbered
-    stringstyle=\color{mymauve},              % string literal style
-    tabsize=4,                                % sets default tabsize to 2 spaces
-    title=\lstname                            % show the filename of files
-}

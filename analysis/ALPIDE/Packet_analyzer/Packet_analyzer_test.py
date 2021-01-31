@@ -409,10 +409,10 @@ if __name__=="__main__":
         Rareas[0]   = areas[i]
         Rmeany [0]  = means[i, 0]
         Rmeanx[0]   = means[i, 1]
+        #Rtheta[0]   = np.arctan2((means[i, 1] - 547)*ALPIDE_width/1024,
+        #                         np.sqrt(((means[i, 0] - 251)*ALPIDE_height/512)**2+(ALPIDE_distance)**2))+ (args.StepCenter+ALPIDE_center)*0.9*np.pi/180
         Rtheta[0]   = np.arctan2((means[i, 1] - 547)*ALPIDE_width/1024,
-                                 np.sqrt(((means[i, 0] - 251)*ALPIDE_height/512)**2+(ALPIDE_distance)**2))+ (args.StepCenter+ALPIDE_center)*0.9*np.pi/180
-        #Rtheta[0]   = np.arctan2((means[i, 1] - 512)*ALPIDE_width/1024,
-                               #ALPIDE_distance) + (args.StepCenter+ALPIDE_center)*0.9*np.pi/180    
+                               ALPIDE_distance) + (args.StepCenter+ALPIDE_center)*0.9*np.pi/180    
         #Rweight[0]  = args.Weight
         Reetime[0]  = (Strobe*time)/(Gap+Strobe) #effective exposition time [s]
         Rratios[0]  = ratios[i]

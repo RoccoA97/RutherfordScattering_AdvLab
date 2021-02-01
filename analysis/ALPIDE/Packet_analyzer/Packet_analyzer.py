@@ -152,8 +152,8 @@ parser.add_argument('-d', '--Dist', metavar='N', type=int, nargs='+', default=[1
                     help='DB scan distance, Agglomerative cluster distance')
 parser.add_argument('-s', '--StepCenter', metavar='N', type=int, default='17',
                     help='Distance from the center, in motor steps')
-parser.add_argument('-w', '--Weight', metavar='N', type=float, default='1.',
-                    help="Event's weight")
+#parser.add_argument('-w', '--Weight', metavar='N', type=float, default='1.',
+                    #help="Event's weight")
 parser.add_argument('-NThr', '--NThreads', metavar='N', type=int, default='4',
                     help="Number of threahds")
 parser.add_argument('-b', '--NBestemmie', metavar='N', type=int, default='1000',
@@ -164,11 +164,25 @@ args = parser.parse_args()
 
 SET_N_THREADS = args.NThreads
 
+tqdm_disabler  = True
+
 #Geometry parameters
-ALPIDE_center   = -17   #Steps
-ALPIDE_distance = 78.63 #mm
-ALPIDE_width    = 30    #mm
-ALPIDE_height   = 15    #mm
+cfg_file=open('ALPIDE_par.cfg')
+
+line=cfg_file.readlines()
+for l in line:
+    if (l.startswith("px_center")):
+        px_center       = int(l.split('=')[1].strip())
+    if (l.startswith("py_center")):
+        py_center       = int(l.split('=')[1].strip())
+    if (l.startswith("ALPIDE_center")):
+        ALPIDE_center   = int(l.split('=')[1].strip())
+    if (l.startswith("ALPIDE_distance")):
+        ALPIDE_distance = float(l.split('=')[1].strip())
+    if (l.startswith("ALPIDE_width")):
+        ALPIDE_width    = float(l.split('=')[1].strip())
+    if (l.startswith("ALPIDE_height")):
+        ALPIDE_height   = float(l.split('=')[1].strip())
 
 
 
@@ -204,7 +218,7 @@ if __name__=="__main__":
     if args.Alg=="DB":
         if args.Par==True:
             Verbose_print('Parallel processing with DBSCAN',args.Verbose)
-            for i in tqdm(range(N_files), desc=args.Folder):
+            for i in tqdm(range(N_files), desc=args.Folder, disable=tqdm_disabler):
                 file_name =Data_folder_path + "/" + Folder_name + "/" + Folder_name + "_packet_{0:0d}.npy".format(i)
                 my_file = Path(file_name)
                 if my_file.is_file():
@@ -224,7 +238,7 @@ if __name__=="__main__":
                     break
         else:
             Verbose_print('Processing with DBSCAN',args.Verbose)
-            for i in tqdm(range(N_files),desc=args.Folder):
+            for i in tqdm(range(N_files),desc=args.Folder, disable=tqdm_disabler):
                 file_name =Data_folder_path + "/" + Folder_name + "/" + Folder_name + "_packet_{0:0d}.npy".format(i)
                 my_file = Path(file_name)
                 if my_file.is_file():
@@ -246,7 +260,7 @@ if __name__=="__main__":
     elif args.Alg=="Agg":
         if args.Par==True:
             Verbose_print('Parallel processing with Agglomerative Clustering',args.Verbose)
-            for i in tqdm(range(N_files),desc=args.Folder):
+            for i in tqdm(range(N_files),desc=args.Folder, disable=tqdm_disabler):
                 file_name =Data_folder_path + "/" + Folder_name + "/" + Folder_name + "_packet_{0:0d}.npy".format(i)
                 my_file = Path(file_name)
                 if my_file.is_file():
@@ -266,7 +280,7 @@ if __name__=="__main__":
                     break
         else:
             Verbose_print('Processing with Agglomerative Clustering',args.Verbose)
-            for i in tqdm(range(N_files),desc=args.Folder):
+            for i in tqdm(range(N_files),desc=args.Folder, disable=tqdm_disabler):
                 file_name =Data_folder_path + "/" + Folder_name + "/" + Folder_name + "_packet_{0:0d}.npy".format(i)
                 my_file = Path(file_name)
                 if my_file.is_file():
@@ -374,13 +388,25 @@ if __name__=="__main__":
     String      = 'Analyzed_Data/' + Folder_name + '/' + args.Folder + '.root'
     root_file   = TFile(String, "RECREATE")
     tree        = TTree("tree", "file")
+    
+    file=open(Data_folder_path+"/"+Folder_name+"/Stat_"+Folder_name+".txt")
+    line=file.readlines()
+    for l in line:
+        if (l.startswith("Readout_time")):
+            time=float(l.split('=')[1].strip()[:-1])
+        if (l.startswith("Strobe")):
+            Strobe=int(l.split('=')[1].strip()[:-1])
+        if (l.startswith("Gap")):
+             Gap=int(l.split('=')[1].strip()[:-1])
+    file.close()
 
     Rnoise  = np.empty(1, dtype="float32")
     Rareas  = np.empty(1, dtype="float32")
     Rmeanx  = np.empty(1, dtype="float32")
     Rmeany  = np.empty(1, dtype="float32")
     Rtheta  = np.empty(1, dtype="float32")
-    Rweight = np.empty(1, dtype="float32")
+    #Rweight = np.empty(1, dtype="float32")
+    Reetime = np.empty(1, dtype="float32")
     Rratios = np.empty(1, dtype="float32")
 
     tree.Branch("Rnoise",  Rnoise,  "Rnoise/F")
@@ -388,7 +414,8 @@ if __name__=="__main__":
     tree.Branch("Rmeanx",  Rmeanx,  "Rmeanx/F")
     tree.Branch("Rmeany",  Rmeany,  "Rmeany/F")
     tree.Branch("Rtheta",  Rtheta,  "Rtheta/F")
-    tree.Branch("Rweight", Rweight, "Rweight/F")
+    #tree.Branch("Rweight", Rweight, "Rweight/F")
+    tree.Branch("Reetime", Reetime, "Reetime/F")
     tree.Branch("Rratios", Rratios, "Rratios/F")
 
     for i in range(len(areas)):
@@ -396,9 +423,13 @@ if __name__=="__main__":
         Rareas[0]   = areas[i]
         Rmeany [0]  = means[i, 0]
         Rmeanx[0]   = means[i, 1]
-        Rtheta[0]   = np.arctan2((means[i, 1] - 512)*ALPIDE_width/1024,
-                               ALPIDE_distance) + (args.StepCenter+ALPIDE_center)*0.9*np.pi/180
-        Rweight[0]  = args.Weight
+        #Rtheta[0]   = np.arctan2((means[i, 1] - px_center)*ALPIDE_width/1024,
+                                    #np.sqrt(((means[i, 0] - py_center)*ALPIDE_height/512)**2+(ALPIDE_distance)**2))+ (args.StepCenter+ALPIDE_center)*0.9*np.pi/180
+            
+        Rtheta[0]   = np.arctan2((means[i, 1] - px_center)*ALPIDE_width/1024,
+                                   ALPIDE_distance) + (args.StepCenter+ALPIDE_center)*0.9*np.pi/180    
+        #Rweight[0]  = args.Weight
+        Reetime[0]  = (Strobe*time)/(Gap+Strobe) #effective exposition time [s]
         Rratios[0]  = ratios[i]
         tree.Fill()
 

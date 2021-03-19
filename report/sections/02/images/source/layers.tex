@@ -1,0 +1,120 @@
+\documentclass[tikz, border=0pt]{standalone}
+\usepackage{siunitx}
+\usepackage{physics}
+
+\usetikzlibrary{decorations,decorations.markings,decorations.text}
+\usetikzlibrary{patterns}
+
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{goldmetallic}{rgb}{0.83, 0.69, 0.22}
+
+\begin{document}
+    %% lengths
+    % main shape
+    \def\xo{0}
+    \def\yo{0}
+    \def\xl{6.00}
+    \def\yl{3.50}
+    \def\xa{\xo + 0.01}
+    \def\xb{\xl - 0.01}
+    % flash plating
+    \def\ya{\yo + 0.01}
+    \def\yb{\yo + 0.20}
+    % silver layer
+    \def\yc{\yb + 0.01}
+    \def\yd{\yc + 2.40}
+    % gold layer 1
+    \def\ye{\yd + 0.01}
+    \def\yf{\ye + 0.20}
+    % americium layer
+    \def\yg{\yf + 0.01}
+    \def\yh{\yg + 0.175}
+    % gold layer 1
+    \def\yi{\yh + 0.01}
+    \def\yj{\yi + 0.275}
+    % gold or palladium layer
+    \def\yk{\yj + 0.01}
+    \def\ym{\yk + 0.20 - 0.01}
+
+    \begin{tikzpicture}[scale=2.0, transform shape]
+        % main shape of support
+        \draw[thick] (\xo, \yo) rectangle (\xl, \yl);
+        % shading
+        % \shade[
+        %     top color=gray,
+        %     bottom color=gray,
+        %     middle color=gray
+        % ] (\xo, \yo) rectangle (\xl, \yl);
+        
+        % flash plating
+        \draw[thin] (\xa, \ya) rectangle (\xb, \yb);
+        % shading
+        \shade[
+            left color=goldmetallic,
+            right color=goldmetallic,
+            middle color=white
+        ] (\xa, \ya) rectangle (\xb, \yb);
+        
+        % silver layer
+        \draw[thin] (\xa, \yc) rectangle (\xb, \yd);
+        % shading
+        \shade[
+            left color=gray!80,
+            right color=gray!80,
+            middle color=gray!80
+        ] (\xa, \yc) rectangle (\xb, \yd);
+        
+        % silver layer
+        \draw[thin] (\xa, \ye) rectangle (\xb, \yf);
+        % shading
+        \shade[
+            left color=goldmetallic,
+            right color=goldmetallic,
+            middle color=white
+        ] (\xa, \ye) rectangle (\xb, \yf);
+        
+        % silver layer
+        \draw[thin] (\xa, \yg) rectangle (\xb, \yh);
+        % shading
+        \shade[
+            left color=gray!80,
+            right color=gray!80,
+            middle color=gray!80
+        ] (\xa, \yg) rectangle (\xb, \yh);
+        
+        % silver layer
+        \draw[thin] (\xa, \yi) rectangle (\xb, \yj);
+        % shading
+        \shade[
+            left color=goldmetallic,
+            right color=goldmetallic,
+            middle color=white
+        ] (\xa, \yi) rectangle (\xb, \yj);
+        
+        % silver layer
+        \draw[thin] (\xa, \yk) rectangle (\xb, \ym);
+        % shading
+        \shade[
+            left color=goldmetallic,
+            right color=goldmetallic,
+            middle color=white
+        ] (\xa, \yk) rectangle (\xb, \ym);
+        
+        
+        \draw[very thin] (\xl,\yo+0.001) -- (\xo-1.00,\yo+0.001);
+        \draw[very thin] (\xl,\yl-0.001) -- (\xo-1.00,\yl+0.001);
+        \draw[<->, very thin] (\xo-0.70,\yo+0.001) -- (\xo-0.70,\yl-0.001) node[scale=1.5, midway, anchor=east, text width=1.2cm, align=center] {%
+        \tiny\( 0.104 \ \si{mm} \)\\
+        \( \divisionsymbol \)\\
+        \vspace{-\baselineskip}
+        \( 0.229 \ \si{mm} \)};
+        
+        % list
+        \draw[->, thick] (\xl-0.2,\ya*0.5+\yb*0.5) -- (\xl+1.0,\ya*0.5+\yb*0.5) node[anchor=west] {{\sffamily\textbf{F}}: Flash Plating for Identification};
+        \draw[->, thick] (\xl-0.2,\yc*0.86+\yd*0.14) -- (\xl+1.0,\yc*0.86+\yd*0.14) node[anchor=west] {{\sffamily\textbf{E}}: Silver (\( 0.0102 \divisionsymbol 0.229 \ \si{mm} \))};
+        \draw[->, thick] (\xl-0.2,\ye+0.1) -- (\xl+1.0,\ye-1.2) node[anchor=west]  {{\sffamily\textbf{D}}: Gold (\( 0.0008 \ \si{mm} \))};
+        \draw[->, thick] (\xl-0.2,\yg+0.1) -- (\xl+1.0,\yg-0.75) node[anchor=west] {{\sffamily\textbf{C}}: Americium-241 \& Gold (\( 0.00051 \ \si{mm} \))};
+        \draw[->, thick] (\xl-0.2,\yi+0.1) -- (\xl+1.0,\yi-0.3) node[anchor=west]  {{\sffamily\textbf{B}}:  Gold (\( 0.0010 \ \si{mm} \))};
+        \draw[->, thick] (\xl-0.2,\yk+0.1) -- (\xl+1.0,\yk+0.1) node[anchor=west]  {{\sffamily\textbf{A}}:  Gold or Palladium Plate (\( 0.00051 \ \si{mm} \))};
+    \end{tikzpicture}
+\end{document}

@@ -5,60 +5,58 @@
 \begin{document}
 
 \section{Introduction}
+\label{sec:introduction}
 
-% \subsection{History background}
-In the beginning of the \( 20^{\text{th}} \) century, the study of the structure of atoms began to intensify. In particular, J.J. Thomson, after the discover of the electrons, hypothesized the ``plum pudding'' model: the structure of the atom consists of electrons occuping a region of space uniformly and positively charged.
-Ernest Rutherford tested if this behaviour of nature was plausible and set up his famous experiment, proving that Thomson's prediction was not explained by experimental data. His idea was to study the atomic structure through scattering experiments, namely bombarding a thin gold target with \( \alpha \) particles projectiles.
+\paragraph{Background of the experiment}
+In the beginning of the \( 20^{\text{th}} \) century, the study of the structure of atoms began to intensify. In particular, J.J. Thomson, after the discovery of electrons, hypothesised the ``plum pudding'' model: the structure of the atom consists of electrons occupying a region of space uniformly and positively charged.
+Ernest Rutherford tested if this behaviour of nature was plausible and set up his famous experiment, proving that Thomson's prediction could not explain the experimental data. His idea was to study the atomic structure through scattering experiments, namely bombarding a thin gold target with \( \alpha \) particles projectiles.
 This was the start of a revolution, since with the experimental data he obtained he was finally able to solve a long standing riddle by introducing a new hypothesis.
-It was the birth of the Rutherford model, where the positive charge is densely-packed in the center, forming the nucleus.
+It was the birth of the Rutherford model, where the positive charge is densely-packed in the atom centre, forming the nucleus.
 
-Returning to the present time, a general scattering process is tipically described in terms of the differential cross section. This is nothing more than a function describind the probability of a scattering event to occur. In the particular case of a charged particle as projectile going against a nucleus target, the differential cross section according to Rutherford description reads:
+
+\paragraph{Scattering processes in a nutshell}
+Returning to the present time, a general scattering process is typically described in terms of the differential cross section. This is nothing more than a function describing the probability of a scattering event to occur. In the particular case of a charged particle as projectile going against a nucleus target, the differential cross section according to Rutherford description reads:
 \begin{equation}
     \dv{\sigma}{\Omega}
     =
-    \qty(\frac{ZZ'e^{2}}{16\pi \varepsilon_{0} E}) \frac{1}{\sin^4\frac{\theta}{2}}
+    \qty(\frac{ZZ'e^{2}}{16\pi \varepsilon_{0} \mathcal{E}})^{2} \frac{1}{\sin^4\frac{\theta}{2}}
+    \quad ,
     \label{eq:S01_1}
 \end{equation}
 where:
 \begin{itemize}
     \item \( Z \) and \( Z' \) are the atomic numbers of the incoming particle and of the scattering material, respectively;
     \item \( e \) is the unit charge, namely the charge of a proton;
-    \item \( E \) is the energy of the incoming particle;
-    \item \( \theta \) is the polar angle at which the incoming particle scatters with respect to the center of the scattering, namely the atom nucleus.
+    \item \( \mathcal{E} \) is the energy of the incoming particle;
+    \item \( \theta \) is the polar angle at which the incoming particle scatters with respect to the scattering centre, namely the atom nucleus.
 \end{itemize}
 
-However, the expression given in Eq. \ref{eq:S01_1} is only an approximation given by a simplified model and naive geometrical hypotheses. In fact, for small angles it diverges and this is in contrast with the experimental observations.
-In a real experiment we do not deal with beams with a point-like section or monochromatic. They have a more complex shape that should be modeled and the energy of its particles can more or less dispersed. Every of these details could apport a small correction to the already known result, but if we sum up all of them together, we can find significantly different results from the theoretical expectations.
+However, the expression given in \eqnref{eq:S01_1} is only an approximation given by a simplified model and naive geometrical hypotheses. In fact, for small angles it diverges, which is in contrast with the experimental observations.
+For instance, in a real experiment we do not deal with beams with a point-like section or monochromatic spectrum. They have a more complex shape that should be modelled and the energy of their particles is dispersed. Every of these details induces a small correction to the already known result, but their joint contribution leads to discrepancies with theoretical expectations.
 
-Given these premises, on which the following discussion will hold on, this work represents the final report of the experimental activity done for the Advanced Physics Laboratory course. The core aim is to reproduce Rutherford's result, but, more in particular, we want to:
+
+\paragraph{Aims of the work}
+Given the premises on which the following discussion will hold on, in this work we try to reproduce Rutherford's experimental work and to extrapolate the results on the differential cross section of the scattering process with a regard towards the various corrections due to both geometry and inner physics. More in particular, our aims are in logical order to:
 \begin{itemize}
-    \item elaborate and describe an appropriate experimental setup for performing measurments of charged particles scattering;
-    \item characterize the instruments employed for the measurments;
-    \item model through numerical simulations the experimental apparatus components and conditions and the physics of the phenomenon under study, basing its behaviour on theoretical considerations from which Rutherford model was elaborated;
-    \item measure the differential cross section of the scattering analyzed and compare it with the expected result from simulation.
+    \item elaborate and describe an appropriate experimental setup for performing measurements of charged particles scattering;
+    \item characterise the instruments employed for the measurements;
+    \item model through numerical simulations the components of the apparatus and the physics of the phenomenon under study;
+    \item extract the angular scattering profile distribution of the physical process from the analysis and compare it with the expected results from simulation.
 \end{itemize}
-Due to the shorter time at our disposal for the exceptional situation of 2020, the activity would have come to completely different results without the heredity of previous years students, who worked on the same topic. Several technical realizations have been taken from them, in particular:
+
+Due to the shorter time at our disposal for the exceptional situation of 2020, the activity would have come to completely different results without the heredity of previous iterations of the experience. Several technical realisations have been taken from them, in particular:
 \begin{itemize}
-    \item the \( \alpha \) source support;
+    \item the supports for the \( \alpha \) source and the silicon detector;
     \item the collimators of the beam;
-    \item the support of the detector;
     \item the mechanics and electronics for the motor control;
-    \item the software for the acquisition from the silicon detector and of the control of the digitizer.
+    \item the software for the acquisition from the silicon detector.
 \end{itemize}
-Several improvements and new systems have been introduced by us during the experimental activity, including:
+On the other hand, several improvements and new systems have been introduced in this iteration, including:
 \begin{itemize}
     \item a new ALPIDE pixel detector for the acquisition, with a finer geometrical resolution, along with its support and the software needed to control it from an FPGA;
     \item an improved configuration for the mechanical system of the motor, in order to perform acquisitions with both the detectors contemporaneously in the vacuum chamber;
     \item a new simulation of the apparatus and of the physics of the scattering process;
     \item several small improvements to the entire setup, including the possibility to perform all the operations for data acquisition in remote.
-\end{itemize}
-
-The report is organized as follow:
-\begin{itemize}
-    \item in Section \ref{sec:02}, we introduce every piece of the experimental appartus. Particular attention will be reserved to the acquisition system for both the detector employed and to their geometrical configuration with respect to the source support and the collimators;
-    \item in Section \ref{sec:03}, we treat the preliminary technical operations applied for the characterization of the detectors, such as efficiency calculations and working point;
-    \item in Section \ref{sec:04}, we discuss about the modeling of the physics of the process and the geometry of the apparatus through a complete simulation, written in Python3;
-    \item in Section \ref{sec:05}, we come to the acquisition of data and to their analysis, needed to extract the differential cross section distribution.
 \end{itemize}
 
 \end{document}

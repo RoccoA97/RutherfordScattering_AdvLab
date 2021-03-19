@@ -1,0 +1,72 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usepackage{siunitx}
+\usetikzlibrary{decorations,decorations.markings,decorations.text}
+
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{goldmetallic}{rgb}{0.83, 0.69, 0.22}
+
+\begin{document}
+    % horizontal lengths
+    \def\xo{0}
+    \def\xa{0.42}
+    \def\xb{\xa + 0.005}
+    \def\xc{\xb + 0.13}
+    \def\xd{\xc + 0.005}
+    \def\xe{\xd + 0.13}
+    \begin{tikzpicture}[scale=2.0]
+        % shape of rectangle
+        \draw[thin] (\xo, 0) rectangle (\xa, -1.52);
+        % shading
+        \shade[
+            top color=black!30,
+            bottom color=black!30,
+            middle color=black!80
+        ] (\xo, 0) rectangle (\xa, -1.52);
+        
+        \draw[very thin] (\xo-0.001,-1.52) -- (\xo-0.001,-1.75);
+        \draw[very thin] (\xa+0.001,-1.52) -- (\xa+0.001,-1.75);
+        \draw[very thin] (\xe+0.001,-0.76) -- (\xe+0.001,-1.75);
+        \draw[<->, very thin] (\xo,-1.70) -- (\xa,-1.70) node[midway,anchor=south] {\tiny\( y \)};
+        \draw[<->, very thin] (\xa,-1.70) -- (\xe,-1.70) node[midway,anchor=south] {\tiny\( z \)};
+        \draw[very thin] (\xo-0.001,0.001) -- (\xo-0.25,0.001);
+        \draw[very thin] (\xo-0.001,-1.521) -- (\xo-0.25,-1.521);
+        \draw[<->, very thin] (\xo-0.18,0.001) -- (\xo-0.18,-1.521) node[midway,anchor=west] {\tiny\( x \)};
+        
+        % connector
+        % 100-15->0.23 40-10->0.093
+        \draw[thin] (\xb,-0.76 + 0.115) rectangle (\xc,-0.76 - 0.115);
+        \shade[
+            top color=black!80,
+            bottom color=black!80,
+            middle color=black!80
+        ] (\xb,-0.76 + 0.115) rectangle (\xc,-0.76 - 0.115);
+        \draw[thin] (\xb,-0.76 + 0.115 + 0.10) rectangle (\xc,-0.76 + 0.115);
+        \shade[
+            top color=black!50,
+            bottom color=black!80,
+            %middle color=black!70
+        ] (\xb,-0.76 + 0.115 + 0.10) rectangle (\xc,-0.76 + 0.115);
+        \draw[thin] (\xb,-0.76 - 0.115) rectangle (\xc,-0.76 - 0.115 - 0.10);
+        \shade[
+            top color=black!80,
+            bottom color=black!50,
+            %middle color=black!70
+        ] (\xb,-0.76 - 0.115) rectangle (\xc,-0.76 - 0.115 - 0.10);
+        \draw[thin] (\xd,-0.76 + 0.105) rectangle (\xe,-0.76 - 0.105);
+        % shading
+        \shade[
+            top color=black!50,
+            bottom color=black!50,
+            middle color=black!80
+        ] (\xd,-0.76 + 0.105) rectangle (\xe,-0.76 - 0.105);
+
+        \draw[circle, fill=black!50] (\xe + 0.5 + 0.76,-0.76) circle (0.76);
+        \draw[circle, fill=black!30] (\xe + 0.5 + 0.76,-0.76) circle (0.68);
+        \draw[circle, fill=goldmetallic] (\xe + 0.5 + 0.76,-0.76) circle (0.63);
+        
+        \draw[very thin] (\xe + 0.5 + 0.13,-0.76) -- (\xe + 0.5 + 0.13,-1.75);
+        \draw[very thin] (\xe + 0.5 + 1.39,-0.76) -- (\xe + 0.5 + 1.39,-1.75);
+        \draw[<->, very thin] (\xe + 0.5 + 0.13,-1.70) -- (\xe + 0.5 + 1.39,-1.70) node[midway,anchor=south] {\tiny\( w \)};
+        
+    \end{tikzpicture}
+\end{document}

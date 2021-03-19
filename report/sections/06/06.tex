@@ -6,4 +6,32 @@
 
 \section{Conclusions}
 
+\paragraph{Summary}
+In this work we discuss the construction of an experimental setup to study Rutherford scattering interactions of \( \alpha \) particles on different target foils.
+The setup is composed of a vacuum chamber inside of which we position a radioactive source on top of a motorised support. The ladder allows us to rotate the source, and consequently the beam direction, making possible to acquire in a wide range of angles.
+
+Inside the chamber two detectors are positioned at a fixed distance from the axis of the motor, in order to reveal \( \alpha \) particles emitted by the source. The source beam is collimated using two aluminium targets and it interacts with the scattering foil positioned at the end of the support.
+The use of two independent detectors, each one with its own detection and monitoring system, constitutes a challenge with many technical issues to overcome, as we further discuss below, but after an opportune characterisation it is possible to successfully observe scattering events in a very wide interval of angles.
+
+This phenomenon has been modelled with a Monte Carlo simulation written from scratch, which takes into account the complex geometry of the whole system and several first order corrections, such as straggling and nuclear charge screening effects. The results of the simulation are in good agreement with the experimental data in the interesting angular regions of the scattering distribution. In particular, the results obtained with ALPIDE detector are the ones more promising and interesting, enhanced by the fact that this is its first employment in an experiment like this.
+
+
+\paragraph{Technical issues}
+Most of the main technical issues have been faced when dealing with the necessity of a remote control of the apparatus. The first one involves the laboratory PC, which has an ancient operating system with outdated libraries.
+This results in the impossibility of running the detection system in an unique framework due to the ALPIDE detection system requirement for newer UNIX OS system and libraries. A temporary solution was found by using an Intel NUC Mini PC for the ALPIDE detection system, connected to the laboratory PC via a LAN built using a switch. 
+This setup allows us to remotely control the system but only via a console.
+The graphical interface of the system can be controlled by desktop applications like TeamViewer, but the ladder requires an internet connection which would interfere with the ALPIDE communication protocol. Therefore, we introduce a second a second Intel Nuc Mini PC in the network in order to run the graphical application for remote control.
+
+The final issue faced is the limitation imposed by the use of the CTRL port of ALPIDE, whose main purpose is not the data readout but only the monitoring of the detector itself. This limitation has been partially overcome by selecting an appropriate combination of the strobe and gap parameters.
+
+
+\paragraph{Possible experiment improvements}
+
+
+
+The main improvement that may be done to the apparatus is the replacement of the laboratory PC to a newer hardware with a recent OS system, with the necessity of a complete rewrite of the SSB acquisition system using newer libraries.
+This operation would drastically improve the maintainability of the system itself and also allow a second improvement, namely the integration of the ALPIDE detection system with the already existing interface for PicoScope. This would then allow to control the whole setup and the acquisition process from a single terminal a with less resources and efforts.
+ 
+Another important improvement would be the possibility of using the faster port of the ALPIDE controller. In fact, the use of the CTRL port limits our acquisition rate to a maximum of \( 50 \ \si{Hz} \). In order to use the faster port a firmware integration is needed alongside to a dedicated PCB able to support the readout operation. This would allow to extend the sensible time window of the controller, with the consequent increase of the maximum acquisition rate up to \( \sim 10 \ \si{kHz} \).
+
 \end{document}

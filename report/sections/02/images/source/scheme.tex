@@ -1,0 +1,109 @@
+\documentclass[tikz, border=0pt]{standalone}
+\usepackage{siunitx}
+\usetikzlibrary{decorations,decorations.markings,decorations.text}
+\usetikzlibrary{patterns}
+
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{goldmetallic}{rgb}{0.83, 0.69, 0.22}
+
+\begin{document}
+    %% lengths
+    % main shape
+    \def\xo{0}
+    \def\yo{0}
+    \def\xl{7.90}
+    \def\yl{1.20}
+    % left gap
+    \def\xa{\xo + 0.05}
+    % americium layer
+    \def\xb{\xa + 0.01}
+    \def\xc{\xb + 0.08}
+    \def\yb{\yo + 0.25}
+    \def\yc{\yo + \yl - 0.25}
+    % right part wrt the americium layer
+    \def\xd{\xc + 0.01}
+    \def\xe{\xd + 0.70}
+    \def\yd{\yb}
+    \def\ye{\yc}
+    % right hole
+    \def\xf{\xo + \xl - 1.50}
+    \def\xg{\xo + \xl - 1.00}
+    \def\yf{\yo + 0.35}
+    \def\yg{\yo + \yl - 0.35}
+    % right right hole
+    \def\xh{\xg + 0.01}
+    \def\xi{\xo + \xl - 0.01 }
+    \def\yh{\yf}
+    \def\yi{\yg}
+    % \def\xb{\xa + 0.005}
+    % \def\xc{\xb + 0.13}
+    % \def\xd{\xc + 0.005}
+    % \def\xe{\xd + 0.13}
+    \begin{tikzpicture}[scale=2.0, transform shape]
+        % main shape of support
+        \draw[thin] (\xo, \yo) rectangle (\xl, \yl);
+        % shading
+        \shade[
+            top color=gray,
+            bottom color=gray,
+            middle color=gray
+        ] (\xo, \yo) rectangle (\xl, \yl);
+        
+        % left gap
+        \shade[
+            top color=black,
+            bottom color=black,
+            middle color=black
+        ] (\xo, \yo) rectangle (\xa, \yl);
+        
+        % americium layer
+        \draw[thin] (\xb, \yb) rectangle (\xc, \yc);
+        \shade[
+            top color=red,
+            bottom color=red,
+            middle color=red
+        ] (\xb, \yb) rectangle (\xc, \yc);
+        
+        % right part wrt the americium layer
+        \shade[
+            top color=black!10,
+            bottom color=black!10,
+            middle color=black!10
+        ] (\xd, \yd) rectangle (\xe, \ye);
+        \draw[thin, pattern=north west lines] (\xd, \yd) rectangle (\xe, \ye);
+        
+        % right hole
+        \shade[
+            top color=black!10,
+            bottom color=black!10,
+            middle color=black!10
+        ] (\xf, \yf) rectangle (\xg, \yg);
+        \draw[thin, pattern=north west lines] (\xf, \yf) rectangle (\xg, \yg);
+        
+        % right right hole
+        \shade[
+            top color=black!10,
+            bottom color=black!10,
+            middle color=black!10
+        ] (\xh, \yh) rectangle (\xi, \yi);
+        \draw[thin, pattern=north west lines] (\xh, \yh) rectangle (\xi, \yi);
+        
+        %% measures
+        \draw[very thin] (\xo-0.001,\yo) -- (\xo-0.001,\yo + 2.60);
+        \draw[very thin] (\xl-0.001,\yo) -- (\xl-0.001,\yo + 2.60);
+        \draw[<->, very thin] (\xo-0.001,2.30) -- (\xl-0.001,2.30) node[midway,anchor=south] {\tiny\( 79 \ \si{mm} \)};
+        
+        \draw[very thin] (\xf-0.001,\yf) -- (\xf-0.001,\yo + 2.20);
+        \draw[<->, very thin] (\xf-0.001,\yo + 1.90) -- (\xl-0.001,1.90) node[midway,anchor=south] {\tiny\( 15 \ \si{mm} \)};
+        
+        \draw[very thin] (\xg-0.001,\yg) -- (\xg-0.001,\yo + 1.80);
+        \draw[<->, very thin] (\xg-0.001,\yo + 1.50) -- (\xl-0.001,1.50) node[midway,anchor=south] {\tiny\( 10 \ \si{mm} \)};
+        
+        \draw[very thin] (\xl-0.001,\yo) -- (\xl+1.00,\yo);
+        \draw[very thin] (\xl-0.001,\yl+0.001) -- (\xl+1.00,\yl-0.001);
+        \draw[<->, very thin] (\xl+0.70,\yo+0.001) -- (\xl+0.70,\yl-0.001) node[midway,anchor=west] {\tiny\( 12 \ \si{mm} \)};
+        
+        \draw[<-, thick] (\xb + 0.04,0.6) -- (\xb + 0.04,-0.2) node[anchor=north] {\footnotesize\( {}^{241}\mathrm{Am} \)};
+        \draw[<-, thick] (\xl - 0.75,0.6) -- (\xl - 0.75,-0.2) node[anchor=north, text width=3.5cm, align=center] {\footnotesize Attachment\\for threaded rods};
+    \end{tikzpicture}
+\end{document}

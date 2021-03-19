@@ -21,15 +21,22 @@
 \usepackage{float}
 \usepackage{siunitx}
 \usepackage{amssymb}
-% \usepackage[caption=false, justification=right]{subfig}
+%\usepackage[caption=false]{subfig}
 \usepackage[caption=false]{subfig}
+% \usepackage{subcaption}
+\usepackage[export]{adjustbox}
 \usepackage{multirow}
+\usepackage[margin=2cm]{geometry}
+\usepackage{enumitem}
 
 %% listing packages (for codes)
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{framed}
 \usepackage{inconsolata} % To change the listing font
+
+%% standalone package
+\usepackage[mode=buildnew]{standalone}
 
 %% hyperlink package
 \definecolor{linkcolor}{rgb}{0,0,0.65} %hyperlink
@@ -40,6 +47,17 @@
 
 %% page settings and formatting
 \usepackage{fancyhdr}
+% \usepackage{ragged2e}
+
+% TODOs package
+\usepackage{todonotes}
+
+%% tikz
+\usepackage{tikz}
+
+%% tikz libraries
+\usetikzlibrary{decorations,decorations.markings,decorations.text}
+\usetikzlibrary{patterns}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -62,27 +80,68 @@
 
 %% indentation space
 \setlength\parindent{9pt}
-\linespread{1.13}% 0.956} % if using 11pt font
+% \linespread{1.13} % 11pt, highly spaced
+\linespread{1.05} % 11pt, lowly spaced
+% \linespread{0.956} % 0.956} % if using 11pt font
 
 %% section style
 %Redefine \thesubsection as \thesection.\alph{subsection}. (\alph replaces the default \arabic; you could also choose, e.g., \Alph, \roman, and \Roman.)
 \renewcommand{\thesection}{\textbf{\Roman{section}}}
 \renewcommand{\thesubsection}{\textbf{\arabic{subsection}}}
 \renewcommand{\thesubsubsection}{\textbf{\Alph{subsubsection}}}
+\renewcommand{\theparagraph}{\bf\sffamily\alph{paragraph}}
+
+\makeatletter
+\renewcommand{\paragraph}{% standard vertical spacing: 3.25ex
+    \@startsection{paragraph}{4}%
+    {\z@}{2.50ex \@plus 1ex \@minus .2ex}{-1em}%
+    {\bf\sffamily}%
+}
+\makeatother
 %\renewcommand{\thesection}{\textbf{\arabic{section}}}
 %\renewcommand{\thesubsection}{\thesection.\textbf{\arabic{subsection}}}
 %\renewcommand{\thesubsubsection}{\textbf{\thesection.\arabic{subsection}.\arabic{subsubsection}}}
 
 %% figure and table style settings
-\renewcommand{\tablename}{\textbf{TAB.}}
-\renewcommand{\thetable}{\textbf{\arabic{table}}}
-\renewcommand{\figurename}{\textbf{FIG.}}
-\renewcommand{\thefigure}{\textbf{\arabic{figure}}}
+% creano casini
+% \renewcommand{\tablename}{\textbf{TAB.}}
+% \renewcommand{\thetable}{\textbf{\arabic{table}}}
+% \renewcommand{\figurename}{\textbf{FIG.}}
+% \renewcommand{\thefigure}{\textbf{\arabic{figure}}}
 
 %% bibliography settings
 \bibliographystyle{aipnum4-1}
 \setcitestyle{numbers,square}
 
 %% figure caption settings (in bold)
-\captionsetup[figure]{labelfont={bf},labelformat={default},labelsep=period,name={FIG.}}
+\captionsetup[figure]{
+    % justification=justified,
+    % labelsep=newline,
+    % justification=raggedright,
+    % format=hang,
+    % justification=RaggedRight,
+    % singlelinecheck=off,
+    labelfont={bf},
+    labelformat={default},
+    labelsep=period,
+    name={FIG.}%
+}
+% \captionsetup[subfigure]{labelformat=brace}
+
+%% colors
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{goldmetallic}{rgb}{0.83, 0.69, 0.22}
+
+% itemize
+\setlist[itemize]{
+    noitemsep,
+    topsep=5pt,
+    parsep=5pt,
+    partopsep=5pt
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\figref}[1]{FIG. \textbf{\ref{#1}}}
+\newcommand{\eqnref}[1]{EQ. \textbf{\ref{#1}}}
+\newcommand{\tabref}[1]{TAB. \textbf{\ref{#1}}}
